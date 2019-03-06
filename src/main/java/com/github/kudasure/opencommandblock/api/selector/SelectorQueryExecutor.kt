@@ -9,11 +9,12 @@ import org.bukkit.entity.Entity
 
 object SelectorQueryExecutor {
     fun apply(original: List<Entity>, sb: SelectorBuilder, relativeLocationBase: CommonVector3): Set<Entity> {
-        val tickComparator: Comparator<Entity> = when (sb.getOrder()) {
+        val tickComparator: Comparator<Entity> = when (sb.getOrder() ?: SelectorOrder.NEAREST) {
             SelectorOrder.NEAREST -> NearestComparator
             SelectorOrder.FARTHEST -> NearestComparator.reversed()
             else -> TODO()
         }
+        val limit = sb.getLimit()
         val ret =
                 original.asSequence().filter {
                     it.isValid
@@ -32,7 +33,7 @@ object SelectorQueryExecutor {
                         val d2 = relativeLocationBase.distance(o2.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle())
                         return d1.compareTo(d2)
                     }
-                }.thenComparing(tickComparator)).toSet()
+                }.thenComparing(tickComparator)).filterIndexed { index, _ -> limit == null || index <= limit }.toSet()
         ret.forEach {
             OpenCommandBlock.instance.logger.info(relativeLocationBase.distance(it.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle()).toString())
         }

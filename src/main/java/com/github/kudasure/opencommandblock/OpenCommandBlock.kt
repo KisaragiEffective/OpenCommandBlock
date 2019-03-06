@@ -1,6 +1,9 @@
 package com.github.kudasure.opencommandblock
 
+import com.github.kudasure.opencommandblock.command.BlockCommandListener
+import com.github.kudasure.opencommandblock.command.ConsoleCommandListener
 import com.github.kudasure.opencommandblock.command.LCommandExecutor
+import com.github.kudasure.opencommandblock.command.PlayerCommandListener
 import com.github.kudasure.opencommandblock.command.impl.CheckRegion
 import com.github.kudasure.opencommandblock.command.impl.GameModeCommandHandler
 import com.github.kudasure.opencommandblock.command.impl.OpenCommandBlocksHelp
@@ -56,7 +59,14 @@ class OpenCommandBlock : JavaPlugin() {
             abort()
         }
 
-        logger.info("The command named `$n` will handled by ${exe::class.java.simpleName}")
+        var msg = "The command named `$n` will handled by ${exe::class.java.simpleName}"
+        msg += when (exe) {
+            is PlayerCommandListener -> " (Player Command)"
+            is ConsoleCommandListener -> " (Console Command)"
+            is BlockCommandListener -> " (CommandBlock Command)"
+            else -> ""
+        }
+        logger.info(msg)
         k.executor = exe
     }
 

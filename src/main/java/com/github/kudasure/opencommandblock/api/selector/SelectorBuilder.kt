@@ -10,17 +10,15 @@ import com.github.kudasure.opencommandblock.api.selector.Property.LIMIT_ORDER
 import com.github.kudasure.opencommandblock.api.selector.Property.MAXIMUM_RANGE
 import com.github.kudasure.opencommandblock.api.selector.Property.MINIMAL_RANGE
 import com.github.kudasure.opencommandblock.api.selector.Property.ORDER
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.freeze
 import com.github.kudasure.opencommandblock.kotlinmagic.notImplemented
 import org.bukkit.GameMode
-import java.util.EnumMap
-
 @Suppress("MemberVisibilityCanBePrivate")
 class SelectorBuilder {
-    private val emptyProperty = EnumMap<Property, Any>(Property::class.java).freeze
-    private var property: EnumMap<Property, Any?> = EnumMap(Property::class.java)
-    private var inverted: EnumMap<Property, Boolean> = EnumMap(Property::class.java)
-    private var isAbsolute: EnumMap<Property, Boolean> = EnumMap(Property::class.java)
+    val e: Class<Property> = requireNotNull(Property::class.java) { "CLASS" }
+    private val emptyProperty: MutableMap<Property, Any?> = requireNotNull(mutableMapOf()) { "emptyProperty" }
+    private var property: MutableMap<Property, Any?> = requireNotNull(mutableMapOf()) { "property" }
+    private var inverted: MutableMap<Property, Boolean> = requireNotNull(mutableMapOf()) { "inverted" }
+    private var isAbsolute: MutableMap<Property, Boolean> = requireNotNull(mutableMapOf()) { "isAbsolute" }
     fun setX(x: Int): SelectorBuilder {
         property[BASE_X] = x
         isAbsolute[BASE_X] = true
@@ -103,12 +101,12 @@ class SelectorBuilder {
         return property[LIMIT] as Int?
     }
 
-    fun getOrder(): SelectorOrder {
-        return property[ORDER] as SelectorOrder
+    fun getOrder(): SelectorOrder? {
+        return property[ORDER] as SelectorOrder?
     }
 
     fun clear() {
-        property = emptyProperty.clone()
+        property = emptyProperty
     }
 
     fun build(): Selector {

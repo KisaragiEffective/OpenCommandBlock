@@ -1,11 +1,13 @@
 package com.github.kudasure.opencommandblock.kotlinmagic.extension
 
+import com.github.kudasure.opencommandblock.annotations.GenericsUpCast
 import java.util.EnumMap
 import java.util.EnumSet
 
 /**
  * This should used
  */
+@GenericsUpCast
 inline val <reified T : Any> Array<T>.nullable: Array<T?>
     get() {
         return map { it }.toTypedArray()
@@ -26,6 +28,7 @@ fun <T> Array<T>.operationAndSelf(operation: (T) -> Unit): Array<T> {
     return this
 }
 
+@GenericsUpCast
 inline fun <reified SUPER, SUB : SUPER> Array<SUB>.exciplitUpCastAll(): Array<SUPER> {
     return map {
         it as SUPER
@@ -57,6 +60,13 @@ fun <K, V> Map<*, *>.check(): Map<K, V> {
     }.toMap()
 }
 
+@GenericsUpCast
+fun <BK : SK, BV : SV, SK, SV> Map<BK, BV>.upcast(): Map<SK, SV> {
+    return entries.map {
+        Pair(it.key as SK, it.value as SV)
+    }.toMap()
+}
+
 fun <E : Enum<E>, V> Map<E, V>.toEnumMap(): EnumMap<E, V> {
     return EnumMap(this)
 }
@@ -65,8 +75,6 @@ fun <E : Enum<E>> Set<E>.toEnumSet(): EnumSet<E> {
     return EnumSet.copyOf(this)
 }
 
-fun <SUB : SUPER, SUPER> Collection<SUB>.exciplitUpCastAll(): Collection<SUPER> {
-    return map {
-        it as SUPER
-    }
+inline fun <reified E> Array<E>.unmodifiable(): Array<out E> {
+    return toList().toTypedArray()
 }

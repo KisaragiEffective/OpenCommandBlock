@@ -1,7 +1,7 @@
 package com.github.kudasure.opencommandblock.command
 
+import com.github.kudasure.opencommandblock.OpenCommandBlock
 import com.github.kudasure.opencommandblock.annotations.CompatibilityMethod
-import com.github.kudasure.opencommandblock.command.impl.GameModeCommandHandler
 import com.github.kudasure.opencommandblock.enums.Platform
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.footBlock
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.isCommand
@@ -44,7 +44,16 @@ interface LCommandExecutor<W : CommandSender> : CommandExecutor {
 
         try {
             return firedCommand(sender as W, command, label, args)
+        } catch (e: TypeCastException) {
+            // for null -> non-null thrown
+            sender.sendMessage("Technical Error: Failed Type Check @ LCommandExecutor")
         } catch (e: ClassCastException) {
+            with(OpenCommandBlock.instance.logger) {
+                warning("${e::class.java.canonicalName}: ${e.message}")
+                e.stackTrace.forEach {
+                    this.warning(it.toString())
+                }
+            }
             sender.sendMessage("This command can't be invoked from you, ${sender::class.java.simpleName}")
         }
         return true

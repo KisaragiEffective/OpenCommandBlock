@@ -1,9 +1,9 @@
 package com.github.kudasure.opencommandblock.kotlinmagic.extension
 
 import com.github.kudasure.opencommandblock.annotations.FromKotlinSDK
+import com.github.kudasure.opencommandblock.annotations.GenericsUpCast
 import java.util.Calendar
 import java.util.Date
-import java.util.EnumSet
 import java.util.logging.Logger
 
 fun Date.asCalendar(): Calendar {
@@ -83,10 +83,15 @@ fun Long.parseAsMilliSeconds(): Calendar {
     return calendar
 }
 
-inline fun <reified E> Array<E>.unmodifiable(): Array<out E> {
-    return toList().toTypedArray()
-}
-
+@GenericsUpCast
 inline fun <SUB : SUPER, reified SUPER : Any> Class<SUB>.toUpcastExciplictly(): Class<out SUPER>? {
     return asSubclass(SUPER::class.java)
+}
+
+fun <T> Comparator<T>.reverse(): Comparator<T> {
+    return object : Comparator<T> {
+        override fun compare(o1: T, o2: T): Int {
+            return this@reverse.compare(o2, o1)
+        }
+    }
 }

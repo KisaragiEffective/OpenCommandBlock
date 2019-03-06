@@ -1,0 +1,11 @@
+<root>
+    <item name='com.sk89q.worldguard.bukkit.WGBukkit com.sk89q.worldguard.protection.managers.RegionManager getRegionManager(org.bukkit.World)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.bukkit.WorldGuardPlugin com.sk89q.worldguard.bukkit.WorldGuardPlugin inst()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.bukkit.WorldGuardPlugin inst'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,29 @@
+package com.github.kudasure.opencommandblock.kotlinmagic.extension.each2common
+
+import com.github.kudasure.opencommandblock.api.common.CommonPoint3
+import com.github.kudasure.opencommandblock.api.common.CommonWorld
+import com.github.kudasure.opencommandblock.kotlinmagic.extension.common2each.toBukkitStyle
+import org.bukkit.Difficulty
+import org.bukkit.Location
+import org.bukkit.World
+import org.bukkit.block.Block
+import java.util.UUID
+
+@FromBukkit
+fun Location.toFrameworkStyle(): CommonPoint3 {
+    return CommonPoint3(this.world.toFrameworkStyle(), x, y, z)
+}
+
+@FromBukkit
+fun World.toFrameworkStyle(): CommonWorld {
+    return object : CommonWorld {
+        override val difficulty: Difficulty
+            get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        override val uuid: UUID
+            get() = this@toFrameworkStyle.uid
+
+        override fun get(commonPoint3: CommonPoint3): Block {
+            return this@toFrameworkStyle.getBlockAt(commonPoint3.toBukkitStyle())
+        }
+    }
+}

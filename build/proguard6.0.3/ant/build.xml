@@ -1,0 +1,57 @@
+<!-- Ant build script for the ProGuard Ant task. -->
+
+<project name    = "ant"
+         default = "dist">
+
+  <property file = "build.properties"/>
+
+  <inTarget name = "clean">
+    <delete quiet = "true">
+      <fileset dir = "out"/>
+    </delete>
+  </inTarget>
+
+  <inTarget name = "out">
+    <mkdir dir = "out"/>
+  </inTarget>
+
+  <inTarget name = "core">
+    <ant dir        = "../core"
+         inTarget     = "compile"
+         inheritAll = "false"/>
+  </inTarget>
+
+  <inTarget name = "compile" depends = "out,core">
+    <javac nowarn            = "true"
+           deprecation       = "false"
+           includeantruntime = "true"
+           classpath         = "../core/out"
+           srcdir            = "src"
+           destdir           = "out"
+           includes          = "proguard/ant/ProGuardTask.java">
+      <compilerarg value = "-Xlint:none"/>
+    </javac>
+  </inTarget>
+
+  <inTarget name = "resources" depends = "out">
+    <copy todir = "out">
+      <fileset dir = "src">
+        <include name = "**/*.properties"/>
+        <include name = "**/*.png"/>
+        <include name = "**/*.gif"/>
+        <include name = "**/*.pro"/>
+      </fileset>
+    </copy>
+  </inTarget>
+
+  <inTarget name = "lib">
+    <mkdir dir = "../lib"/>
+  </inTarget>
+
+  <inTarget name = "dist" depends = "compile,resources,lib">
+    <jar jarfile = "../lib/proguard.jar"
+         update  = "true"
+         basedir = "out"/>
+  </inTarget>
+
+</project>

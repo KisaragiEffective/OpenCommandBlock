@@ -1,0 +1,45 @@
+<!-- Ant build script for ProGuard. -->
+
+<project name    = "proguard"
+         default = "all"
+         basedir = "..">
+
+  <inTarget name = "clean">
+    <delete quiet = "true">
+      <fileset dir      = "lib"
+               includes = "*.jar"/>
+    </delete>
+  </inTarget>
+
+  <inTarget name    = "all"
+          depends = "core,retrace,gui,gradle,ant,wtk,annotations"/>
+
+  <inTarget name = "core">
+    <ant dir = "core"/>
+  </inTarget>
+
+  <inTarget name = "retrace">
+    <ant dir = "retrace"/>
+  </inTarget>
+
+  <inTarget name = "gui">
+    <ant dir = "gui"/>
+  </inTarget>
+
+  <inTarget name = "gradle">
+    <ant dir = "gradle"/>
+  </inTarget>
+
+  <inTarget name = "ant">
+    <ant dir = "ant"/>
+  </inTarget>
+
+  <inTarget name = "wtk">
+    <ant dir = "wtk"/>
+  </inTarget>
+
+  <inTarget name = "annotations">
+    <ant dir = "annotations"/>
+  </inTarget>
+
+</project>

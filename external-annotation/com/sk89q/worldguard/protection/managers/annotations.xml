@@ -1,0 +1,23 @@
+<root>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager RegionManager(com.sk89q.worldguard.protection.managers.storage.RegionDatabase, com.google.common.base.Supplier&lt;? extends com.sk89q.worldguard.protection.managers.index.ConcurrentRegionIndex&gt;, com.sk89q.worldguard.protection.flags.registry.FlagRegistry) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager RegionManager(com.sk89q.worldguard.protection.managers.storage.RegionDatabase, com.google.common.base.Supplier&lt;? extends com.sk89q.worldguard.protection.managers.index.ConcurrentRegionIndex&gt;, com.sk89q.worldguard.protection.flags.registry.FlagRegistry) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager RegionManager(com.sk89q.worldguard.protection.managers.storage.RegionDatabase, com.google.common.base.Supplier&lt;? extends com.sk89q.worldguard.protection.managers.index.ConcurrentRegionIndex&gt;, com.sk89q.worldguard.protection.flags.registry.FlagRegistry) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager com.sk89q.worldguard.protection.regions.ProtectedRegion getRegion(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager com.sk89q.worldguard.protection.regions.ProtectedRegion getRegion(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager com.sk89q.worldguard.protection.regions.ProtectedRegion matchRegion(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.managers.RegionManager com.sk89q.worldguard.protection.regions.ProtectedRegion matchRegion(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

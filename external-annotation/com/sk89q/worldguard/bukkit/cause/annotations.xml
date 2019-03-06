@@ -1,0 +1,11 @@
+<root>
+    <item name='com.sk89q.worldguard.bukkit.cause.Cause com.sk89q.worldguard.bukkit.cause.Cause create(java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.bukkit.cause.Cause org.bukkit.entity.EntityType find(org.bukkit.entity.EntityType...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.bukkit.cause.Cause.Builder void addAll(java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+</root>

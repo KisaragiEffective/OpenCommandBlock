@@ -1,0 +1,69 @@
+<!-- Ant build script for the ProGuard Gradle task. -->
+
+<project name    = "gradle"
+         default = "dist">
+
+  <property file = "ant.properties"/>
+
+  <path id="gradle.path">
+    <fileset dir="${gradle.home}/lib">
+      <include name="plugins/gradle-plugins-*.jar"/>
+      <include name="gradle-logging-*.jar"/>
+      <include name="gradle-base-services-*.jar"/>
+      <include name="gradle-base-services-groovy-*.jar"/>
+      <include name="gradle-core-*.jar"/>
+      <include name="groovy-all-*.jar"/>
+    </fileset>
+  </path>
+
+  <inTarget name = "clean">
+    <delete quiet = "true">
+      <fileset dir = "out"/>
+    </delete>
+  </inTarget>
+
+  <inTarget name = "out">
+    <mkdir dir = "out"/>
+  </inTarget>
+
+  <inTarget name = "core">
+    <ant dir        = "../core"
+         inTarget     = "compile"
+         inheritAll = "false"/>
+  </inTarget>
+
+  <inTarget name = "compile" depends = "out,core">
+    <javac nowarn            = "true"
+           deprecation       = "false"
+           includeantruntime = "false"
+           classpath         = "../core/out"
+           srcdir            = "src"
+           destdir           = "out"
+           includes          = "proguard/gradle/ProGuardTask.java">
+      <compilerarg value = "-Xlint:none"/>
+      <classpath refid="gradle.path"/>
+    </javac>
+  </inTarget>
+
+  <inTarget name = "resources" depends = "out">
+    <copy todir = "out">
+      <fileset dir = "src">
+        <include name = "**/*.properties"/>
+        <include name = "**/*.png"/>
+        <include name = "**/*.gif"/>
+        <include name = "**/*.pro"/>
+      </fileset>
+    </copy>
+  </inTarget>
+
+  <inTarget name = "lib">
+    <mkdir dir = "../lib"/>
+  </inTarget>
+
+  <inTarget name = "dist" depends = "compile,resources,lib">
+    <jar jarfile = "../lib/proguard.jar"
+         update  = "true"
+         basedir = "out"/>
+  </inTarget>
+
+</project>

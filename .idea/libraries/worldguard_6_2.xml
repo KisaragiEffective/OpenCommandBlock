@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="worldguard-6.2">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/external-annotation" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

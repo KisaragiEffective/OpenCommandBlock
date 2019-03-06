@@ -1,0 +1,59 @@
+<root>
+    <item name='com.sk89q.worldguard.protection.flags.CommandStringFlag java.lang.String parseInput(com.sk89q.worldguard.protection.flags.FlagContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.Flag T getDefault()'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.Flag boolean isValidName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.Flags java.lang.Object marshal(com.sk89q.worldguard.protection.flags.Flag&lt;T&gt;, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.Flags java.util.Map&lt;java.lang.String,java.lang.Object&gt; marshal(java.util.Map&lt;com.sk89q.worldguard.protection.flags.Flag&lt;?&gt;,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.LocationFlag com.sk89q.worldedit.Location parseInput(com.sk89q.worldguard.protection.flags.FlagContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag boolean test(com.sk89q.worldguard.protection.flags.StateFlag.State...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State allowOrNone(boolean)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State chooseValue(java.util.Collection&lt;com.sk89q.worldguard.protection.flags.StateFlag.State&gt;)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State combine(com.sk89q.worldguard.protection.flags.StateFlag.State...)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State combine(com.sk89q.worldguard.protection.flags.StateFlag.State...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State combine(java.util.Collection&lt;com.sk89q.worldguard.protection.flags.StateFlag.State&gt;)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State combine(java.util.Collection&lt;com.sk89q.worldguard.protection.flags.StateFlag.State&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State denyToNone(com.sk89q.worldguard.protection.flags.StateFlag.State)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State getDefault()'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State parseInput(com.sk89q.worldguard.protection.flags.FlagContext)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State parseInput(com.sk89q.worldguard.protection.flags.FlagContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag com.sk89q.worldguard.protection.flags.StateFlag.State unmarshal(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='com.sk89q.worldguard.protection.flags.StateFlag java.lang.Object marshal(com.sk89q.worldguard.protection.flags.StateFlag.State)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+</root>

@@ -1,0 +1,14 @@
+<root>
+    <item name='org.bukkit.Material ctor'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.bukkit.Material java.lang.Class&lt;? extends org.bukkit.material.MaterialData&gt; getData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.bukkit.Material org.bukkit.Material matchMaterial(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+    <item name='org.bukkit.Material org.bukkit.Material matchMaterial(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

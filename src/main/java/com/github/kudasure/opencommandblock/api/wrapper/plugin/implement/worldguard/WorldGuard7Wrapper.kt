@@ -4,16 +4,17 @@ import com.github.kudasure.opencommandblock.api.common.TargetVersionRange
 import com.github.kudasure.opencommandblock.api.common.Version
 import com.github.kudasure.opencommandblock.api.wrapper.plugin.WorldGuardWrapper
 import com.github.kudasure.opencommandblock.api.wrapper.region.IRegion
+import com.github.kudasure.opencommandblock.kotlinmagic.notImplemented
 import org.bukkit.Location
 import org.bukkit.entity.Player
 
 object WorldGuard7Wrapper : WorldGuardWrapper {
     override fun isBuildable(who: Player, where: Location): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        notImplemented()
     }
 
     override fun getRegions(where: Location): Set<IRegion> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        notImplemented()
     }
 
     override val applicableVersion: TargetVersionRange

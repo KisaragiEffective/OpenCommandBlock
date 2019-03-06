@@ -1,5 +1,5 @@
 name: OpenCommandBlock
-version: 1.0.5
+version: 1.0.6
 main: com.github.kudasure.opencommandblock.OpenCommandBlock
 softdepend:
   - WorldGuard
@@ -23,3 +23,6 @@ commands:
     aliases:
       - opencommandblock
       - opencb
+  testselector:
+    description: Test for the selector query.
+    usage: "/<command>"

@@ -1,6 +1,7 @@
 package com.github.kudasure.opencommandblock.api.selector
 
 import com.github.kudasure.opencommandblock.api.common.TargetVersionRange
+import com.github.kudasure.opencommandblock.api.common.Version
 
 class Selector13(override val rawInput: String) : Selector {
     private val selectorType: SelectorType
@@ -20,7 +21,7 @@ class Selector13(override val rawInput: String) : Selector {
     override fun getY(): Number = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
     override fun getZ(): Number = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
     override val applicableApplicationVersion: TargetVersionRange
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        get() = TargetVersionRange(Version(1, 13), Version(1, 13, 2))
 
     init {
         selectorType = SelectorType.ALL

@@ -1,9 +1,11 @@
 package com.github.kudasure.opencommandblock
 
-import com.github.kudasure.opencommandblock.command.impl.GameModeCommandHandler
 import com.github.kudasure.opencommandblock.command.LCommandExecutor
 import com.github.kudasure.opencommandblock.command.impl.CheckRegion
+import com.github.kudasure.opencommandblock.command.impl.GameModeCommandHandler
+import com.github.kudasure.opencommandblock.command.impl.OpenCommandBlocksHelp
 import com.github.kudasure.opencommandblock.command.impl.TellCommandHandler
+import com.github.kudasure.opencommandblock.command.impl.TestSelectorQuery
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.freeze
 import com.github.kudasure.opencommandblock.listener.OnRightClick
 import org.bukkit.event.Listener
@@ -27,6 +29,8 @@ class OpenCommandBlock : JavaPlugin() {
         registerCommand(GameModeCommandHandler)
         registerCommand(CheckRegion)
         registerCommand(TellCommandHandler)
+        registerCommand(OpenCommandBlocksHelp)
+        registerCommand(TestSelectorQuery)
         registerEventListener(OnRightClick)
     }
 
@@ -35,12 +39,12 @@ class OpenCommandBlock : JavaPlugin() {
     }
 
     private fun checkCommandBlockEnabled() {
-        val serverProperties: Properties = Properties()
+        val serverProperties = Properties()
         serverProperties.load(FileReader(File(".", "server.properties")))
         if (serverProperties["enable-command-block"].toString().toBoolean()) {
-            logger.info("Enabled CommandBlock!")
+            logger.info("CommandBlock is enabled!")
         } else {
-            logger.warning("Disabled CommandBlock in `server.properties`. To enable CommandBlock, set `enable-command-block` to true.")
+            logger.warning("CommandBlock is disabled in `server.properties`. To enable CommandBlock, set `enable-command-block` to `true`.")
         }
     }
 
@@ -48,9 +52,11 @@ class OpenCommandBlock : JavaPlugin() {
         val n = exe.triggerCommand.name
         val k = getCommand(n)
         if (k == null) {
-            logger.severe("The command $n is not found. Abort.")
+            logger.severe("The command named `$n` is not found.\nThis is develop-step error.\nAbort.")
             abort()
         }
+
+        logger.info("The command named `$n` will handled by ${exe::class.java.simpleName}")
         k.executor = exe
     }
 

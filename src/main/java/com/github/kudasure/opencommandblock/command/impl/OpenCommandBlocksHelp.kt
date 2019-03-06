@@ -38,5 +38,5 @@ object OpenCommandBlocksHelp : PlayerCommandListener {
     override val triggerCommand: Command
         get() = OpenCommandBlock.instance.getCommand("opencommandblock")
     override val applicableArguments: List<List<CommandArgumentType>>
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        get() = listOf(listOf(), listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.STRING, CommandArgumentType.STRING))
 }

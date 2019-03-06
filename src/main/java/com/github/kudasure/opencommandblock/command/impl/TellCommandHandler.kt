@@ -24,6 +24,7 @@ object TellCommandHandler : PlayerCommandListener, OCBTemplateAvailable {
         val baseCommand = "tell @p[r=${OpenCommandBlock.applicablePersonalRange}]"
         CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(
                 baseCommand
+                        + " "
             +   args.joinToString(" ")
         )
         return true

@@ -1,12 +1,14 @@
 package com.github.kudasure.opencommandblock.kotlinmagic.extension.each2common
 
 import com.github.kudasure.opencommandblock.api.common.CommonPoint3
+import com.github.kudasure.opencommandblock.api.common.CommonVector3
 import com.github.kudasure.opencommandblock.api.common.CommonWorld
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.common2each.toBukkitStyle
 import org.bukkit.Difficulty
 import org.bukkit.Location
 import org.bukkit.World
 import org.bukkit.block.Block
+import org.bukkit.util.Vector
 import java.util.UUID
 
 @FromBukkit
@@ -26,4 +28,8 @@ fun World.toFrameworkStyle(): CommonWorld {
             return this@toFrameworkStyle.getBlockAt(commonPoint3.toBukkitStyle())
         }
     }
+}
+
+fun Vector.toFrameworkStyle(): CommonVector3 {
+    return CommonVector3(x, y, z)
 }

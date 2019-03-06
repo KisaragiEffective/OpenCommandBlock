@@ -1,7 +1,9 @@
 package com.github.kudasure.opencommandblock.kotlinmagic.extension.each2common
 
 import com.github.kudasure.opencommandblock.OpenCommandBlock
-
+import com.github.kudasure.opencommandblock.api.common.CommonVector
+import com.github.kudasure.opencommandblock.api.common.CommonVector2
+import com.github.kudasure.opencommandblock.api.common.CommonVector3
 import com.github.kudasure.opencommandblock.api.wrapper.region.ActionAnswer
 import com.github.kudasure.opencommandblock.api.wrapper.region.EntitiesGroup
 import com.github.kudasure.opencommandblock.api.wrapper.region.EntityAction
@@ -12,17 +14,11 @@ import com.github.kudasure.opencommandblock.api.wrapper.region.IRectangleRegion
 import com.github.kudasure.opencommandblock.api.wrapper.region.IRegion
 import com.github.kudasure.opencommandblock.api.wrapper.region.RegionSetting
 import com.github.kudasure.opencommandblock.api.wrapper.region.RegionStructure
-
-import com.github.kudasure.opencommandblock.api.common.CommonVector
-import com.github.kudasure.opencommandblock.api.common.CommonVector2
-import com.github.kudasure.opencommandblock.api.common.CommonVector3
-
 import com.github.kudasure.opencommandblock.exception.DevelopStepException
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.toEnumMap
 import com.github.kudasure.opencommandblock.kotlinmagic.extension.worldguard.asBukkitVector
 import com.github.kudasure.opencommandblock.kotlinmagic.notImplemented
 import com.sk89q.worldedit.Location
-
 import com.sk89q.worldguard.bukkit.WGBukkit
 import com.sk89q.worldguard.protection.flags.BooleanFlag
 import com.sk89q.worldguard.protection.flags.CommandStringFlag
@@ -38,14 +34,12 @@ import com.sk89q.worldguard.protection.regions.GlobalProtectedRegion
 import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion
 import com.sk89q.worldguard.protection.regions.ProtectedPolygonalRegion
 import com.sk89q.worldguard.protection.regions.ProtectedRegion
-
 import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Player
 import org.bukkit.util.Vector
-
 import java.util.EnumMap
 
 internal fun ProtectedRegion.toFrameworkStyle(): IRegion {
@@ -188,7 +182,7 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
 
         override fun contains(other: CommonVector): Boolean {
             other as CommonVector3
-            return region.contains(other.x, other.y, other.z)
+            return region.contains(other.x.toInt(), other.y.toInt(), other.z.toInt())
         }
 
         override fun getEntityPermissions(): Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> {

@@ -23,3 +23,6 @@ commands:
     aliases:
       - opencommandblock
       - opencb
+  testselector:
+    description: Test for the selector query.
+    usage: "/<command>"

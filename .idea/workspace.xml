@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66c988a7-ae16-471a-98b5-6c686683de7f" name="Default Changelist" comment="" />
+    <list default="true" id="66c988a7-ae16-471a-98b5-6c686683de7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorQueryExecutor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TestSelectorQuery.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/Rectangle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonPoint3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonPoint3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonVectors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonVectors.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector13.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector13.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/OpenCommandBlock$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/OpenCommandBlock$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/OpenCommandBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/OpenCommandBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/LogData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/LogData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/PlayerPlaceOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/PlayerPlaceOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/PlayerRemoveOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/PlayerRemoveOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonPoint3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonPoint3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonVector2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonVector2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonVector3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/CommonVector3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/TargetVersionRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/TargetVersionRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/Version$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/Version$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/Version.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/common/Version.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/selector/Selector13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/selector/Selector13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/common2each/ToBukkitKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/common2each/ToBukkitKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkitKt$toFrameworkStyle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkitKt$toFrameworkStyle$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkitKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkitKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuardKt$toFrameworkStyle$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuardKt$toFrameworkStyle$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/listener/OnRightClick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/kudasure/opencommandblock/listener/OnRightClick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,29 +52,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/CheckRegion.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+            <state relative-caret-position="337">
+              <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+              <folding>
+                <element signature="n#!!block;n#registerEventListener#0;n#!!block;n#OpenCommandBlock#0" />
+                <element signature="n#!!block;n#checkSoftDepend#0;n#!!block;n#OpenCommandBlock#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/LCommandExecutor.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/ForBukkit.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="1377">
+              <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -41,26 +77,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+            <state relative-caret-position="136">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/listener/OnRightClick.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="-703">
+              <caret line="173" column="53" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
+              <folding>
+                <element signature="e#80#2561#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="459">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorBuilder.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+              <folding>
+                <element signature="e#59#422#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorQueryExecutor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TestSelectorQuery.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="72" lean-forward="true" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -68,29 +146,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="663">
+              <caret line="39" column="69" lean-forward="true" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
               <folding>
                 <element signature="e#59#331#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/IntList.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="51" selection-start-column="51" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/JavaSAMtoKotlinLambda.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="209" selection-start-line="209" selection-end-line="209" />
             </state>
           </provider>
         </entry>
@@ -105,10 +165,10 @@
         <option value="Kotlin Script" />
         <option value="Kotlin Enum" />
         <option value="Interface" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -125,12 +185,15 @@
       <find>TODO(&quot;not implemented&quot;) //To change body of created functions use File | Settings | File Templates.</find>
       <find>this::</find>
       <find>add</find>
+      <find>\[[YZ]\]</find>
+      <find>\[([YZ])\]</find>
     </findStrings>
     <replaceStrings>
       <replace>${userProfile}</replace>
       <replace>version</replace>
       <replace>notImplemented()</replace>
       <replace>::</replace>
+      <replace>[BASE_$1]</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -139,24 +202,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/adapter/implement/worldguard/WorldGuard6Wrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/adapter/JavaPluginWrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/WorldGuardWrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/implement/worldguard/WorldGuard7Wrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/annotations/TargetVersion.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/implement/worldguard/WorldGuardNullImpl.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/implement/worldguard/WorldGuard4Wrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/implement/worldguard/WorldGuard5Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/LoggingWrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector13.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/JavaSAMtoKotlinLambda.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/region/EntityGroups.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/implement/worldguard/WorldGuard6Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersion.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersions.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/WrapperSelector.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/EconomyWrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/EconomyPluginWrapper.kt" />
@@ -169,32 +221,44 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/TreeNode.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/EmptyIterator.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/EnumList.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/Extensions.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/TopLevelFunctions.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/CommandArgument.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/PlayerCommandListener.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/CheckRegion.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/GameModeCommandHandler.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/OCBTemplateAvaiable.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/OCHTemplateAvailable.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/CommandTemplate.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/OCBTemplateAvailable.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/ForBukkit.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/LCommandExecutor.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/IntList.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/listener/OnRightClick.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector13.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersions.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/Rectangle.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/Rectangle.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorBuilder.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonPoint3.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonVectors.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorQueryExecutor.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TestSelectorQuery.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
     <option name="width" value="960" />
     <option name="height" value="1036" />
   </component>
@@ -216,12 +280,124 @@
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="external-annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="worldedit-bukkit-6.1.9.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="worldedit-bukkit-6.1.9.jar" type="ab9368bb:PsiFileNode" />
+              <item name="defaults" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="common2each" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="each2common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="proguarded" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -234,12 +410,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551872996910" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551882988415" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/external-annotation" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="ファセット" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
@@ -248,11 +424,11 @@
       <recent name="com.kudasure.opencommandblock.api" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.github.kudasure.opencommandblock.api.common" />
       <recent name="com.github.kudasure.opencommandblock.exception" />
       <recent name="com.github.kudasure.opencommandblock.interfaces" />
       <recent name="com.github.kudasure.opencommandblock.api.wrapper.plugin" />
       <recent name="com.kudasure.opencommandblock.api.common" />
-      <recent name="com.kudasure.opencommandblock.command.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\build" />
@@ -422,7 +598,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Obsidian550D\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -446,21 +622,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI デザイナー" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="デザイナー" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1705757" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CheckStyle" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32719395" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -484,7 +661,7 @@
       <window_info id="UI デザイナー" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="デザイナー" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16897655" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1705757" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CheckStyle" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.32936078" />
@@ -492,7 +669,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32719395" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -514,170 +691,33 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="executeSpecs" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/com/sk89q/worldguard/bukkit/WorldGuardPlugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="697" column="47" selection-start-line="697" selection-start-column="47" selection-end-line="697" selection-end-column="47" />
-          <folding>
-            <element signature="e#28326#28327#0" expanded="true" />
-            <element signature="e#28400#28401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#79#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/com/sk89q/worldguard/protection/flags/BuildFlag.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/com/sk89q/worldguard/protection/flags/StateFlag.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/IQuery.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/annotations/InlineOnly.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/annotations/DependExternalPlugins.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1078">
-          <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/RegularEnumSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/EnumSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="406" column="40" lean-forward="true" selection-start-line="406" selection-start-column="40" selection-end-line="406" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/EmptyIterator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/TreeNode.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/struct/EnumList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!block;n#EnumList#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/annotations/CompatibilityMethod.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessors.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Annotations.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="217" column="78" lean-forward="true" selection-start-line="217" selection-start-column="78" selection-end-line="217" selection-end-column="78" />
-          <folding>
-            <element signature="e#80#2561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Enumeration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/collections/CollectionsJVM.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#270#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/TopLevelFunctions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -770,37 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156-sources.jar!/org/bukkit/Instrument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="48" column="15" lean-forward="true" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/ForBukkit.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="n#!!block;n#checkCommandBlockEnabled#0;n#!!block;n#OpenCommandBlock#0" />
-            <element signature="n#!!block;n#registerCommand#0;n#!!block;n#OpenCommandBlock#0" />
-            <element signature="n#!!block;n#registerEventListener#0;n#!!block;n#OpenCommandBlock#0" />
-            <element signature="n#!!block;n#checkSoftDepend#0;n#!!block;n#OpenCommandBlock#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#59#331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/Aliases.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -862,20 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="209" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -895,8 +884,214 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="50">
+          <caret line="3" column="67" lean-forward="true" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/TopLevelFunctions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/TargetVersions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Ranges.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/Rectangle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/IQuery.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0-sources.jar!/com/google/common/base/Verify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/util/MathJVM.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="248" column="37" lean-forward="true" selection-start-line="248" selection-start-column="37" selection-end-line="248" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonVectors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#57#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/common/CommonPoint3.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/Selector13.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#59#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+          <folding>
+            <element signature="e#59#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="5206" column="24" selection-start-line="5206" selection-start-column="24" selection-end-line="5206" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="184" column="31" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
+          <folding>
+            <element signature="e#7819#7820#0" expanded="true" />
+            <element signature="e#7872#7873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/OpenCommandBlocksHelp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="69" lean-forward="true" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+          <folding>
+            <element signature="e#59#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libraries/worldedit-bukkit-6.1.9.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libraries/worldedit-bukkit-6.1.9.jar!/defaults/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/ForBukkit.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/kotlinmagic/extension/each2common/FromWorldGuard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="173" column="53" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
+          <folding>
+            <element signature="e#80#2561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/selector/SelectorQueryExecutor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TellCommandHandler.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/impl/TestSelectorQuery.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="72" lean-forward="true" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/OpenCommandBlock.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!block;n#registerEventListener#0;n#!!block;n#OpenCommandBlock#0" />
+            <element signature="n#!!block;n#checkSoftDepend#0;n#!!block;n#OpenCommandBlock#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -917,7 +1112,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Kotlin</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -977,7 +1172,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.bukkit:craftbukkit:1.12.1-R0.1-SNAPSHOT</last-edited>
+          <last-edited>worldguard-6.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

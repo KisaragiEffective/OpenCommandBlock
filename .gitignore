@@ -1,2 +1,4 @@
 Java.gitignore
 build/proguard6.0.3
+target/*
+

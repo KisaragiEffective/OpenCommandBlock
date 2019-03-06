@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/listener/OnRightClick.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -60,19 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/command/CommandTemplate.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-              <folding>
-                <element signature="e#54#188#0" expanded="true" />
-              </folding>
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -146,7 +134,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/OpenCommandBlock" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -228,115 +216,12 @@
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="commandblock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
-              <item name="extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="struct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="external-annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -349,7 +234,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551872649655" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551872996910" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/external-annotation" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,11 +264,11 @@
       <recent name="com.github.kudasure.opencommandblock" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\external-annotation" />
       <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\src\main\java\com\github\kudasure\opencommandblock\api\commandblock" />
       <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\src\main\java\com\github\kudasure\opencommandblock\api\common" />
       <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\src\main\java\com\github\kudasure\opencommandblock\api\wrapper\implement\worldguard" />
       <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\src\main\java\com\github\kudasure\opencommandblock\kotlinmagic\extension\each2common" />
-      <recent name="C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\src\main\java\com\github\kudasure\opencommandblock\api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -561,7 +446,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -631,13 +515,6 @@
     <option featureType="com.intellij.configurationType" implementationName="executeSpecs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/com/sk89q/worldguard/protection/GlobalRegionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="73" column="83" lean-forward="true" selection-start-line="73" selection-start-column="83" selection-end-line="73" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libraries/worldguard-6.2.jar!/com/sk89q/worldguard/bukkit/WorldGuardPlugin.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1005,14 +882,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/listener/OnRightClick.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external-annotation/java/util/annotations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/kudasure/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

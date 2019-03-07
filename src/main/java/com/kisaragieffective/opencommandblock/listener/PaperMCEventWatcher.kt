@@ -11,12 +11,12 @@ import org.bukkit.event.Listener
 object PaperMCEventWatcher : Listener {
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     fun onAnvilDamaged(e: AnvilDamagedEvent) {
-        com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.damageState.name}")
+        OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.damageState.name}")
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     fun onBeaconEffect(e: BeaconEffectEvent) {
-        com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.effect.type} (primary=${e.isPrimary})")
+        OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.effect.type} (primary=${e.isPrimary})")
     }
 
     /*
@@ -28,7 +28,7 @@ object PaperMCEventWatcher : Listener {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     fun onBlockDestroy(e: TNTPrimeEvent) {
-        com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.primerEntity} (reason=${e.reason})")
+        OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName}: ${e.primerEntity} (reason=${e.reason})")
     }
 
 

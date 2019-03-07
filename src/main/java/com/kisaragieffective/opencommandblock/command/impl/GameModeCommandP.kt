@@ -4,9 +4,7 @@ import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.LogAccessor
 import com.kisaragieffective.opencommandblock.api.PlayerCommandInputOperation
 import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessor
-import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.GameModeCommandArgument
-import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common.toFrameworkStyle
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.foot
 import org.bukkit.command.Command

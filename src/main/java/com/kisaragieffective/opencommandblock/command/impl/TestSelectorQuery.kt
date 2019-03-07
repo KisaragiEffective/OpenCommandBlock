@@ -6,6 +6,7 @@ import com.kisaragieffective.opencommandblock.api.selector.SelectorOrder
 import com.kisaragieffective.opencommandblock.api.selector.SelectorQueryExecutor
 import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common.toFrameworkStyle
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 

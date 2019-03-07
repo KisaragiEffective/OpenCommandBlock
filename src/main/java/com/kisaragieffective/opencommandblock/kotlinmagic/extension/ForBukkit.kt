@@ -14,8 +14,12 @@ import org.bukkit.util.Vector
 @InlineOnly
 inline val Material.isCommand: Boolean
     get() {
-        return when (this) {
-            Material.COMMAND, Material.COMMAND_CHAIN, Material.COMMAND_REPEATING -> true
+        return when (this.name) {
+            // for 1.12.2 and below
+            "COMMAND", "COMMAND_CHAIN", "COMMAND_REPEATING" -> true
+
+            // for 1.13+
+            "COMMAND_BLOCK", "CHAIN_COMMAND_BLOCK", "REPEATING_COMMAND_BLOCK" -> true
             else -> false
         }
     }
@@ -90,4 +94,7 @@ fun Player.playSoundThere(sound: Sound, volume: Float, pitch: Float) {
 fun Player.playNoteThere(instrument: Instrument, note: Note) {
     return playNote(location, instrument, note)
 }
+
+
+
 

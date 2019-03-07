@@ -1,9 +1,11 @@
 package com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common
 
+import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.common.CommonVector
 import com.kisaragieffective.opencommandblock.api.common.CommonVector2
 import com.kisaragieffective.opencommandblock.api.common.CommonVector3
 import com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer
+import com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup
 import com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IGlobalRegion
@@ -12,7 +14,27 @@ import com.kisaragieffective.opencommandblock.api.wrapper.region.IRectangleRegio
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion
 import com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting
 import com.kisaragieffective.opencommandblock.api.wrapper.region.RegionStructure
+import com.kisaragieffective.opencommandblock.exception.DevelopStepException
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.toEnumMap
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.worldguard.asBukkitVector
+import com.kisaragieffective.opencommandblock.kotlinmagic.notImplemented
 import com.sk89q.worldedit.Location
+import com.sk89q.worldguard.bukkit.WGBukkit
+import com.sk89q.worldguard.protection.flags.BooleanFlag
+import com.sk89q.worldguard.protection.flags.CommandStringFlag
+import com.sk89q.worldguard.protection.flags.DoubleFlag
+import com.sk89q.worldguard.protection.flags.EntityTypeFlag
+import com.sk89q.worldguard.protection.flags.EnumFlag
+import com.sk89q.worldguard.protection.flags.IntegerFlag
+import com.sk89q.worldguard.protection.flags.LocationFlag
+import com.sk89q.worldguard.protection.flags.SetFlag
+import com.sk89q.worldguard.protection.flags.StateFlag
+import com.sk89q.worldguard.protection.flags.StringFlag
+import com.sk89q.worldguard.protection.regions.GlobalProtectedRegion
+import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion
+import com.sk89q.worldguard.protection.regions.ProtectedPolygonalRegion
+import com.sk89q.worldguard.protection.regions.ProtectedRegion
+import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
@@ -87,7 +109,7 @@ private fun ProtectedPolygonalRegion.toFrameworkStyle(): IPolygon2DRegion {
          * @inherited
          */
         override val parent: IRegion?
-            get() = region.parent.toFrameworkStyle()
+            get() = region.parent?.toFrameworkStyle()
         override val world: World
             get() = Bukkit.getWorlds().filter {
                 WGBukkit.getRegionManager(it).regions.containsValue(region)
@@ -143,7 +165,7 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
          * @inherited
          */
         override val parent: IRegion?
-            get() = region.parent.toFrameworkStyle()
+            get() = region.parent?.toFrameworkStyle()
 
         override fun test(actor: Entity, action: EntityAction): ActionAnswer {
             val query = WGBukkit.getPlugin().regionContainer.createQuery()
@@ -172,16 +194,13 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
             notImplemented()
         }
 
-        /**
-         * Actually, the most key is [com.github.kudasure.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
-         */
         override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, RegionSetting<S>> {
             region.flags.entries.map {
                 Pair(when (it.key) {
                     is IntegerFlag -> RegionSetting(it.value as Int)
                     is DoubleFlag -> RegionSetting(it.value as Double)
                     is BooleanFlag -> RegionSetting(it.value as Boolean)
-                    is CommandStringFlag -> RegionSetting(if (it.value) {
+                    is CommandStringFlag -> RegionSetting(if (it.value as StateFlag.State == StateFlag.State.ALLOW) {
                         ActionAnswer.ALLOWED
                     } else {
                         ActionAnswer.DENIED
@@ -191,7 +210,7 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
                     is LocationFlag -> RegionSetting(it.value as Location)
                     is StringFlag -> RegionSetting(it.value as String)
                     is EnumFlag<*> -> RegionSetting(it.value as Enum<*>)
-                    is StateFlag -> RegionSetting(if (it.value) {
+                    is StateFlag -> RegionSetting(if (it.value as StateFlag.State == StateFlag.State.ALLOW) {
                         ActionAnswer.ALLOWED
                     } else {
                         ActionAnswer.DENIED

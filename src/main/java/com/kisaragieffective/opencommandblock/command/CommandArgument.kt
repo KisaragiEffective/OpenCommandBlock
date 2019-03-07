@@ -1,5 +1,6 @@
 package com.kisaragieffective.opencommandblock.command
 
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.toUpcastExciplictly
 import org.bukkit.GameMode
 import java.net.MalformedURLException
 import java.net.URL

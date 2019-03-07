@@ -18,7 +18,7 @@ fun main() {
     }.invoke()
 
     assertTrue ("Failed") {
-        com.kisaragieffective.opencommandblock.api.common.Version(1, 1) > com.kisaragieffective.opencommandblock.api.common.Version(1, 0)
+        Version(1, 1) > Version(1, 0)
     }
 
     println(Calendar.getInstance().toString())

@@ -3,6 +3,9 @@ package com.kisaragieffective.opencommandblock.command
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.annotations.CompatibilityMethod
 import com.kisaragieffective.opencommandblock.enums.Platform
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.footBlock
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.isCommand
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.playNoteThere
 import org.bukkit.Instrument
 import org.bukkit.Note
 import org.bukkit.command.Command

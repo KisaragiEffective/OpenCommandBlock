@@ -10,6 +10,7 @@ import com.kisaragieffective.opencommandblock.api.selector.Property.LIMIT_ORDER
 import com.kisaragieffective.opencommandblock.api.selector.Property.MAXIMUM_RANGE
 import com.kisaragieffective.opencommandblock.api.selector.Property.MINIMAL_RANGE
 import com.kisaragieffective.opencommandblock.api.selector.Property.ORDER
+import com.kisaragieffective.opencommandblock.kotlinmagic.notImplemented
 import org.bukkit.GameMode
 
 @Suppress("MemberVisibilityCanBePrivate")

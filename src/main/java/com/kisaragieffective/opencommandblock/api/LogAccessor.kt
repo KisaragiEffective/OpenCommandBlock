@@ -2,6 +2,8 @@ package com.kisaragieffective.opencommandblock.api
 
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.enums.CommandBlockType
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.parseAsMilliSeconds
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.toSingleEnumSet
 import org.bukkit.Location
 import org.bukkit.configuration.file.YamlConfiguration
 import java.nio.file.Files

@@ -4,6 +4,7 @@ import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.wrapper.plugin.implement.worldguard.WorldGuard6Wrapper
 import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.foot
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 

@@ -3,6 +3,7 @@ package com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common
 import com.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.kisaragieffective.opencommandblock.api.common.CommonVector3
 import com.kisaragieffective.opencommandblock.api.common.CommonWorld
+import com.kisaragieffective.opencommandblock.kotlinmagic.extension.common2each.toBukkitStyle
 import org.bukkit.Difficulty
 import org.bukkit.Location
 import org.bukkit.World

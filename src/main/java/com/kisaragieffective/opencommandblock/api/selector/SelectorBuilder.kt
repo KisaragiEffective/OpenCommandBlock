@@ -10,16 +10,16 @@ import com.kisaragieffective.opencommandblock.api.selector.Property.LIMIT_ORDER
 import com.kisaragieffective.opencommandblock.api.selector.Property.MAXIMUM_RANGE
 import com.kisaragieffective.opencommandblock.api.selector.Property.MINIMAL_RANGE
 import com.kisaragieffective.opencommandblock.api.selector.Property.ORDER
-import com.github.kudasure.opencommandblock.kotlinmagic.notImplemented
 import org.bukkit.GameMode
+
 @Suppress("MemberVisibilityCanBePrivate")
 class SelectorBuilder {
-    val e: Class<com.kisaragieffective.opencommandblock.api.selector.Property> = requireNotNull(com.kisaragieffective.opencommandblock.api.selector.Property::class.java) { "CLASS" }
-    private val emptyProperty: MutableMap<com.kisaragieffective.opencommandblock.api.selector.Property, Any?> = requireNotNull(mutableMapOf()) { "emptyProperty" }
-    private var property: MutableMap<com.kisaragieffective.opencommandblock.api.selector.Property, Any?> = requireNotNull(mutableMapOf()) { "property" }
-    private var inverted: MutableMap<com.kisaragieffective.opencommandblock.api.selector.Property, Boolean> = requireNotNull(mutableMapOf()) { "inverted" }
-    private var isAbsolute: MutableMap<com.kisaragieffective.opencommandblock.api.selector.Property, Boolean> = requireNotNull(mutableMapOf()) { "isAbsolute" }
-    fun setX(x: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    val e: Class<Property> = requireNotNull(Property::class.java) { "CLASS" }
+    private val emptyProperty: MutableMap<Property, Any?> = requireNotNull(mutableMapOf()) { "emptyProperty" }
+    private var property: MutableMap<Property, Any?> = requireNotNull(mutableMapOf()) { "property" }
+    private var inverted: MutableMap<Property, Boolean> = requireNotNull(mutableMapOf()) { "inverted" }
+    private var isAbsolute: MutableMap<Property, Boolean> = requireNotNull(mutableMapOf()) { "isAbsolute" }
+    fun setX(x: Int): SelectorBuilder {
         property[BASE_X] = x
         isAbsolute[BASE_X] = true
         return this
@@ -29,7 +29,7 @@ class SelectorBuilder {
         return property[BASE_X] as Int?
     }
 
-    fun setY(y: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setY(y: Int): SelectorBuilder {
         property[BASE_Y] = y
         isAbsolute[BASE_Y] = true
         return this
@@ -39,7 +39,7 @@ class SelectorBuilder {
         return property[BASE_Y] as Int?
     }
 
-    fun setZ(z: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setZ(z: Int): SelectorBuilder {
         property[BASE_Z] = z
         isAbsolute[BASE_Z] = true
         return this
@@ -49,7 +49,7 @@ class SelectorBuilder {
         return property[BASE_Z] as Int?
     }
 
-    fun setMinimalRange(range: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setMinimalRange(range: Int): SelectorBuilder {
         property[MINIMAL_RANGE] = range
         return this
     }
@@ -58,7 +58,7 @@ class SelectorBuilder {
         return property[MINIMAL_RANGE] as Int?
     }
 
-    fun setMaximumRange(range: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setMaximumRange(range: Int): SelectorBuilder {
         property[MAXIMUM_RANGE] = range
         return this
     }
@@ -67,16 +67,16 @@ class SelectorBuilder {
         return property[MAXIMUM_RANGE] as Int?
     }
 
-    fun setRange(minimalRange: Int, maximumRange: Int): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setRange(minimalRange: Int, maximumRange: Int): SelectorBuilder {
         setMinimalRange(minimalRange)
         return setMaximumRange(maximumRange)
     }
 
-    fun setRange(range: IntRange): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setRange(range: IntRange): SelectorBuilder {
         return setRange(range.start, range.endInclusive)
     }
 
-    fun setGameModes(gamemodes: Set<GameMode>, inverted: Boolean = false): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setGameModes(gamemodes: Set<GameMode>, inverted: Boolean = false): SelectorBuilder {
         property[GAMEMODES] = gamemodes
         this@SelectorBuilder.inverted[GAMEMODES] = inverted
         return this
@@ -91,7 +91,7 @@ class SelectorBuilder {
         return inverted[GAMEMODES] ?: false
     }
 
-    fun setLimit(limit: Int, order: com.kisaragieffective.opencommandblock.api.selector.SelectorOrder): com.kisaragieffective.opencommandblock.api.selector.SelectorBuilder {
+    fun setLimit(limit: Int, order: SelectorOrder): SelectorBuilder {
         property[LIMIT] = limit
         property[LIMIT_ORDER] = order
         return this
@@ -101,35 +101,35 @@ class SelectorBuilder {
         return property[LIMIT] as Int?
     }
 
-    fun getOrder(): com.kisaragieffective.opencommandblock.api.selector.SelectorOrder? {
-        return property[ORDER] as com.kisaragieffective.opencommandblock.api.selector.SelectorOrder?
+    fun getOrder(): SelectorOrder? {
+        return property[ORDER] as SelectorOrder?
     }
 
     fun clear() {
         property = emptyProperty
     }
 
-    fun build(): com.kisaragieffective.opencommandblock.api.selector.Selector {
+    fun build(): Selector {
         notImplemented()
     }
 
-    fun buildAsString(minecraft: com.kisaragieffective.opencommandblock.api.common.Version): String {
+    fun buildAsString(minecraft: Version): String {
         when {
-            minecraft >= com.kisaragieffective.opencommandblock.api.common.Version(1, 14) -> {
+            minecraft >= Version(1, 14) -> {
                 // 1.14 here
                 TODO()
             }
 
-            minecraft >= com.kisaragieffective.opencommandblock.api.common.Version(1, 13) -> {
+            minecraft >= Version(1, 13) -> {
                 // 1.13.x here
                 TODO()
             }
 
-            minecraft >= com.kisaragieffective.opencommandblock.api.common.Version(1, 12) -> {
+            minecraft >= Version(1, 12) -> {
                 // 1.12.x here
             }
 
-            minecraft >= com.kisaragieffective.opencommandblock.api.common.Version(1, 8) -> {
+            minecraft >= Version(1, 8) -> {
                 // 1.8.x, 1.9.x, 1.10.x, 1.11.x here
                 var s = ""
                 var prop: Array<String> = emptyArray()
@@ -156,8 +156,8 @@ class SelectorBuilder {
                 if (c != null) {
                     val order = getOrder()
                     prop += when (order) {
-                        com.kisaragieffective.opencommandblock.api.selector.SelectorOrder.NEAREST -> "c=$c"
-                        com.kisaragieffective.opencommandblock.api.selector.SelectorOrder.FARTHEST -> "c=-$c"
+                        SelectorOrder.NEAREST -> "c=$c"
+                        SelectorOrder.FARTHEST -> "c=-$c"
                         else -> ""
                     }
                 }

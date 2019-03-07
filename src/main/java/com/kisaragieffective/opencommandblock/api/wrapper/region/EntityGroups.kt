@@ -5,12 +5,12 @@ import com.kisaragieffective.opencommandblock.interfaces.MustImplementContains
 import org.bukkit.entity.Entity
 import org.bukkit.permissions.Permission
 
-@com.kisaragieffective.opencommandblock.annotations.DependencyInjection
-interface IEntityGroup : com.kisaragieffective.opencommandblock.interfaces.MustImplementContains<Entity> {
+@DependencyInjection
+interface IEntityGroup : MustImplementContains<Entity> {
     override operator fun contains(other: Entity): Boolean
 }
 
-class SingletonEntityGroup(private val entity: Entity) : com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup {
+class SingletonEntityGroup(private val entity: Entity) : IEntityGroup {
     override operator fun contains(other: Entity): Boolean {
         return this.entity == other
     }
@@ -20,7 +20,7 @@ class SingletonEntityGroup(private val entity: Entity) : com.kisaragieffective.o
     }
 }
 
-class EntitiesGroup(private val entities: Collection<Entity>) : com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup {
+class EntitiesGroup(private val entities: Collection<Entity>) : IEntityGroup {
     override operator fun contains(other: Entity): Boolean {
         return entities.contains(other)
     }
@@ -30,7 +30,7 @@ class EntitiesGroup(private val entities: Collection<Entity>) : com.kisaragieffe
     }
 }
 
-class NotEntitiesGroup(private val entities: Collection<Entity>) : com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup {
+class NotEntitiesGroup(private val entities: Collection<Entity>) : IEntityGroup {
     override operator fun contains(other: Entity): Boolean {
         return !entities.contains(other)
     }
@@ -40,7 +40,7 @@ class NotEntitiesGroup(private val entities: Collection<Entity>) : com.kisaragie
     }
 }
 
-class PermissionGroup(private val permission: Permission) : com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup {
+class PermissionGroup(private val permission: Permission) : IEntityGroup {
     override operator fun contains(other: Entity): Boolean {
         return other.hasPermission(permission)
     }

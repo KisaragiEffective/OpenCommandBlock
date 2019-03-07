@@ -1,18 +1,18 @@
 package com.kisaragieffective.opencommandblock.api.commandblock
 
-import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 import com.kisaragieffective.opencommandblock.api.common.CommonPoint3
+import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 
 class CommandBlockAccessor {
     companion object {
-        fun getCurrentVersionDriver(l: com.kisaragieffective.opencommandblock.api.common.CommonPoint3): com.kisaragieffective.opencommandblock.api.commandblock.ICommandBlockAccessor {
-            return com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessorR12(l)
+        fun getCurrentVersionDriver(l: CommonPoint3): ICommandBlockAccessor {
+            return CommandBlockAccessorR12(l)
         }
     }
 }
 
 interface ICommandBlockAccessor {
-    val location: com.kisaragieffective.opencommandblock.api.common.CommonPoint3
+    val location: CommonPoint3
 
     fun setCommand(s: String)
 
@@ -32,5 +32,5 @@ interface ICommandBlockAccessor {
 
     var needPower: Boolean
 
-    val canApplyVersion: com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
+    val canApplyVersion: TargetVersionRange
 }

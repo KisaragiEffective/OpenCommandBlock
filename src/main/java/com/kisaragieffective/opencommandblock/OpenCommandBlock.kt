@@ -9,8 +9,6 @@ import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandHandle
 import com.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp
 import com.kisaragieffective.opencommandblock.command.impl.TellCommandHandler
 import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.freeze
-import com.github.kudasure.opencommandblock.listener.OnRightClick
 import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
@@ -19,7 +17,7 @@ import java.util.Properties
 
 class OpenCommandBlock : JavaPlugin() {
     init {
-        com.kisaragieffective.opencommandblock.OpenCommandBlock.Companion.instance = this.freeze
+        instance = this.freeze
     }
 
     override fun onLoad() {
@@ -29,11 +27,11 @@ class OpenCommandBlock : JavaPlugin() {
 
     override fun onEnable() {
         checkSoftDepend("WorldGuard")
-        registerCommand(com.kisaragieffective.opencommandblock.command.impl.GameModeCommandHandler)
-        registerCommand(com.kisaragieffective.opencommandblock.command.impl.CheckRegion)
-        registerCommand(com.kisaragieffective.opencommandblock.command.impl.TellCommandHandler)
-        registerCommand(com.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp)
-        registerCommand(com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery)
+        registerCommand(GameModeCommandHandler)
+        registerCommand(CheckRegion)
+        registerCommand(TellCommandHandler)
+        registerCommand(OpenCommandBlocksHelp)
+        registerCommand(TestSelectorQuery)
         registerEventListener(OnRightClick)
     }
 
@@ -51,7 +49,7 @@ class OpenCommandBlock : JavaPlugin() {
         }
     }
 
-    private fun registerCommand(exe: com.kisaragieffective.opencommandblock.command.LCommandExecutor<*>) {
+    private fun registerCommand(exe: LCommandExecutor<*>) {
         val n = exe.triggerCommand.name
         val k = getCommand(n)
         if (k == null) {
@@ -61,9 +59,9 @@ class OpenCommandBlock : JavaPlugin() {
 
         var msg = "The command named `$n` will handled by ${exe::class.java.simpleName}"
         msg += when (exe) {
-            is com.kisaragieffective.opencommandblock.command.PlayerCommandListener -> " (Player Command)"
-            is com.kisaragieffective.opencommandblock.command.ConsoleCommandListener -> " (Console Command)"
-            is com.kisaragieffective.opencommandblock.command.BlockCommandListener -> " (CommandBlock Command)"
+            is PlayerCommandListener -> " (Player Command)"
+            is ConsoleCommandListener -> " (Console Command)"
+            is BlockCommandListener -> " (CommandBlock Command)"
             else -> ""
         }
         logger.info(msg)
@@ -97,10 +95,10 @@ class OpenCommandBlock : JavaPlugin() {
     }
 
     companion object {
-        lateinit var instance: com.kisaragieffective.opencommandblock.OpenCommandBlock
+        lateinit var instance: OpenCommandBlock
         const val applicablePersonalRange = 10
         const val applicablePeopleRange = 10
-        val personalSelector = "@p[r=${com.kisaragieffective.opencommandblock.OpenCommandBlock.Companion.applicablePersonalRange}]"
-        val peopleSelector = "@a[r=${com.kisaragieffective.opencommandblock.OpenCommandBlock.Companion.applicablePeopleRange}]"
+        val personalSelector = "@p[r=$applicablePersonalRange]"
+        val peopleSelector = "@a[r=$applicablePeopleRange]"
     }
 }

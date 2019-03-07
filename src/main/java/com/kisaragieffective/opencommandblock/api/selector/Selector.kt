@@ -7,11 +7,11 @@ interface Selector {
 
     fun asSelectorSyntax(): String
 
-    fun getType(): com.kisaragieffective.opencommandblock.api.selector.SelectorType
+    fun getType(): SelectorType
     fun getX(): Number
     fun getY(): Number
     fun getZ(): Number
-    val applicableApplicationVersion: com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
+    val applicableApplicationVersion: TargetVersionRange
     val rawInput: String
 }
 

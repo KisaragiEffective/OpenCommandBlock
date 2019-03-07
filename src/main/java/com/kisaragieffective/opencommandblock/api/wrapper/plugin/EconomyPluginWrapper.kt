@@ -2,7 +2,7 @@ package com.kisaragieffective.opencommandblock.api.wrapper.plugin
 
 import org.bukkit.OfflinePlayer
 
-interface EconomyPluginWrapper : com.kisaragieffective.opencommandblock.api.wrapper.plugin.JavaPluginWrapper {
+interface EconomyPluginWrapper : JavaPluginWrapper {
     fun decreaseMoney(player: OfflinePlayer, minusAmount: Float, reason: String = "")
 
     fun increaseMoney(player: OfflinePlayer, plusAmount: Float, reason: String = "")

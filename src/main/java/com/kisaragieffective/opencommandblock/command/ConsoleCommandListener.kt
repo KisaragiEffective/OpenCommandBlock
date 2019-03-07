@@ -2,4 +2,4 @@ package com.kisaragieffective.opencommandblock.command
 
 import org.bukkit.command.ConsoleCommandSender
 
-interface ConsoleCommandListener : com.kisaragieffective.opencommandblock.command.LCommandExecutor<ConsoleCommandSender>
+interface ConsoleCommandListener : LCommandExecutor<ConsoleCommandSender>

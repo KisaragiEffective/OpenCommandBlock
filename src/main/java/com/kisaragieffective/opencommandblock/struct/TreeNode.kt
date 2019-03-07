@@ -8,7 +8,7 @@ import com.kisaragieffective.opencommandblock.interfaces.MustImplementContains
  * @param children the children nodes
  * @param parent the parent. If doesn't have parent, it may null
  */
-class TreeNode<T>(private val here: T, private val children: List<TreeNode<T>>, private val parent: TreeNode<T>?): com.kisaragieffective.opencommandblock.interfaces.MustImplementContains<T> {
+class TreeNode<T>(private val here: T, private val children: List<TreeNode<T>>, private val parent: TreeNode<T>?): MustImplementContains<T> {
     override operator fun contains(other: T): Boolean {
         if (here == other) return true
         if (children.isNotEmpty() && children.any { it.contains(other)}) {

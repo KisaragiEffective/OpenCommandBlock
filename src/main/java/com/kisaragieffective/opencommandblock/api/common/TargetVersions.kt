@@ -2,11 +2,11 @@ package com.kisaragieffective.opencommandblock.api.common
 
 import com.kisaragieffective.opencommandblock.interfaces.MustImplementContains
 
-data class Version(val major: Int = 1, val minor: Int = 0, val fix: Int = 0, val build: Int = 0) : Comparable<com.kisaragieffective.opencommandblock.api.common.Version> {
+data class Version(val major: Int = 1, val minor: Int = 0, val fix: Int = 0, val build: Int = 0) : Comparable<Version> {
     /**
      * @inherited
      */
-    override operator fun compareTo(other: com.kisaragieffective.opencommandblock.api.common.Version): Int {
+    override operator fun compareTo(other: Version): Int {
         return when {
             major > other.major || minor > other.minor || fix > other.fix || build > other.build -> 1
             major < other.major || minor < other.minor || fix < other.fix || build < other.build -> -1
@@ -19,7 +19,7 @@ data class Version(val major: Int = 1, val minor: Int = 0, val fix: Int = 0, val
     }
 
     override fun equals(other: Any?): Boolean {
-        return if (other is com.kisaragieffective.opencommandblock.api.common.Version) {
+        return if (other is Version) {
             major == other.major && minor == other.minor && fix == other.fix && build == other.build
         } else {
             false
@@ -38,18 +38,18 @@ data class Version(val major: Int = 1, val minor: Int = 0, val fix: Int = 0, val
         /**
          * The HIGHEST version, in my opinion.
          */
-        val LATEST = com.kisaragieffective.opencommandblock.api.common.Version(9999, 9999, 9999, 9999)
+        val LATEST = Version(9999, 9999, 9999, 9999)
     }
 }
 
-data class TargetVersionRange(val lowerInclusive: com.kisaragieffective.opencommandblock.api.common.Version, val upperExclusive: com.kisaragieffective.opencommandblock.api.common.Version) : com.kisaragieffective.opencommandblock.interfaces.MustImplementContains<com.kisaragieffective.opencommandblock.api.common.Version> {
+data class TargetVersionRange(val lowerInclusive: Version, val upperExclusive: Version) : MustImplementContains<Version> {
     init {
         if (upperExclusive < lowerInclusive) {
             throw IllegalArgumentException("$upperExclusive > $lowerInclusive")
         }
     }
 
-    override operator fun contains(other: com.kisaragieffective.opencommandblock.api.common.Version): Boolean {
+    override operator fun contains(other: Version): Boolean {
         return (lowerInclusive <= other && other < upperExclusive)
     }
 }

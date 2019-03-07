@@ -7,7 +7,7 @@ import java.util.EnumSet
 /**
  * This should used
  */
-@com.kisaragieffective.opencommandblock.annotations.GenericsUpCast
+@GenericsUpCast
 inline val <reified T : Any> Array<T>.nullable: Array<T?>
     get() {
         return map { it }.toTypedArray()
@@ -28,7 +28,7 @@ fun <T> Array<T>.operationAndSelf(operation: (T) -> Unit): Array<T> {
     return this
 }
 
-@com.kisaragieffective.opencommandblock.annotations.GenericsUpCast
+@GenericsUpCast
 inline fun <reified SUPER, SUB : SUPER> Array<SUB>.exciplitUpCastAll(): Array<SUPER> {
     return map {
         it as SUPER
@@ -60,7 +60,7 @@ fun <K, V> Map<*, *>.check(): Map<K, V> {
     }.toMap()
 }
 
-@com.kisaragieffective.opencommandblock.annotations.GenericsUpCast
+@GenericsUpCast
 fun <BK : SK, BV : SV, SK, SV> Map<BK, BV>.upcast(): Map<SK, SV> {
     return entries.map {
         Pair(it.key as SK, it.value as SV)

@@ -4,7 +4,7 @@ import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
 
 interface OCBTemplateAvailable {
-    fun template(): com.kisaragieffective.opencommandblock.command.CommandTemplate
+    fun template(): CommandTemplate
 
     fun invoke(sender: CommandSender, command: Command, label: String, args: Array<out String>): String {
         return template().invoke(sender, command, label, args)

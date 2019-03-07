@@ -36,13 +36,13 @@ inline val <T : Any?> T.exciplitNullable: T?
  * The first element of the array (assuming the array is not empty) represents the top of the
  * stack, which is the place where [currentStackTrace] function was called from.
  */
-@com.kisaragieffective.opencommandblock.annotations.FromKotlinSDK("kotlin.test.currentStackTrace")
+@FromKotlinSDK("kotlin.test.currentStackTrace")
 // --- here
 @Suppress("PLATFORM_CLASS_MAPPED_TO_KOTLIN")
 fun currentStackTrace(): Array<out StackTraceElement> = (java.lang.Exception() as java.lang.Throwable).stackTrace
 // --- end
 
-@com.kisaragieffective.opencommandblock.annotations.FromKotlinSDK("kotlin.jvm.JvmClassMapping")
+@FromKotlinSDK("kotlin.jvm.JvmClassMapping")
 @Suppress("UNCHECKED_CAST", "PLATFORM_CLASS_MAPPED_TO_KOTLIN")
 inline val <T : Any> T.javaClass: Class<T>
     get() {
@@ -83,7 +83,7 @@ fun Long.parseAsMilliSeconds(): Calendar {
     return calendar
 }
 
-@com.kisaragieffective.opencommandblock.annotations.GenericsUpCast
+@GenericsUpCast
 inline fun <SUB : SUPER, reified SUPER : Any> Class<SUB>.toUpcastExciplictly(): Class<out SUPER>? {
     return asSubclass(SUPER::class.java)
 }

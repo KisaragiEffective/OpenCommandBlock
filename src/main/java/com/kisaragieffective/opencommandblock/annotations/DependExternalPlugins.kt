@@ -4,4 +4,4 @@ import com.kisaragieffective.opencommandblock.enums.VersionRelationalShip
 
 @Target()
 @Retention(AnnotationRetention.SOURCE)
-annotation class DependWorldGuard(val version: String, val relation: com.kisaragieffective.opencommandblock.enums.VersionRelationalShip)
+annotation class DependWorldGuard(val version: String, val relation: VersionRelationalShip)

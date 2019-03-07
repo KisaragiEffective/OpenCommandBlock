@@ -1,6 +1,5 @@
 package com.kisaragieffective.opencommandblock.command
 
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.toUpcastExciplictly
 import org.bukkit.GameMode
 import java.net.MalformedURLException
 import java.net.URL
@@ -13,11 +12,11 @@ interface CommandArgument<out T> {
     */
 }
 
-class IntegerCommandArgument(override val value: Int) : com.kisaragieffective.opencommandblock.command.CommandArgument<Int> {
+class IntegerCommandArgument(override val value: Int) : CommandArgument<Int> {
     companion object {
-        fun fromString(s: String): com.kisaragieffective.opencommandblock.command.CommandArgument<Int>? {
+        fun fromString(s: String): CommandArgument<Int>? {
             return try {
-                com.kisaragieffective.opencommandblock.command.IntegerCommandArgument(s.toInt())
+                IntegerCommandArgument(s.toInt())
             } catch (e: NumberFormatException) {
                 null
             }
@@ -29,9 +28,9 @@ class IntegerCommandArgument(override val value: Int) : com.kisaragieffective.op
     }
 }
 
-class StringCommandArgument(override val value: String) : com.kisaragieffective.opencommandblock.command.CommandArgument<String> {
+class StringCommandArgument(override val value: String) : CommandArgument<String> {
     companion object {
-        fun fromString(s : String): com.kisaragieffective.opencommandblock.command.StringCommandArgument = com.kisaragieffective.opencommandblock.command.StringCommandArgument(s)
+        fun fromString(s : String): StringCommandArgument = StringCommandArgument(s)
     }
 
     override fun toString(): String {
@@ -39,7 +38,7 @@ class StringCommandArgument(override val value: String) : com.kisaragieffective.
     }
 }
 
-enum class GameModeCommandArgument(override val value: GameMode) : com.kisaragieffective.opencommandblock.command.CommandArgument<GameMode> {
+enum class GameModeCommandArgument(override val value: GameMode) : CommandArgument<GameMode> {
     SURVIVAL(GameMode.SURVIVAL),
     CREATIVE(GameMode.CREATIVE),
     ADVENTURE(GameMode.ADVENTURE),
@@ -48,12 +47,12 @@ enum class GameModeCommandArgument(override val value: GameMode) : com.kisaragie
     ;
 
     companion object {
-        fun fromString(s: String): com.kisaragieffective.opencommandblock.command.GameModeCommandArgument {
+        fun fromString(s: String): GameModeCommandArgument {
             return when (s.toLowerCase()) {
-                "survival", "s", "0" -> com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.SURVIVAL
-                "creative", "c", "1" -> com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.CREATIVE
-                "adventure", "a", "2" -> com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.ADVENTURE
-                "spectator", "sp", "3" -> com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.SPECTATOR
+                "survival", "s", "0" -> SURVIVAL
+                "creative", "c", "1" -> CREATIVE
+                "adventure", "a", "2" -> ADVENTURE
+                "spectator", "sp", "3" -> SPECTATOR
                 else -> throw IllegalArgumentException()
             }
         }
@@ -61,19 +60,19 @@ enum class GameModeCommandArgument(override val value: GameMode) : com.kisaragie
 
     override fun toString(): String {
         return when(this) {
-            com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.SURVIVAL -> "survival"
-            com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.CREATIVE -> "creative"
-            com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.ADVENTURE -> "adventure"
-            com.kisaragieffective.opencommandblock.command.GameModeCommandArgument.SPECTATOR -> "spectator"
+            SURVIVAL -> "survival"
+            CREATIVE -> "creative"
+            ADVENTURE -> "adventure"
+            SPECTATOR -> "spectator"
         }
     }
 }
 
-class UrlCommandArgument(override val value: URL) : com.kisaragieffective.opencommandblock.command.CommandArgument<URL> {
+class UrlCommandArgument(override val value: URL) : CommandArgument<URL> {
     companion object {
-        fun fromString(s: String): com.kisaragieffective.opencommandblock.command.UrlCommandArgument {
+        fun fromString(s: String): UrlCommandArgument {
             try {
-                return com.kisaragieffective.opencommandblock.command.UrlCommandArgument(URL(s))
+                return UrlCommandArgument(URL(s))
             } catch (e: MalformedURLException) {
                 throw IllegalArgumentException(e)
             }
@@ -81,14 +80,14 @@ class UrlCommandArgument(override val value: URL) : com.kisaragieffective.openco
     }
 }
 
-object VoidCommandArgument : com.kisaragieffective.opencommandblock.command.CommandArgument<Unit> {
+object VoidCommandArgument : CommandArgument<Unit> {
     override val value: Unit
         get() = Unit
 }
 
-enum class CommandArgumentType(ref: Class<out com.kisaragieffective.opencommandblock.command.CommandArgument<*>>) {
-    INTEGER(com.kisaragieffective.opencommandblock.command.IntegerCommandArgument::class.java.toUpcastExciplictly<com.kisaragieffective.opencommandblock.command.IntegerCommandArgument, com.kisaragieffective.opencommandblock.command.CommandArgument<*>>()!!),
-    STRING(com.kisaragieffective.opencommandblock.command.StringCommandArgument::class.java.toUpcastExciplictly<com.kisaragieffective.opencommandblock.command.StringCommandArgument, com.kisaragieffective.opencommandblock.command.CommandArgument<*>>()!!),
-    GAMEMODE(com.kisaragieffective.opencommandblock.command.GameModeCommandArgument::class.java.toUpcastExciplictly<com.kisaragieffective.opencommandblock.command.GameModeCommandArgument, com.kisaragieffective.opencommandblock.command.CommandArgument<*>>()!!),
-    URL(com.kisaragieffective.opencommandblock.command.UrlCommandArgument::class.java.toUpcastExciplictly<com.kisaragieffective.opencommandblock.command.UrlCommandArgument, com.kisaragieffective.opencommandblock.command.CommandArgument<*>>()!!)
+enum class CommandArgumentType(ref: Class<out CommandArgument<*>>) {
+    INTEGER(IntegerCommandArgument::class.java.toUpcastExciplictly<IntegerCommandArgument, CommandArgument<*>>()!!),
+    STRING(StringCommandArgument::class.java.toUpcastExciplictly<StringCommandArgument, CommandArgument<*>>()!!),
+    GAMEMODE(GameModeCommandArgument::class.java.toUpcastExciplictly<GameModeCommandArgument, CommandArgument<*>>()!!),
+    URL(UrlCommandArgument::class.java.toUpcastExciplictly<UrlCommandArgument, CommandArgument<*>>()!!)
 }

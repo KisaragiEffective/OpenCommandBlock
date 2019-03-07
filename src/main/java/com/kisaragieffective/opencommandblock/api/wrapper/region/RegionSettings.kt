@@ -1,8 +1,8 @@
 package com.kisaragieffective.opencommandblock.api.wrapper.region
 
-class RegionSetting<out V>(private val setting: V) : com.kisaragieffective.opencommandblock.api.wrapper.region.IRegionSetting {
+class RegionSetting<out V>(private val setting: V) : IRegionSetting {
     override fun equals(other: Any?): Boolean {
-        return if (other is com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting<*>) {
+        return if (other is RegionSetting<*>) {
             this.setting == other.setting
         } else {
             false
@@ -16,6 +16,4 @@ class RegionSetting<out V>(private val setting: V) : com.kisaragieffective.openc
 
 }
 
-interface IRegionSetting {
-
-}
+interface IRegionSetting

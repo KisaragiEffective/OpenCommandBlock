@@ -6,15 +6,15 @@ import com.kisaragieffective.opencommandblock.annotations.DependencyInjection
 /**
  * The lookup parameters
  */
-@com.kisaragieffective.opencommandblock.annotations.DependencyInjection
+@DependencyInjection
 interface IQuery
 
 /**
  * The unspecified [IQuery] instance
  */
-object NullQuery : com.kisaragieffective.opencommandblock.api.IQuery
+object NullQuery : IQuery
 
 /**
  * The default [IQuery] implements
  */
-class Query : com.kisaragieffective.opencommandblock.api.IQuery
+class Query : IQuery

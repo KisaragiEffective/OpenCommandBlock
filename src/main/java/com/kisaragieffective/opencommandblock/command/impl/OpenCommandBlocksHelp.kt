@@ -6,7 +6,7 @@ import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 
-object OpenCommandBlocksHelp : com.kisaragieffective.opencommandblock.command.PlayerCommandListener {
+object OpenCommandBlocksHelp : PlayerCommandListener {
     override fun firedCommand(sender: Player, command: Command?, alias: String?, args: Array<out String>): Boolean {
         val len = args.size
         when (len) {
@@ -36,7 +36,7 @@ object OpenCommandBlocksHelp : com.kisaragieffective.opencommandblock.command.Pl
     }
 
     override val triggerCommand: Command
-        get() = com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.getCommand("opencommandblock")
-    override val applicableArguments: List<List<com.kisaragieffective.opencommandblock.command.CommandArgumentType>>
-        get() = listOf(listOf(), listOf(com.kisaragieffective.opencommandblock.command.CommandArgumentType.STRING), listOf(com.kisaragieffective.opencommandblock.command.CommandArgumentType.STRING, com.kisaragieffective.opencommandblock.command.CommandArgumentType.STRING))
+        get() = OpenCommandBlock.instance.getCommand("opencommandblock")
+    override val applicableArguments: List<List<CommandArgumentType>>
+        get() = listOf(listOf(), listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.STRING, CommandArgumentType.STRING))
 }

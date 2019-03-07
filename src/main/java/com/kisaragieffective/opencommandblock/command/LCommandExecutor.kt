@@ -3,9 +3,6 @@ package com.kisaragieffective.opencommandblock.command
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.annotations.CompatibilityMethod
 import com.kisaragieffective.opencommandblock.enums.Platform
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.footBlock
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.isCommand
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.playNoteThere
 import org.bukkit.Instrument
 import org.bukkit.Note
 import org.bukkit.command.Command
@@ -15,7 +12,7 @@ import org.bukkit.entity.Player
 
 interface LCommandExecutor<W : CommandSender> : CommandExecutor {
     @Suppress("UNCHECKED_CAST")
-    @com.kisaragieffective.opencommandblock.annotations.CompatibilityMethod(com.kisaragieffective.opencommandblock.enums.Platform.BUKKIT_API)
+    @CompatibilityMethod(Platform.BUKKIT_API)
     override fun onCommand(sender: CommandSender?, command: Command?, label: String?, args: Array<out String>?): Boolean {
         args!!
         sender!!
@@ -48,7 +45,7 @@ interface LCommandExecutor<W : CommandSender> : CommandExecutor {
             // for null -> non-null thrown
             sender.sendMessage("Technical Error: Failed Type Check @ LCommandExecutor")
         } catch (e: ClassCastException) {
-            with(com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.logger) {
+            with(OpenCommandBlock.instance.logger) {
                 warning("${e::class.java.canonicalName}: ${e.message}")
                 e.stackTrace.forEach {
                     this.warning(it.toString())
@@ -63,7 +60,7 @@ interface LCommandExecutor<W : CommandSender> : CommandExecutor {
 
     val triggerCommand: Command
 
-    val applicableArguments: List<List<com.kisaragieffective.opencommandblock.command.CommandArgumentType>>
+    val applicableArguments: List<List<CommandArgumentType>>
 
     val maxArgumentCount: Int
         get() = applicableArguments.maxBy { it.size }?.size ?: 0

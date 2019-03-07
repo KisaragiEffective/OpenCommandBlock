@@ -7,11 +7,11 @@ import com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion
 import org.bukkit.Location
 import org.bukkit.entity.Player
 
-object WorldGuard4Wrapper : com.kisaragieffective.opencommandblock.api.wrapper.plugin.WorldGuardWrapper {
-    override val applicableVersion: com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
-        get() = com.kisaragieffective.opencommandblock.api.common.TargetVersionRange(com.kisaragieffective.opencommandblock.api.common.Version(4, 0), com.kisaragieffective.opencommandblock.api.common.Version(5, 0))
+object WorldGuard4Wrapper : WorldGuardWrapper {
+    override val applicableVersion: TargetVersionRange
+        get() = TargetVersionRange(Version(4, 0), Version(5, 0))
 
-    override fun getRegions(where: Location): Set<com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion> {
+    override fun getRegions(where: Location): Set<IRegion> {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

@@ -5,7 +5,7 @@ import org.bukkit.block.Block
 import java.util.UUID
 
 interface CommonWorld {
-    operator fun get(commonPoint3: com.kisaragieffective.opencommandblock.api.common.CommonPoint3): Block
+    operator fun get(commonPoint3: CommonPoint3): Block
 
     val uuid: UUID
 

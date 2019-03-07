@@ -39,17 +39,17 @@ import java.io.File
 import java.util.UUID
 
 @ToBukkit
-fun com.kisaragieffective.opencommandblock.api.common.CommonPoint3.toBukkitStyle(): Location {
+fun CommonPoint3.toBukkitStyle(): Location {
     return Location(this.world.toBukkitStyle(), x, y, z)
 }
 
 @ToBukkit
-fun com.kisaragieffective.opencommandblock.api.common.CommonVector3.toBukkitStyle(): Vector {
+fun CommonVector3.toBukkitStyle(): Vector {
     return Vector(x, y, z)
 }
 
 @ToBukkit
-fun com.kisaragieffective.opencommandblock.api.common.CommonWorld.toBukkitStyle(): World {
+fun CommonWorld.toBukkitStyle(): World {
     return object : World {
         /**
          * Sets the limit for number of water animals that can spawn in a chunk in

@@ -9,5 +9,8 @@
         <module name="OpenCommandBlock" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OpenCommandBlock (1)" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

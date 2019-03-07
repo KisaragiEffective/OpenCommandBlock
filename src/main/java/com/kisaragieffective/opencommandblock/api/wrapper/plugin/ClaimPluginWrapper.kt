@@ -5,9 +5,9 @@ import com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion
 import org.bukkit.Location
 import org.bukkit.entity.Player
 
-@com.kisaragieffective.opencommandblock.annotations.DependencyInjection
-interface ClaimPluginWrapper : com.kisaragieffective.opencommandblock.api.wrapper.plugin.JavaPluginWrapper {
+@DependencyInjection
+interface ClaimPluginWrapper : JavaPluginWrapper {
     fun isBuildable(who: Player, where: Location): Boolean
 
-    fun getRegions(where: Location): Set<com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion>
+    fun getRegions(where: Location): Set<IRegion>
 }

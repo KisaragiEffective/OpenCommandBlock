@@ -11,7 +11,7 @@ import org.bukkit.block.Block
 import org.bukkit.entity.Player
 import org.bukkit.util.Vector
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Material.isCommand: Boolean
     get() {
         return when (this) {
@@ -20,7 +20,7 @@ inline val Material.isCommand: Boolean
         }
     }
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Material.isChest: Boolean
     get() {
         return when (this) {
@@ -29,7 +29,7 @@ inline val Material.isChest: Boolean
         }
     }
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Material.isContainerBlock: Boolean
     get() {
         return when {
@@ -39,11 +39,11 @@ inline val Material.isContainerBlock: Boolean
         }
     }
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Player.footBlock: Block
     get() = foot.block
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Player.foot: Location
     get() = this.location.add(0.0, -1.0, 0.0)
 
@@ -75,7 +75,7 @@ operator fun Vector.div(other: Vector): Vector {
     return this.divide(other)
 }
 
-@com.kisaragieffective.opencommandblock.annotations.InlineOnly
+@InlineOnly
 inline val Vector.ZERO: Vector
     get() = Vector(0, 0, 0)
 

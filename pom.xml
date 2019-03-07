@@ -115,15 +115,17 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.sk89q.worldguard</groupId>
-            <artifactId>worldguard-6.2</artifactId>
+            <groupId>com.sk89q</groupId>
+            <artifactId>worldguard</artifactId>
             <version>6.2</version>
+            <!--
             <scope>system</scope>
             <systemPath>${basedir}/libraries/worldguard-6.2.jar</systemPath>
+            -->
         </dependency>
         <dependency>
-            <groupId>com.sk89q.worldedit</groupId>
-            <artifactId>worldedit-6.1.9</artifactId>
+            <groupId>com.sk89q</groupId>
+            <artifactId>worldedit</artifactId>
             <version>6.1.9</version>
             <scope>system</scope>
             <systemPath>${basedir}/libraries/worldedit-bukkit-6.1.9.jar</systemPath>

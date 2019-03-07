@@ -1,11 +1,9 @@
 package com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common
 
-import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.common.CommonVector
 import com.kisaragieffective.opencommandblock.api.common.CommonVector2
 import com.kisaragieffective.opencommandblock.api.common.CommonVector3
 import com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer
-import com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup
 import com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IGlobalRegion
@@ -14,27 +12,7 @@ import com.kisaragieffective.opencommandblock.api.wrapper.region.IRectangleRegio
 import com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion
 import com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting
 import com.kisaragieffective.opencommandblock.api.wrapper.region.RegionStructure
-import com.kisaragieffective.opencommandblock.exception.DevelopStepException
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.toEnumMap
-import com.github.kudasure.opencommandblock.kotlinmagic.extension.worldguard.asBukkitVector
-import com.github.kudasure.opencommandblock.kotlinmagic.notImplemented
 import com.sk89q.worldedit.Location
-import com.sk89q.worldguard.bukkit.WGBukkit
-import com.sk89q.worldguard.protection.flags.BooleanFlag
-import com.sk89q.worldguard.protection.flags.CommandStringFlag
-import com.sk89q.worldguard.protection.flags.DoubleFlag
-import com.sk89q.worldguard.protection.flags.EntityTypeFlag
-import com.sk89q.worldguard.protection.flags.EnumFlag
-import com.sk89q.worldguard.protection.flags.IntegerFlag
-import com.sk89q.worldguard.protection.flags.LocationFlag
-import com.sk89q.worldguard.protection.flags.SetFlag
-import com.sk89q.worldguard.protection.flags.StateFlag
-import com.sk89q.worldguard.protection.flags.StringFlag
-import com.sk89q.worldguard.protection.regions.GlobalProtectedRegion
-import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion
-import com.sk89q.worldguard.protection.regions.ProtectedPolygonalRegion
-import com.sk89q.worldguard.protection.regions.ProtectedRegion
-import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
@@ -42,7 +20,7 @@ import org.bukkit.entity.Player
 import org.bukkit.util.Vector
 import java.util.EnumMap
 
-internal fun ProtectedRegion.toFrameworkStyle(): com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion {
+internal fun ProtectedRegion.toFrameworkStyle(): IRegion {
     if (this is ProtectedCuboidRegion) {
         return this.toFrameworkStyle()
     }
@@ -58,11 +36,11 @@ internal fun ProtectedRegion.toFrameworkStyle(): com.kisaragieffective.opencomma
     notImplemented()
 }
 
-private fun GlobalProtectedRegion.toFrameworkStyle(): com.kisaragieffective.opencommandblock.api.wrapper.region.IGlobalRegion {
-    return object : com.kisaragieffective.opencommandblock.api.wrapper.region.IGlobalRegion {
+private fun GlobalProtectedRegion.toFrameworkStyle(): IGlobalRegion {
+    return object : IGlobalRegion {
         private val region: ProtectedRegion = this@toFrameworkStyle
-        override val type: com.kisaragieffective.opencommandblock.api.wrapper.region.RegionStructure
-            get() = com.kisaragieffective.opencommandblock.api.wrapper.region.RegionStructure.GLOBAL
+        override val type: RegionStructure
+            get() = RegionStructure.GLOBAL
         override val world: World
             get() = Bukkit.getWorlds().filter {
                 WGBukkit.getRegionManager(it).regions.containsValue(region)
@@ -70,46 +48,46 @@ private fun GlobalProtectedRegion.toFrameworkStyle(): com.kisaragieffective.open
         override val name: String
             get() = region.id
 
-        override fun test(actor: Entity, action: com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction): com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer {
+        override fun test(actor: Entity, action: EntityAction): ActionAnswer {
             notImplemented()
         }
 
-        override fun getEntityPermissions(): Map<Pair<com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup, com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction>, com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer> {
+        override fun getEntityPermissions(): Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> {
             notImplemented()
         }
 
         /**
          * Actually, the most key is [com.github.kudasure.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
          */
-        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting<S>> {
+        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, RegionSetting<S>> {
             // notImplemented()
-            return emptyMap<E, com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting<S>>().toEnumMap()
+            return emptyMap<E, RegionSetting<S>>().toEnumMap()
         }
 
-        override val members: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val members: IEntityGroup
             get() {
-                return com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup(region.members.uniqueIds.map {
+                return EntitiesGroup(region.members.uniqueIds.map {
                     Bukkit.getEntity(it)
                 })
             }
 
-        override val owners: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val owners: IEntityGroup
             get() {
-                return com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup(region.owners.uniqueIds.map {
+                return EntitiesGroup(region.owners.uniqueIds.map {
                     Bukkit.getEntity(it)
                 })
             }
     }
 }
 
-private fun ProtectedPolygonalRegion.toFrameworkStyle(): com.kisaragieffective.opencommandblock.api.wrapper.region.IPolygon2DRegion {
-    return object : com.kisaragieffective.opencommandblock.api.wrapper.region.IPolygon2DRegion {
+private fun ProtectedPolygonalRegion.toFrameworkStyle(): IPolygon2DRegion {
+    return object : IPolygon2DRegion {
         private val region: ProtectedRegion = this@toFrameworkStyle
         /**
          * @inherited
          */
-        override val parent: com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion?
-            get() = region.parent?.toFrameworkStyle()
+        override val parent: IRegion?
+            get() = region.parent.toFrameworkStyle()
         override val world: World
             get() = Bukkit.getWorlds().filter {
                 WGBukkit.getRegionManager(it).regions.containsValue(region)
@@ -117,35 +95,35 @@ private fun ProtectedPolygonalRegion.toFrameworkStyle(): com.kisaragieffective.o
         override val name: String
             get() = region.id
 
-        override fun test(actor: Entity, action: com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction): com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer {
+        override fun test(actor: Entity, action: EntityAction): ActionAnswer {
             notImplemented()
         }
 
-        override operator fun contains(other: com.kisaragieffective.opencommandblock.api.common.CommonVector): Boolean {
+        override operator fun contains(other: CommonVector): Boolean {
             notImplemented()
         }
 
-        override fun getEntityPermissions(): Map<Pair<com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup, com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction>, com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer> {
+        override fun getEntityPermissions(): Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> {
             notImplemented()
         }
 
         /**
          * Actually, the most key is [com.github.kudasure.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
          */
-        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting<S>> {
+        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, RegionSetting<S>> {
             notImplemented()
         }
 
-        override val members: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val members: IEntityGroup
             get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-        override val owners: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val owners: IEntityGroup
             get() {
-                return com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup(region.owners.uniqueIds.map {
+                return EntitiesGroup(region.owners.uniqueIds.map {
                     Bukkit.getEntity(it)
                 })
             }
 
-        override fun getPoints(): Collection<com.kisaragieffective.opencommandblock.api.common.CommonVector2> {
+        override fun getPoints(): Collection<CommonVector2> {
             return region.points.map { 
                 it.toFrameworkStyle()
             }
@@ -154,8 +132,8 @@ private fun ProtectedPolygonalRegion.toFrameworkStyle(): com.kisaragieffective.o
     }
 }
 
-private fun ProtectedCuboidRegion.toFrameworkStyle(): com.kisaragieffective.opencommandblock.api.wrapper.region.IRectangleRegion {
-    return object : com.kisaragieffective.opencommandblock.api.wrapper.region.IRectangleRegion {
+private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
+    return object : IRectangleRegion {
         private val region: ProtectedRegion = this@toFrameworkStyle
         override val world: World
             get() = Bukkit.getWorlds().filter {
@@ -164,32 +142,32 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): com.kisaragieffective.open
         /**
          * @inherited
          */
-        override val parent: com.kisaragieffective.opencommandblock.api.wrapper.region.IRegion?
-            get() = region.parent?.toFrameworkStyle()
+        override val parent: IRegion?
+            get() = region.parent.toFrameworkStyle()
 
-        override fun test(actor: Entity, action: com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction): com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer {
+        override fun test(actor: Entity, action: EntityAction): ActionAnswer {
             val query = WGBukkit.getPlugin().regionContainer.createQuery()
             return when (query.queryState(min.toLocation(world), actor as Player, *region.flags.keys.filter {
                 it is StateFlag
             }.map{
                 it as StateFlag
             }.toTypedArray())) {
-                StateFlag.State.ALLOW -> com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.ALLOWED
-                StateFlag.State.DENY -> com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.DENIED
-                else -> throw com.kisaragieffective.opencommandblock.exception.DevelopStepException("This statement should not reached")
+                StateFlag.State.ALLOW -> ActionAnswer.ALLOWED
+                StateFlag.State.DENY -> ActionAnswer.DENIED
+                else -> throw DevelopStepException("This statement should not reached")
             }
         }
 
-        override fun contains(other: com.kisaragieffective.opencommandblock.api.common.CommonVector): Boolean {
-            other as com.kisaragieffective.opencommandblock.api.common.CommonVector3
+        override fun contains(other: CommonVector): Boolean {
+            other as CommonVector3
             return region.contains(other.x.toInt(), other.y.toInt(), other.z.toInt())
         }
 
-        override fun getEntityPermissions(): Map<Pair<com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup, com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction>, com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer> {
-            val ret: Map<Pair<com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup, com.kisaragieffective.opencommandblock.api.wrapper.region.EntityAction>, com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer> = mutableMapOf()
+        override fun getEntityPermissions(): Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> {
+            val ret: Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> = mutableMapOf()
             region.flags.entries.forEach {
                 // the name is Flag#getName, the value is actual flag value.
-                com.kisaragieffective.opencommandblock.OpenCommandBlock.instance.logger.info("${it.key}:${it.value}")
+                OpenCommandBlock.instance.logger.info("${it.key}:${it.value}")
             }
             notImplemented()
         }
@@ -197,26 +175,26 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): com.kisaragieffective.open
         /**
          * Actually, the most key is [com.github.kudasure.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
          */
-        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting<S>> {
+        override fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, RegionSetting<S>> {
             region.flags.entries.map {
                 Pair(when (it.key) {
-                    is IntegerFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Int)
-                    is DoubleFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Double)
-                    is BooleanFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Boolean)
-                    is CommandStringFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(if (it.value as Boolean) {
-                        com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.ALLOWED
+                    is IntegerFlag -> RegionSetting(it.value as Int)
+                    is DoubleFlag -> RegionSetting(it.value as Double)
+                    is BooleanFlag -> RegionSetting(it.value as Boolean)
+                    is CommandStringFlag -> RegionSetting(if (it.value) {
+                        ActionAnswer.ALLOWED
                     } else {
-                        com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.DENIED
+                        ActionAnswer.DENIED
                     })
-                    is SetFlag<*> -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Set<*>)
-                    is EntityTypeFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as EntityType)
-                    is LocationFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Location)
-                    is StringFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as String)
-                    is EnumFlag<*> -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(it.value as Enum<*>)
-                    is StateFlag -> com.kisaragieffective.opencommandblock.api.wrapper.region.RegionSetting(if (it.value as Boolean) {
-                        com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.ALLOWED
+                    is SetFlag<*> -> RegionSetting(it.value as Set<*>)
+                    is EntityTypeFlag -> RegionSetting(it.value as EntityType)
+                    is LocationFlag -> RegionSetting(it.value as Location)
+                    is StringFlag -> RegionSetting(it.value as String)
+                    is EnumFlag<*> -> RegionSetting(it.value as Enum<*>)
+                    is StateFlag -> RegionSetting(if (it.value) {
+                        ActionAnswer.ALLOWED
                     } else {
-                        com.kisaragieffective.opencommandblock.api.wrapper.region.ActionAnswer.DENIED
+                        ActionAnswer.DENIED
                     })
                     else -> UnsupportedOperationException("Flag ${it.key} is not supported yet.")
                 }, it.value)
@@ -224,16 +202,16 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): com.kisaragieffective.open
             notImplemented()
         }
 
-        override val members: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val members: IEntityGroup
             get() {
-                return com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup(region.members.uniqueIds.map {
+                return EntitiesGroup(region.members.uniqueIds.map {
                     Bukkit.getEntity(it)
                 })
             }
 
-        override val owners: com.kisaragieffective.opencommandblock.api.wrapper.region.IEntityGroup
+        override val owners: IEntityGroup
             get() {
-                return com.kisaragieffective.opencommandblock.api.wrapper.region.EntitiesGroup(region.owners.uniqueIds.map {
+                return EntitiesGroup(region.owners.uniqueIds.map {
                     Bukkit.getEntity(it)
                 })
             }
@@ -246,7 +224,7 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): com.kisaragieffective.open
             get() = region.id
 
         override fun toString(): String {
-            return "${com.kisaragieffective.opencommandblock.api.wrapper.region.IRectangleRegion::class.java.canonicalName}{name=$name,where={world=$world,min=$min,max=$max},owner=$owners,member=$members,parent=$parent"
+            return "${IRectangleRegion::class.java.canonicalName}{name=$name,where={world=$world,min=$min,max=$max},owner=$owners,member=$members,parent=$parent"
         }
     }
 }

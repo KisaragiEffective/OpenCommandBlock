@@ -5,7 +5,8 @@ import com.kisaragieffective.opencommandblock.command.ConsoleCommandListener
 import com.kisaragieffective.opencommandblock.command.LCommandExecutor
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
 import com.kisaragieffective.opencommandblock.command.impl.CheckRegion
-import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandHandler
+import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandA
+import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandP
 import com.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp
 import com.kisaragieffective.opencommandblock.command.impl.TellCommandHandler
 import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
@@ -30,7 +31,8 @@ class OpenCommandBlock : JavaPlugin() {
 
     override fun onEnable() {
         checkSoftDepend("WorldGuard")
-        registerCommand(GameModeCommandHandler)
+        registerCommand(GameModeCommandP)
+        registerCommand(GameModeCommandA)
         registerCommand(CheckRegion)
         registerCommand(TellCommandHandler)
         registerCommand(OpenCommandBlocksHelp)
@@ -45,10 +47,11 @@ class OpenCommandBlock : JavaPlugin() {
     private fun checkCommandBlockEnabled() {
         val serverProperties = Properties()
         serverProperties.load(FileReader(File(".", "server.properties")))
-        if (serverProperties["enable-command-block"].toString().toBoolean()) {
-            logger.info("CommandBlock is enabled!")
+        val enabled = serverProperties.containsKey("enable-command-block") && serverProperties["enable-command-block"].toString().toBoolean()
+        if (enabled) {
+            logger.info("CommandBlock operations were enabled!")
         } else {
-            logger.warning("CommandBlock is disabled in `server.properties`. To enable CommandBlock, set `enable-command-block` to `true`.")
+            logger.warning("CommandBlock operations were disabled in `server.properties`. To enable CommandBlock, set `enable-command-block` to `true`.")
         }
     }
 
@@ -113,7 +116,7 @@ class OpenCommandBlock : JavaPlugin() {
         lateinit var instance: OpenCommandBlock
         const val applicablePersonalRange = 10
         const val applicablePeopleRange = 10
-        val personalSelector = "@p[r=$applicablePersonalRange]"
-        val peopleSelector = "@a[r=$applicablePeopleRange]"
+        const val personalSelector = "@p[r=$applicablePersonalRange]"
+        const val peopleSelector = "@a[r=$applicablePeopleRange]"
     }
 }

@@ -10,11 +10,19 @@ commands:
     aliases:
       - cbgm
     usage: "/<command> [mode;GAMEMODE]"
+  cbgamemode-a:
+    description: Input command that changes the gamemode.
+    aliases:
+      - cbgm-a
+    usage: "/<command> [mode;GAMEMODE]"
   checkregion:
     description: Check the region.
     aliases:
       - chkrgon
   cbtell:
+    description: Input command that tell something.
+    usage: "/<command> [message;STRING]"
+  cbtell-a:
     description: Input command that tell something.
     usage: "/<command> [message;STRING]"
   ocb:

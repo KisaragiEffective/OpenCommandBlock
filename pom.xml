@@ -45,6 +45,25 @@
                         </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <artifactSet>
+                        <includes>
+                            <include>org.jetbrains.kotlin:*</include>
+                            <include>org.jetbrains:annotations</include>
+                        </includes>
+                        <excludes>
+                            <!-- where:artifact:package:version -->
+                            <exclude>org.ow2.asm:*</exclude>
+                            <exclude>com.google.*:*</exclude>
+                            <exclude>com.destroystokyo.paper:paper-api:*:*</exclude>
+                            <exclude>commons-lang:*</exclude>
+                            <exclude>junit:*</exclude>
+                            <exclude>net.md_5:*</exclude>
+                            <exclude>org.yaml:snakeyaml:*</exclude>
+
+                        </excludes>
+                    </artifactSet>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -91,6 +110,11 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.13-R0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>

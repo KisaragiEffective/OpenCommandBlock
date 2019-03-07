@@ -18,7 +18,7 @@ import java.util.logging.Logger
 import kotlin.concurrent.thread
 
 val userProfile = """C:\Users\Obsidian550D"""
-val baseDir = """$userProfile\Documents\intellij\OpenCommandBlock"""
+val baseDir = """$userProfile\Documents\github\OpenCommandBlock"""
 /**
  * The ProGuard path.
  */
@@ -88,7 +88,7 @@ val requiredInput = jdkLib + arrayOf(
     """${mavenCache}\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
     """${baseDir}\libraries\"""
 ).distinct()
-val keep: String = """com.github.kudasure.opencommandblock.OpenCommandBlock"""
+val keep: String = """com.kisaragieffective.opencommandblock.OpenCommandBlock"""
 /**
  * If false, you can't minimize until fix all warnings.
  */

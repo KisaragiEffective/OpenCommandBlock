@@ -1,6 +1,6 @@
 name: OpenCommandBlock
 version: ${project.version}
-main: com.github.kudasure.opencommandblock.OpenCommandBlock
+main: "com.kisaragieffective.opencommandblock.OpenCommandBlock"
 softdepend:
   - WorldGuard
 

@@ -1,0 +1,28 @@
+name: OpenCommandBlock
+version: ${project.version}
+main: com.github.kudasure.opencommandblock.OpenCommandBlock
+softdepend:
+  - WorldGuard
+
+commands:
+  cbgamemode:
+    description: Input command that changes the gamemode.
+    aliases:
+      - cbgm
+    usage: "/<command> [mode;GAMEMODE]"
+  checkregion:
+    description: Check the region.
+    aliases:
+      - chkrgon
+  cbtell:
+    description: Input command that tell something.
+    usage: "/<command> [message;STRING]"
+  ocb:
+    description: The root command for utilities.
+    usage: "/<command> <arguments...>"
+    aliases:
+      - opencommandblock
+      - opencb
+  testselector:
+    description: Test for the selector query.
+    usage: "/<command>"

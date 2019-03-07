@@ -1,0 +1,12 @@
+---
+# Auto generated file.
+log:
+  - # ＃１
+    uuid: 11111111-2222-3333-44444444-5555
+    action: place
+    type: IMPLUSE
+    time: "###Some date###"
+  - # ＃２
+    uuid: 11111111-2222-3333-44444444-5555
+    type: COMMAND
+    time: "###Some date###"

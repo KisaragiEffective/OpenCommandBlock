@@ -35,7 +35,7 @@ class PlayerPlaceOperation(override val player: UUID, override val location: Loc
         }
 }
 
-class PlayerCommandInputOperation(override val location: Location, override val player: UUID, override val date: Calendar = Calendar.getInstance()) : IPlayerOperation {
+class PlayerCommandInputOperation(override val location: Location, override val player: UUID, override val date: Calendar = Calendar.getInstance(), val command: String) : IPlayerOperation {
     override val action: PlayerOperationKind
         get() {
             return PlayerOperationKind.INPUT

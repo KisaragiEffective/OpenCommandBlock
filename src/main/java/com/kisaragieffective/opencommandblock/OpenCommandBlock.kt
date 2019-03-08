@@ -8,7 +8,8 @@ import com.kisaragieffective.opencommandblock.command.impl.CheckRegion
 import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandA
 import com.kisaragieffective.opencommandblock.command.impl.GameModeCommandP
 import com.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp
-import com.kisaragieffective.opencommandblock.command.impl.TellCommandHandler
+import com.kisaragieffective.opencommandblock.command.impl.TellCommandA
+import com.kisaragieffective.opencommandblock.command.impl.TellCommandP
 import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.freeze
 import com.kisaragieffective.opencommandblock.listener.OnRightClick
@@ -34,10 +35,11 @@ class OpenCommandBlock : JavaPlugin() {
         checkSoftDepend("WorldGuard")
         registerCommand(GameModeCommandP)
         registerCommand(GameModeCommandA)
-        registerCommand(CheckRegion)
-        registerCommand(TellCommandHandler)
+        registerCommand(TellCommandP)
+        registerCommand(TellCommandA)
         registerCommand(OpenCommandBlocksHelp)
         registerCommand(TestSelectorQuery)
+        registerCommand(CheckRegion)
         registerEventListener(OnRightClick)
         val t: Sound = Sound.AMBIENT_CAVE
     }

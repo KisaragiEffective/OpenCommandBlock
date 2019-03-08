@@ -81,6 +81,18 @@ class UrlCommandArgument(override val value: URL) : CommandArgument<URL> {
     }
 }
 
+class FloatingDecimalCommandArgument(override val value: Double) : CommandArgument<Double> {
+    companion object {
+        fun fromString(s: String): FloatingDecimalCommandArgument {
+            try {
+                return FloatingDecimalCommandArgument(s.toDouble())
+            } catch (e: NumberFormatException) {
+                throw IllegalArgumentException(e)
+            }
+        }
+    }
+}
+
 object VoidCommandArgument : CommandArgument<Unit> {
     override val value: Unit
         get() = Unit
@@ -90,5 +102,6 @@ enum class CommandArgumentType(ref: Class<out CommandArgument<*>>) {
     INTEGER(IntegerCommandArgument::class.java.toUpcastExciplictly<IntegerCommandArgument, CommandArgument<*>>()!!),
     STRING(StringCommandArgument::class.java.toUpcastExciplictly<StringCommandArgument, CommandArgument<*>>()!!),
     GAMEMODE(GameModeCommandArgument::class.java.toUpcastExciplictly<GameModeCommandArgument, CommandArgument<*>>()!!),
-    URL(UrlCommandArgument::class.java.toUpcastExciplictly<UrlCommandArgument, CommandArgument<*>>()!!)
+    URL(UrlCommandArgument::class.java.toUpcastExciplictly<UrlCommandArgument, CommandArgument<*>>()!!),
+    FLOAT(FloatingDecimalCommandArgument::class.java.toUpcastExciplictly<FloatingDecimalCommandArgument, CommandArgument<*>>()!!)
 }

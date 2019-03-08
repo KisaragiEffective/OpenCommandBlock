@@ -10,21 +10,22 @@ import com.kisaragieffective.opencommandblock.kotlinmagic.extension.foot
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 
-object GameModeCommandA : GameModeCommand {
+object GameModeCommandA : GameModeCommand, PeopleCommand {
     override val triggerCommand: Command = OpenCommandBlock.instance.getCommand("cbgamemode-a")
 
     override fun firedCommand(sender: Player, command: Command?, alias: String?, args: Array<out String>): Boolean {
         val location = sender.foot
         val gamemode = args[0]
         val e: GameModeCommandArgument
-        LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId))
         e = try {
             GameModeCommandArgument.fromString(gamemode)
         } catch (ex: IllegalArgumentException) {
             sender.sendMessage("Illegal argument: First argument requires GAMEMODE, but got `$gamemode`")
             return true
         }
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand("gamemode $e ${OpenCommandBlock.peopleSelector}")
+        val finalCommand = "gamemode $e $selector"
+        LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId, command = finalCommand))
+        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(finalCommand)
         return true
     }
 }

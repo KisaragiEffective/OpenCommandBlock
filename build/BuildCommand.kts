@@ -16,6 +16,7 @@ import kotlin.system.exitProcess
 import kotlin.io.FileTreeWalk
 import java.util.logging.Logger
 import kotlin.concurrent.thread
+import kotlin.coroutines.*
 
 val userProfile = """C:\Users\Obsidian550D"""
 val baseDir = """$userProfile\Documents\github\OpenCommandBlock"""
@@ -143,18 +144,37 @@ try {
 // --- EXECUTE'em
 println(finalCommand)
 val dir = File(baseDir, "build")
+logger.info("Running...")
 val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
-val watchdog = thread {
-    Thread.sleep(500)
-    proc.inputStream.bufferedReader().lines().forEach {
-        println(it)
+var alive: Boolean = true
+
+
+val watchdog = launch {
+    while (true) {
+        Thread.sleep(5)
+        val t = proc.inputStream.bufferedReader()
+        val c = t.readLine()
+        if (c == null) {
+            println("---")
+        }
+        println(c)
+        t.lines().forEach {
+            println(it)
+        }
+        if (!t.ready()) {
+            println("234$")
+            break
+        } else {
+            println("###")
+        }
+        println("!!!")
     }
+    proc.destroyForcibly()
 }
 
-while (proc.isAlive) {
-}
-
-println("EXITED. CODE: ${proc.exitValue()}")
+logger.info("Ended.")
+logger.info("EXITED. CODE: ${proc.exitValue()}")
+watchdog.interrupt()
 exitProcess(0)
 fun File.tryDelete(): Boolean {
     return if (this.exists()) {

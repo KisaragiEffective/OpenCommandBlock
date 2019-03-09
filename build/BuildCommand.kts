@@ -15,8 +15,7 @@ import java.util.logging.Level
 import kotlin.system.exitProcess
 import kotlin.io.FileTreeWalk
 import java.util.logging.Logger
-import kotlin.concurrent.thread
-import kotlin.coroutines.*
+import kotlin.coroutines.startCoroutine
 
 val userProfile = """C:\Users\Obsidian550D"""
 val baseDir = """$userProfile\Documents\github\OpenCommandBlock"""
@@ -148,8 +147,8 @@ logger.info("Running...")
 val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
 var alive: Boolean = true
 
-
-val watchdog = launch {
+startCoroutine()
+val watchdog = kotlin.coroutines.jvm.GlobalScope.launch {
     while (true) {
         Thread.sleep(5)
         val t = proc.inputStream.bufferedReader()

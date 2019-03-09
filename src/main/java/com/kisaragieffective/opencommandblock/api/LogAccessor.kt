@@ -69,11 +69,11 @@ class LogAccessor private constructor() {
         }
 
         fun addRemoveLog(operation: PlayerRemoveOperation) {
-
+            TODO()
         }
 
         fun addInputLog(operation: PlayerCommandInputOperation) {
-
+            TODO()
         }
 
         private fun add(who: UUID, where: Location, properties: Map<String, *>) {
@@ -86,6 +86,10 @@ class LogAccessor private constructor() {
 
         private fun YamlConfiguration.addToList(path: String, prop: Map<*, *>) {
             this.set(path, this.getMapList(path) + prop)
+        }
+
+        fun addActivationLog() {
+            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         }
     }
 }

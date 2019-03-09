@@ -3,7 +3,7 @@ package com.kisaragieffective.opencommandblock.command.impl
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.LogAccessor
 import com.kisaragieffective.opencommandblock.api.PlayerCommandInputOperation
-import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessor
+import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessorFactory
 import com.kisaragieffective.opencommandblock.command.CommandTemplate
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common.toFrameworkStyle
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.foot
@@ -15,7 +15,7 @@ object TellCommandA : TellCommand, PeopleCommand {
         val location = sender.foot
         val baseCommand = "tell $selector " +   args.joinToString(" ")
         LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId, command = baseCommand))
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(baseCommand)
+        CommandBlockAccessorFactory.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(baseCommand)
         return true
     }
 

@@ -12,7 +12,8 @@ import com.kisaragieffective.opencommandblock.command.impl.TellCommandA
 import com.kisaragieffective.opencommandblock.command.impl.TellCommandP
 import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.freeze
-import com.kisaragieffective.opencommandblock.listener.OnRightClick
+import com.kisaragieffective.opencommandblock.event.listener.OnRightClick
+import com.kisaragieffective.opencommandblock.event.monitor.paper.PaperMCEventWatcher
 import org.bukkit.Sound
 import org.bukkit.command.CommandExecutor
 import org.bukkit.event.Listener
@@ -41,7 +42,7 @@ class OpenCommandBlock : JavaPlugin() {
         registerCommand(TestSelectorQuery)
         registerCommand(CheckRegion)
         registerEventListener(OnRightClick)
-        val t: Sound = Sound.AMBIENT_CAVE
+        registerEventListener(PaperMCEventWatcher)
     }
 
     override fun onDisable() {

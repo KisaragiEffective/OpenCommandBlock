@@ -3,7 +3,7 @@ package com.kisaragieffective.opencommandblock.api.commandblock
 import com.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 
-class CommandBlockAccessor {
+class CommandBlockAccessorFactory private constructor(){
     companion object {
         fun getCurrentVersionDriver(l: CommonPoint3): ICommandBlockAccessor {
             return CommandBlockAccessorR12(l)

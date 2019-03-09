@@ -88,4 +88,4 @@ class ListIteratorImpl<E>(private val source: List<E>) : ListIterator<E> {
     }
 }
 
-object NoMoreElementsException : Throwable()
+object NoMoreElementsException : Exception()

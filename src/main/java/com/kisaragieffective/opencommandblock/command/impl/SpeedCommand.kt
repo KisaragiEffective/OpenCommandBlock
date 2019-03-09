@@ -4,7 +4,7 @@ import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.annotations.Depends
 import com.kisaragieffective.opencommandblock.api.LogAccessor
 import com.kisaragieffective.opencommandblock.api.PlayerCommandInputOperation
-import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessor
+import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessorFactory
 import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.FloatingDecimalCommandArgument
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
@@ -36,7 +36,7 @@ object SpeedCommand : PlayerCommandListener {
         }
         val finalCommand = "essentials:speed $mode $speedMultiplier"
         LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId, command = finalCommand))
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(finalCommand)
+        CommandBlockAccessorFactory.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(finalCommand)
         return true
     }
 

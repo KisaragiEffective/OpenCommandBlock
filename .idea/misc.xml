@@ -6,6 +6,9 @@
     </list>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file url="file://$PROJECT_DIR$/build/proguard6.0.3/examples/android" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

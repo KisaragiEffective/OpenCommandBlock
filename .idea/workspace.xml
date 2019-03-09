@@ -2,21 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff96d9d6-5ed9-4c03-a86c-e27779a4e369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/TestCoroutines.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/Depends.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/PersonalCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external-annotation/org/bukkit/command/defaults/annotations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/EventResultTester.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/CommandBlockActivateEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockActivateEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockPlaceEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/TemplateCommandInputEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnPlayerCommandBlockActivateEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher13.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/BuildCommand.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build/BuildCommand.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/PlayerOperations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/PlayerOperations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandArgument.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandArgument.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandA.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandA.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandP.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandP.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/OnRightClick.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnRightClick.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/PaperMCEventWatcher.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/IntList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/IntList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/Iterators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/Iterators.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/TreeNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/TreeNode.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,35 +38,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher13.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="365">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockActivateEvent.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="156" selection-start-line="6" selection-start-column="156" selection-end-line="6" selection-end-column="156" />
               <folding>
-                <element signature="e#61#653#0" expanded="true" />
+                <element signature="e#54#206#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="442">
+              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="136">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding>
-                <element signature="e#61#339#0" expanded="true" />
+                <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+                <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -63,70 +85,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/BuildCommand.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="408">
+              <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
               <folding>
-                <element signature="e#0#559#0" expanded="true" />
+                <element signature="e#0#540#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/TestCoroutines.kts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/coroutines/jvm/internal/RunSuspend.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.21/kotlin-stdlib-common-1.3.21-sources.jar!/kotlin/coroutines/Continuation.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.1.1/kotlinx-coroutines-core-1.1.1.jar!/kotlinx/coroutines/GlobalScope.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-213">
+              <caret line="69" column="101" selection-start-line="69" selection-start-column="101" selection-end-line="69" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-                <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" />
-                <element signature="n#repositories#0;n#project#0;n#!!top" />
+                <element signature="e#120#679#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/BufferedReader.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/CommandBlockActivateEvent.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/nio/cs/StreamDecoder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="227" selection-start-line="227" selection-end-line="227" />
+            <state relative-caret-position="187">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#54#285#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,11 +140,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
-        <option value="Kotlin Object" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Script" />
+        <option value="HTML File" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -162,11 +168,17 @@
       <find>([=,:] ?|^[\t ]+&lt;|^[\t ]*fun |[&lt;{(@]|^[\t ]+|is +)com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
       <find>true</find>
       <find>([=,:] ?|^[\t ]+&lt;|^[\t ]*fun |[&lt;{(@]|^[\t ]+|(is|as|return) +)com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z][A-Za-z\d]+)?(.*?)</find>
+      <find>[PaperEvent] ${e.eventName}</find>
+      <find>^(.*)(com/destroystokyo/paper/event/entity/[A-Za-z]+\.html)?(.*)$</find>
+      <find>^#{0,5}</find>
+      <find>(com\.destroystokyo\.paper\.event\.entity\.([A-Za-z]+))</find>
+      <find>(com\.destroystokyo\.paper\.event\.entity\.([A-Za-z]+)(?:Event))</find>
     </findStrings>
     <replaceStrings>
       <replace>exclude</replace>
       <replace>$1$3</replace>
       <replace>$1$4</replace>
+      <replace>[PaperEvent] ${e.eventName} (cancel=${e.isCancelled},async=${e.isAsynchronous}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -176,32 +188,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/common2each/toBukkit.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TestSelectorQuery.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/BlockCommandListener.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandTemplate.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/ConsoleCommandListener.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/OpenCommandBlocksHelp.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/LCommandExecutor.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/OCBTemplateAvailable.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/PlayerCommandListener.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/exception/DevelopStepException.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/Extensions.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/ForCollection.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/PaperMCEventWatcher.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/ForBukkit.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/TopLevelFunctions.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/Aliases.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/ForCraftBukkit.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/CompatibilityMethod.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/DependExternalPlugins.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/IQuery.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard4Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard5Wrapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuardNullImpl.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ClaimPluginWrapper.kt" />
@@ -211,11 +200,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/WorldGuardWrapper.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/region/EntityGroups.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/region/Regions.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommand.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandHandler.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/PersonalCommand.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandArgument.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/Depends.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/PlayerOperations.kt" />
@@ -224,22 +211,50 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandA.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandP.kt" />
-        <option value="$PROJECT_DIR$/build/BuildCommand.kts" />
         <option value="$PROJECT_DIR$/build/TestCoroutines.kts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/IntList.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/Iterators.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/TreeNode.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/k.html" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kisaragieffective/opencommandblock/GenericsTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kisaragieffective/opencommandblock/a.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/PaperMCEventWatcher.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/monitor/paper/PaperMCEventWatcher.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/monitor/paper/PaperMCEventWatcher.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/monitor/paper/PaperMCEventWatcher13.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/PaperMCEventWatcher13.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/OnRightClick.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockActivateEvent.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnPlayerCommandBlockActivateEvent.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/EventResultTester.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnRightClick.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/CommandBlockActivateEvent.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/TemplateCommandInputEvent.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockPlaceEvent.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher13.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/build/BuildCommand.kts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1036" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="追加" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,11 +270,6 @@
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,16 +301,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -321,7 +321,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="commandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="selector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -381,9 +381,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="region" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -393,7 +391,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -403,8 +402,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -414,27 +413,9 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="paper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -454,46 +435,55 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlinmagic" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="proguarded" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="struct" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552025219368" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/TestCoroutines.kts" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552147316209" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/external-annotation" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\event\listener\monitor\paper" />
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\listener\monitor\paper" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.kisaragieffective.opencommandblock.event.listener" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\build" />
       <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\libraries" />
     </key>
   </component>
@@ -509,7 +499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin script.名前未設定">
+  <component name="RunManager" selected="Kotlin script.Run Proguard">
     <configuration name="名前未設定" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script" nameIsGenerated="true">
       <module name="OpenCommandBlock" />
       <option name="filePath" value="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\build\TestCoroutines.kts" />
@@ -680,37 +670,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1036" extended-state="0" />
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="デザイナー" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI デザイナー" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3215859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="IntelliGuard" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32786885" />
+      <window_info id="デザイナー" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI デザイナー" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32568306" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32502708" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="キャプチャー分析" />
-      <window_info anchor="right" id="パレット" />
-      <window_info anchor="right" id="LuaJ" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="IntelliGuard" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="キャプチャー分析" order="5" />
+      <window_info anchor="right" id="パレット" order="6" />
+      <window_info anchor="right" id="LuaJ" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="デザイナー" order="0" />
@@ -769,6 +760,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -778,254 +783,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added EventWatcher for Paper." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/DependencyInjection.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/DependExternalPlugins.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/FromKotlinSDK.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/GenericsUpCast.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/InlineOnly.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/JavaSAMtoKotlinLambda.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2806" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard4Wrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="104" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard5Wrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuardNullImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ClaimPluginWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/EconomyPluginWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/JavaPluginWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/LoggingPluginWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/WorldGuardWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/WrapperSelector.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/region/EntityGroups.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/region/Regions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/region/RegionSettings.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/IQuery.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/BlockCommandListener.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommand.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-          <folding>
-            <element signature="e#61#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/PersonalCommand.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#48#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandTemplate.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandArgument.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="105" column="127" selection-start-line="105" selection-start-column="127" selection-end-line="105" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/Depends.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TeleportCommandHandler.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#61#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/PlayerOperations.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="37" column="168" selection-start-line="37" selection-start-column="168" selection-end-line="37" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandA.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="109" selection-start-line="26" selection-start-column="109" selection-end-line="26" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandP.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1033,51 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#61#653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/nio/cs/StreamDecoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/net/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#61#339#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,9 +813,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/coroutines/jvm/internal/RunSuspend.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandA.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="e#61#653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/TestCoroutines.kts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.21/kotlin-stdlib-1.3.21-sources.jar!/kotlin/coroutines/jvm/internal/RunSuspend.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
         </state>
       </provider>
@@ -1111,41 +851,402 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/BuildCommand.kts">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/TreeNode.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="527">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/Iterators.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
           <folding>
-            <element signature="e#0#559#0" expanded="true" />
+            <element signature="n#!!block;n#EmptyIterator#0" />
+            <element signature="n#!!block;n#EmptyListIterator#0" />
+            <element signature="n#!!block;n#IteratorImpl#0" />
+            <element signature="n#!!block;n#ListIteratorImpl#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/TestCoroutines.kts">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/struct/IntList.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/ForCraftBukkit.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard4Wrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="104" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.13-R0.1-SNAPSHOT/paper-api-1.13-R0.1-SNAPSHOT-sources.jar!/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/listener/k.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard7Wrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/nio/cs/StreamDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kisaragieffective/opencommandblock/GenericsTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kisaragieffective/opencommandblock/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/org/bukkit/command/defaults/VersionCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="267" column="39" lean-forward="true" selection-start-line="267" selection-start-column="39" selection-end-line="267" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/org/bukkit/conversations/FixedSetPrompt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/org/bukkit/conversations/BooleanPrompt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/org/bukkit/craftbukkit/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="103" column="73" lean-forward="true" selection-start-line="103" selection-start-column="73" selection-end-line="103" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156-sources.jar!/org/bukkit/material/Redstone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156-sources.jar!/org/bukkit/material/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#1183#1184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.12.2-R0.1-SNAPSHOT/paper-api-1.12.2-R0.1-20190305.045058-401.jar!/org/bukkit/event/Event.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="82" column="69" lean-forward="true" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/EventResultTester.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#52#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnPlayerCommandBlockActivateEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#63#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.12.2-R0.1-SNAPSHOT/paper-api-1.12.2-R0.1-20190305.045058-401.jar!/org/bukkit/event/player/PlayerEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnRightClick.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/TemplateCommandInputEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#54#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockPlaceEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="e#54#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockActivateEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="156" selection-start-line="6" selection-start-column="156" selection-end-line="6" selection-end-column="156" />
+          <folding>
+            <element signature="e#54#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/CommandBlockActivateEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#54#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/worldguard/WorldGuard6Wrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#120#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher13.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/OpenCommandBlock.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="69" column="101" selection-start-line="69" selection-start-column="101" selection-end-line="69" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
             <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
             <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" />
-            <element signature="n#repositories#0;n#project#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/BuildCommand.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/kotlinx-coroutines-core-1.1.1.jar/kotlinx/coroutines/sync/Empty.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.1.1/kotlinx-coroutines-core-1.1.1.jar!/kotlinx/coroutines/GlobalScope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>OpenCommandBlock</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>worldguard-bukkit-6.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

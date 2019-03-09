@@ -1,3 +1,4 @@
+
 package com.kisaragieffective.opencommandblock.api.wrapper.plugin.implement.worldguard
 
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
@@ -10,7 +11,6 @@ import com.sk89q.worldguard.bukkit.WGBukkit
 import org.bukkit.Location
 import org.bukkit.entity.Player
 
-
 object WorldGuard6Wrapper : WorldGuardWrapper {
     override fun isBuildable(who: Player, where: Location): Boolean {
         return WGBukkit.getPlugin().canBuild(who, where)
@@ -19,7 +19,6 @@ object WorldGuard6Wrapper : WorldGuardWrapper {
     override fun getRegions(where: Location): Set<IRegion> {
         OpenCommandBlock.instance.logger.info(where.toString())
         val ret = WGBukkit.getRegionManager(where.world).getApplicableRegions(where).map {
-            println(it)
             it.toFrameworkStyle()
         }.toSet()
         OpenCommandBlock.instance.logger.info(ret.joinToString(","))

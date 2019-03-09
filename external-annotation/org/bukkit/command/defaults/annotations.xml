@@ -1,0 +1,5 @@
+<root>
+    <item name='org.bukkit.command.defaults.VersionCommand java.util.List&lt;java.lang.String&gt; tabComplete(org.bukkit.command.CommandSender, java.lang.String, java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

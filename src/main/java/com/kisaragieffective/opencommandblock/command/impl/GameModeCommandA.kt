@@ -3,7 +3,7 @@ package com.kisaragieffective.opencommandblock.command.impl
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.api.LogAccessor
 import com.kisaragieffective.opencommandblock.api.PlayerCommandInputOperation
-import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessor
+import com.kisaragieffective.opencommandblock.api.commandblock.CommandBlockAccessorFactory
 import com.kisaragieffective.opencommandblock.command.GameModeCommandArgument
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common.toFrameworkStyle
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.foot
@@ -25,7 +25,7 @@ object GameModeCommandA : GameModeCommand, PeopleCommand {
         }
         val finalCommand = "gamemode $e $selector"
         LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId, command = finalCommand))
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(finalCommand)
+        CommandBlockAccessorFactory.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(finalCommand)
         return true
     }
 }

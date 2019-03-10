@@ -1,8 +1,11 @@
 package com.kisaragieffective.opencommandblock.api.commandblock
 
+import com.kisaragieffective.opencommandblock.annotations.DependsCraftBukkit
 import com.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 import com.kisaragieffective.opencommandblock.api.common.Version
+import com.kisaragieffective.opencommandblock.enums.CommandBlockType
+import net.minecraft.server.v1_12_R1.TileEntityCommand
 import org.bukkit.block.CommandBlock
 
 class CommandBlockAccessorR12(override val location: CommonPoint3) : ICommandBlockAccessor {
@@ -25,23 +28,26 @@ class CommandBlockAccessorR12(override val location: CommonPoint3) : ICommandBlo
         return target.name
     }
 
+    @DependsCraftBukkit
     override fun updateOutput() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        target.update(true, true)
     }
 
+    @DependsCraftBukkit
     override fun reExecute() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
-    override fun changeType() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    @DependsCraftBukkit
+    override fun changeType(type: CommandBlockType) {
+
     }
 
     override var conditionality: Boolean
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        get() = TileEntityCommandBridgeR12(TileEntityCommand()).basedCondition()
         set(value) {}
     override var needPower: Boolean
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        get() = TileEntityCommandBridgeR12(TileEntityCommand()).requiresPower()
         set(value) {}
     override val canApplyVersion: TargetVersionRange
         get() = TargetVersionRange(Version(1, 12), Version(1, 12, 2))

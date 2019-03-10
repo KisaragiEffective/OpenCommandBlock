@@ -2,6 +2,7 @@ package com.kisaragieffective.opencommandblock.api.commandblock
 
 import com.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
+import com.kisaragieffective.opencommandblock.enums.CommandBlockType
 
 class CommandBlockAccessorFactory private constructor(){
     companion object {
@@ -26,7 +27,7 @@ interface ICommandBlockAccessor {
 
     fun reExecute()
 
-    fun changeType()
+    fun changeType(type: CommandBlockType)
 
     var conditionality: Boolean
 

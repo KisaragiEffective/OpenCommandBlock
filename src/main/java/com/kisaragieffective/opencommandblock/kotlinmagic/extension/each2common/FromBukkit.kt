@@ -29,7 +29,3 @@ fun World.toFrameworkStyle(): CommonWorld {
         }
     }
 }
-
-fun Vector.toFrameworkStyle(): CommonVector3 {
-    return CommonVector3(x, y, z)
-}

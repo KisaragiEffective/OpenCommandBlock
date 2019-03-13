@@ -15,6 +15,7 @@ import java.util.logging.Level
 import kotlin.system.exitProcess
 import kotlin.io.FileTreeWalk
 import java.util.logging.Logger
+import kotlin.concurrent.thread
 import kotlin.coroutines.startCoroutine
 
 val userProfile = """C:\Users\Obsidian550D"""
@@ -83,7 +84,7 @@ jdkLib += arrayOf(
         """
     "${jdk}\rt.jar"
 """.trimIndent()
-)
+)//.map { it.drop(1).dropLast(1) }
 val requiredInput = jdkLib + arrayOf(
     """${mavenCache}\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
     """${baseDir}\libraries\"""
@@ -102,19 +103,16 @@ val jdkVersion: Number = 8
 var moreOption: Array<String> = emptyArray()
 
 val jre = """
-"C:\Program Files\Java\jdk1.8.0_144\bin\java.exe"
+C:\Program Files\Java\jdk1.8.0_144\bin\java.exe
 """.trimIndent()
-var baseCommand = "${jre} -jar ${proguard} -injars ${inTarget} -keep class ${keep} -libraryjars ${requiredInput.joinToString(";")} -outjars ${outTarget} "
+var baseCommand = """"${jre}" -jar ${proguard} -injars ${inTarget} -keep class ${keep} -libraryjars ${requiredInput.joinToString(";")} -outjars ${outTarget} """
 val logger: Logger = java.util.logging.Logger.getLogger("RunProguard")
-logger.info("The target version is: $targetVersion")
+logger.info("The target: v$targetVersion")
 val env: Logger = java.util.logging.Logger.getLogger("RunProguard.Env")
-env.info("The Java Runtime: $jre")
+env.info("The JRE: $jre")
+logger.info("The kotlin version: ${kotlinVersion}")
 if (ignoreWarn) {
     moreOption += "-ignorewarnings"
-}
-
-if (!doPreVerify) {
-    moreOption += "-dontpreverify"
 }
 
 if (!doObfuscate) {
@@ -144,36 +142,20 @@ try {
 println(finalCommand)
 val dir = File(baseDir, "build")
 logger.info("Running...")
+println(finalCommand)
 val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
-var alive: Boolean = true
-
-startCoroutine()
-val watchdog = kotlin.coroutines.jvm.GlobalScope.launch {
-    while (true) {
-        Thread.sleep(5)
-        val t = proc.inputStream.bufferedReader()
-        val c = t.readLine()
-        if (c == null) {
-            println("---")
-        }
-        println(c)
-        t.lines().forEach {
-            println(it)
-        }
-        if (!t.ready()) {
-            println("234$")
-            break
-        } else {
-            println("###")
-        }
-        println("!!!")
+val watchdog = thread {
+    Thread.sleep(500)
+    proc.inputStream.bufferedReader().lines().forEach {
+        println(it)
     }
-    proc.destroyForcibly()
+}
+
+while (proc.isAlive) {
 }
 
 logger.info("Ended.")
 logger.info("EXITED. CODE: ${proc.exitValue()}")
-watchdog.interrupt()
 exitProcess(0)
 fun File.tryDelete(): Boolean {
     return if (this.exists()) {

@@ -45,6 +45,7 @@
                         </configuration>
                     </execution>
                 </executions>
+
                 <configuration>
                     <artifactSet>
                         <includes>
@@ -64,6 +65,7 @@
                         </excludes>
                     </artifactSet>
                 </configuration>
+
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>

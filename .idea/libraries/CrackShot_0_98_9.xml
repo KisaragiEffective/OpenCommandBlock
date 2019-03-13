@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CrackShot-0.98.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

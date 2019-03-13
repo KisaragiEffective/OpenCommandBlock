@@ -6,6 +6,7 @@ import com.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 import com.kisaragieffective.opencommandblock.api.common.Version
 import com.kisaragieffective.opencommandblock.enums.CommandBlockType
 import net.minecraft.server.v1_12_R1.TileEntityCommand
+import org.bukkit.Material
 import org.bukkit.block.CommandBlock
 
 class CommandBlockAccessorR12(override val location: CommonPoint3) : ICommandBlockAccessor {
@@ -38,9 +39,15 @@ class CommandBlockAccessorR12(override val location: CommonPoint3) : ICommandBlo
 
     }
 
-    @DependsCraftBukkit
     override fun changeType(type: CommandBlockType) {
-
+        with (target.block) {
+            setType(when(type){
+                CommandBlockType.IMPLUSE -> Material.COMMAND
+                CommandBlockType.CHAIN -> Material.COMMAND_CHAIN
+                CommandBlockType.REPEAT -> Material.COMMAND_REPEATING
+            })
+        }
+        target.update(true, true)
     }
 
     override var conditionality: Boolean

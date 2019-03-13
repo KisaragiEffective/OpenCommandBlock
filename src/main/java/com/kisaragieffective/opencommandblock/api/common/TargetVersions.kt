@@ -35,6 +35,7 @@ data class Version(val major: Int = 1, val minor: Int = 0, val fix: Int = 0, val
     }
 
     companion object {
+        val EARLIEST = Version(9999, 9999, 9999, 9999)
         /**
          * The HIGHEST version, in my opinion.
          */
@@ -51,5 +52,9 @@ data class TargetVersionRange(val lowerInclusive: Version, val upperExclusive: V
 
     override operator fun contains(other: Version): Boolean {
         return (lowerInclusive <= other && other < upperExclusive)
+    }
+
+    companion object {
+        val ALL = TargetVersionRange(Version.EARLIEST, Version.LATEST)
     }
 }

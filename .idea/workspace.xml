@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff96d9d6-5ed9-4c03-a86c-e27779a4e369" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/CrackShot_0_98_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ShotgunPluginWrapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotDecompiled.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotWrapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="170">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -26,89 +33,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+            <state relative-caret-position="1207">
+              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntityCommand.class">
+        <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/resources/defaultWeapons.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-              <folding>
-                <element signature="e#2679#2680#0" expanded="true" />
-                <element signature="e#2708#2709#0" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
-                <element signature="e#2784#2785#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-748">
+              <caret line="217" column="35" lean-forward="true" selection-start-line="217" selection-start-column="35" selection-end-line="217" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ShotgunPluginWrapper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/CommandObjectiveExecutor.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotWrapper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-901">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Block.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4487">
-              <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+            <state relative-caret-position="384">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
-                <element signature="e#9106#9490#0" />
-                <element signature="e#10957#11321#0" />
-                <element signature="e#11327#11497#0" />
-                <element signature="e#11503#12092#0" />
-                <element signature="e#12098#12915#0" />
-                <element signature="e#12921#13407#0" />
-                <element signature="e#13572#13843#0" />
-                <element signature="e#13849#14564#0" />
-                <element signature="e#16060#16161#0" />
-                <element signature="e#16358#17012#0" />
-                <element signature="e#17115#17352#0" />
-                <element signature="e#18164#18236#0" />
-                <element signature="e#18601#18777#0" />
-                <element signature="e#18783#18919#0" />
-                <element signature="e#18998#19118#0" />
-                <element signature="e#19508#19667#0" />
-                <element signature="e#20410#21088#0" />
-                <element signature="e#21264#53166#0" />
-                <element signature="e#53510#53640#0" />
+                <element signature="e#87#361#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Material.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="136" column="54" lean-forward="true" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="54" />
+            <state relative-caret-position="526">
+              <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntity.class">
+        <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="102">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/IBlockData.class">
+        <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/com/shampaggon/crackshot/CSDirector.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="398">
+              <caret line="187" column="23" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#18318#25370#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/com/shampaggon/crackshot/CSMinion.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="522" column="46" lean-forward="true" selection-start-line="522" selection-start-column="46" selection-end-line="522" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="e#61#361#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,18 +128,16 @@
       <list>
         <option value="Kotlin Script" />
         <option value="HTML File" />
-        <option value="Kotlin Object" />
-        <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>([=,:] |^[\t ]+&lt;|^[\t ]*fun )com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
-      <find>(= |^[\t ]+|: )com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
       <find>([=,:] |^[\t ]+&lt;|^[\t ]*fun |&lt;|\{|\()com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
       <find>([=,:] |^[\t ]+&lt;|^[\t ]*fun |&lt;|\{)com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
       <find>([=,:] ?|^[\t ]+&lt;|^[\t ]*fun |[&lt;{(@]|^[\t ]+)com\.kisaragieffective\.opencommandblock\.([a-z]+\.)*([A-Za-z]+)?(.*?)</find>
@@ -160,12 +166,16 @@
       <find>fromLegacy</find>
       <find>Block(</find>
       <find>material</find>
+      <find>com.shampaggon.crackshot.CSDirector.this</find>
+      <find>HashMap()</find>
     </findStrings>
     <replaceStrings>
       <replace>exclude</replace>
       <replace>$1$3</replace>
       <replace>$1$4</replace>
       <replace>[PaperEvent] ${e.eventName} (cancel=${e.isCancelled},async=${e.isAsynchronous}</replace>
+      <replace>this</replace>
+      <replace>HashMap&lt;&gt;()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -175,11 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommand.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/TellCommandHandler.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/PersonalCommand.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/CommandArgument.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/Depends.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/PlayerOperations.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/SpeedCommand.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/command/impl/GameModeCommandP.kt" />
@@ -215,7 +220,6 @@
         <option value="$PROJECT_DIR$/build/BuildCommand.kts" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/kotlinmagic/extension/each2common/FromBukkit.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/CommonVectors.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/annotations/DependsCraftBukkit.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandWrapperR12.kt" />
@@ -224,12 +228,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/ITileEntityCommandFactory.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandFactory.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/ITileEntityCommandBridge.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ShotgunPluginWrapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotDecompiled.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotDecompiled.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotWrapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="719" />
     <option name="width" value="1201" />
     <option name="height" value="1036" />
@@ -318,25 +328,115 @@
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="selector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="implement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="implement" type="462c0819:PsiDirectoryNode" />
+              <item name="crackshot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="implement" type="462c0819:PsiDirectoryNode" />
+              <item name="crackshot" type="462c0819:PsiDirectoryNode" />
+              <item name="CrackShot-0.98.9.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="implement" type="462c0819:PsiDirectoryNode" />
+              <item name="crackshot" type="462c0819:PsiDirectoryNode" />
+              <item name="CrackShot-0.98.9.jar" type="ab9368bb:PsiFileNode" />
+              <item name="crackshot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCommandBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="opencommandblock" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="implement" type="462c0819:PsiDirectoryNode" />
+              <item name="crackshot" type="462c0819:PsiDirectoryNode" />
+              <item name="CrackShot-0.98.9.jar" type="ab9368bb:PsiFileNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.bukkit:craftbukkit:1.12.1-R0.1-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.bukkit:craftbukkit:1.12.1-R0.1-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="craftbukkit-1.12.1-R0.1-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenCommandBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.bukkit:craftbukkit:1.12.1-R0.1-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="craftbukkit-1.12.1-R0.1-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +448,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552308159736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552478047677" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/external-annotation" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -357,16 +457,17 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\event\listener\monitor\paper" />
-      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\listener\monitor\paper" />
-    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.kisaragieffective.opencommandblock.event.listener" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\build" />
       <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\libraries" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\api\wrapper\plugin\implement\crackshot" />
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\event\listener\monitor\paper" />
+      <recent name="C:\Users\Obsidian550D\Documents\github\OpenCommandBlock\src\main\java\com\kisaragieffective\opencommandblock\listener\monitor\paper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -562,14 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552223328934</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Some API">
+      <created>1552308200471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552308200471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="719" y="0" width="1201" height="1036" extended-state="0" />
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4238468" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="デザイナー" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -584,7 +692,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.33224043" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="IntelliGuard" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -681,120 +789,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Some API" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156-sources.jar!/org/bukkit/material/Redstone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156-sources.jar!/org/bukkit/material/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-          <folding>
-            <element signature="e#1183#1184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.12.2-R0.1-SNAPSHOT/paper-api-1.12.2-R0.1-20190305.045058-401.jar!/org/bukkit/event/Event.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/LogAccessor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="82" column="69" lean-forward="true" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/EventResultTester.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#52#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnPlayerCommandBlockActivateEvent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="e#63#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.12.2-R0.1-SNAPSHOT/paper-api-1.12.2-R0.1-20190305.045058-401.jar!/org/bukkit/event/player/PlayerEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/listener/OnRightClick.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/TemplateCommandInputEvent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#54#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockPlaceEvent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding>
-            <element signature="e#54#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/kotlinx-coroutines-core-1.1.1.jar/kotlinx/coroutines/sync/Empty.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.1.1/kotlinx-coroutines-core-1.1.1.jar!/kotlinx/coroutines/GlobalScope.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher13.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/PlayerCommandBlockActivateEvent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="156" selection-start-line="6" selection-start-column="156" selection-end-line="6" selection-end-column="156" />
-          <folding>
-            <element signature="e#54#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/event/monitor/paper/PaperMCEventWatcher.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -861,16 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#61#361#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,77 +974,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/IBlockData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Material.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="136" column="54" lean-forward="true" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Block.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4487">
-          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-          <folding>
-            <element signature="e#9106#9490#0" />
-            <element signature="e#10957#11321#0" />
-            <element signature="e#11327#11497#0" />
-            <element signature="e#11503#12092#0" />
-            <element signature="e#12098#12915#0" />
-            <element signature="e#12921#13407#0" />
-            <element signature="e#13572#13843#0" />
-            <element signature="e#13849#14564#0" />
-            <element signature="e#16060#16161#0" />
-            <element signature="e#16358#17012#0" />
-            <element signature="e#17115#17352#0" />
-            <element signature="e#18164#18236#0" />
-            <element signature="e#18601#18777#0" />
-            <element signature="e#18783#18919#0" />
-            <element signature="e#18998#19118#0" />
-            <element signature="e#19508#19667#0" />
-            <element signature="e#20410#21088#0" />
-            <element signature="e#21264#53166#0" />
-            <element signature="e#53510#53640#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntityCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-          <folding>
-            <element signature="e#2679#2680#0" expanded="true" />
-            <element signature="e#2708#2709#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/org/bukkit/craftbukkit/v1_12_R1/block/CraftCommandBlock.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1074,17 +989,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntityCommand.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        <state relative-caret-position="1224">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/CommandObjectiveExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Block.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="153" column="21" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/Material.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="136" column="54" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/TileEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.12.1-R0.1-SNAPSHOT/craftbukkit-1.12.1-R0.1-SNAPSHOT.jar!/net/minecraft/server/v1_12_R1/IBlockData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/CommandBlockAccessorR12.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/Selector.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/Selector13.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/selector/SelectorQueryExecutor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#61#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotDecompiled.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="4851" column="25" lean-forward="true" selection-start-line="4851" selection-start-column="25" selection-end-line="4851" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/destroystokyo/paper/paper-api/1.12.2-R0.1-SNAPSHOT/paper-api-1.12.2-R0.1-20190305.045058-401.jar!/org/bukkit/World.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="350" column="25" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/com/shampaggon/crackshot/CSMessages.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotDecompiled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="4556" column="52" lean-forward="true" selection-start-line="4556" selection-start-column="52" selection-end-line="4556" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#219022#219023#0" expanded="true" />
+            <element signature="e#219084#219085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/commandblock/TileEntityCommandBridgeR12.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/com/shampaggon/crackshot/CSMinion.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="522" column="46" lean-forward="true" selection-start-line="522" selection-start-column="46" selection-end-line="522" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/com/shampaggon/crackshot/CSDirector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="187" column="23" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#18318#25370#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/ShotgunPluginWrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShot-0.98.9.jar!/resources/defaultWeapons.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="217" column="35" lean-forward="true" selection-start-line="217" selection-start-column="35" selection-end-line="217" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/common/TargetVersions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kisaragieffective/opencommandblock/api/wrapper/plugin/implement/crackshot/CrackShotWrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#87#361#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

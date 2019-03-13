@@ -8,13 +8,14 @@ import org.bukkit.util.Vector
 
 object SelectorQueryExecutor {
     fun apply(original: List<Entity>, sb: SelectorBuilder, relativeLocationBase: Vector): Set<Entity> {
-        val tickComparator: Comparator<Entity> = when (sb.getOrder() ?: NEAREST) {
+        val tickComparator: Comparator<Entity>? = when (sb.getOrder() ?: NEAREST) {
             NEAREST -> NearestComparator
             FARTHEST -> NearestComparator.reverse()
-            else -> TODO()
+            else -> null
         }
         val limit = sb.getLimit()
-        return original.asSequence().filter {
+        var finalation: Sequence<Entity>
+        val distanceFiltered = original.asSequence().filter {
             it.isValid
         }.filter {
             // minimalRange is null -> pass all
@@ -23,7 +24,15 @@ object SelectorQueryExecutor {
         }.filter {
             val req = sb.getMaximumRange()
             req == null || relativeLocationBase.distance(it.location.toVector()) <= req.toDouble()
-        }.sortedWith(DistanceComparator(relativeLocationBase).thenComparing(tickComparator)).filterIndexed { index, _ -> limit == null || index <= limit }.toSet()
+        }
+        finalation = if (tickComparator == null) {
+            distanceFiltered
+        } else {
+            // need to sort
+            distanceFiltered.sortedWith(DistanceComparator(relativeLocationBase).thenComparing(tickComparator))
+        }
+        // limit == null -> pass all
+        return finalation.filterIndexed { index, _ -> limit == null || index <= limit }.toSet()
     }
 }
 

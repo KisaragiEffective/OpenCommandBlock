@@ -16,7 +16,6 @@ import kotlin.system.exitProcess
 import kotlin.io.FileTreeWalk
 import java.util.logging.Logger
 import kotlin.concurrent.thread
-import kotlin.coroutines.startCoroutine
 
 val userProfile = """C:\Users\Obsidian550D"""
 val baseDir = """$userProfile\Documents\github\OpenCommandBlock"""
@@ -84,10 +83,10 @@ jdkLib += arrayOf(
         """
     "${jdk}\rt.jar"
 """.trimIndent()
-)//.map { it.drop(1).dropLast(1) }
+)
 val requiredInput = jdkLib + arrayOf(
-    """${mavenCache}\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
-    """${baseDir}\libraries\"""
+        """${mavenCache}\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
+        """${baseDir}\libraries\"""
 ).distinct()
 val keep: String = """com.kisaragieffective.opencommandblock.OpenCommandBlock"""
 /**
@@ -103,16 +102,19 @@ val jdkVersion: Number = 8
 var moreOption: Array<String> = emptyArray()
 
 val jre = """
-C:\Program Files\Java\jdk1.8.0_144\bin\java.exe
+"C:\Program Files\Java\jdk1.8.0_144\bin\java.exe"
 """.trimIndent()
-var baseCommand = """"${jre}" -jar ${proguard} -injars ${inTarget} -keep class ${keep} -libraryjars ${requiredInput.joinToString(";")} -outjars ${outTarget} """
+var baseCommand = "${jre} -jar ${proguard} -injars ${inTarget} -keep class ${keep} -libraryjars ${requiredInput.joinToString(";")} -outjars ${outTarget} "
 val logger: Logger = java.util.logging.Logger.getLogger("RunProguard")
-logger.info("The target: v$targetVersion")
+logger.info("The target version is: $targetVersion")
 val env: Logger = java.util.logging.Logger.getLogger("RunProguard.Env")
-env.info("The JRE: $jre")
-logger.info("The kotlin version: ${kotlinVersion}")
+env.info("The Java Runtime: $jre")
 if (ignoreWarn) {
     moreOption += "-ignorewarnings"
+}
+
+if (!doPreVerify) {
+    moreOption += "-dontpreverify"
 }
 
 if (!doObfuscate) {
@@ -141,8 +143,6 @@ try {
 // --- EXECUTE'em
 println(finalCommand)
 val dir = File(baseDir, "build")
-logger.info("Running...")
-println(finalCommand)
 val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
 val watchdog = thread {
     Thread.sleep(500)
@@ -154,8 +154,7 @@ val watchdog = thread {
 while (proc.isAlive) {
 }
 
-logger.info("Ended.")
-logger.info("EXITED. CODE: ${proc.exitValue()}")
+println("EXITED. CODE: ${proc.exitValue()}")
 exitProcess(0)
 fun File.tryDelete(): Boolean {
     return if (this.exists()) {

@@ -1,5 +1,6 @@
 package com.kisaragieffective.opencommandblock
 
+import com.kisaragieffective.opencommandblock.api.CustomTemplateCommandManager
 import com.kisaragieffective.opencommandblock.command.BlockCommandListener
 import com.kisaragieffective.opencommandblock.command.ConsoleCommandListener
 import com.kisaragieffective.opencommandblock.command.LCommandExecutor
@@ -14,9 +15,13 @@ import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.freeze
 import com.kisaragieffective.opencommandblock.event.listener.OnRightClick
 import com.kisaragieffective.opencommandblock.event.monitor.paper.PaperMCEventWatcher
+import com.kisaragieffective.opencommandblock.kotlinmagic.ImmutableArray
 import org.bukkit.Sound
 import org.bukkit.command.CommandExecutor
+import org.bukkit.command.CommandSender
 import org.bukkit.event.Listener
+import org.bukkit.permissions.Permission
+import org.bukkit.permissions.PermissionDefault
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
 import java.io.FileReader
@@ -43,6 +48,11 @@ class OpenCommandBlock : JavaPlugin() {
         registerCommand(CheckRegion)
         registerEventListener(OnRightClick)
         registerEventListener(PaperMCEventWatcher)
+        Permission("opencommandblock.template.custom.test").default = PermissionDefault.TRUE
+        CustomTemplateCommandManager.register("test") { sender, name, args ->
+            sender.sendMessage("Hi, ${sender.name}")
+            true
+        }
     }
 
     override fun onDisable() {
@@ -85,7 +95,7 @@ class OpenCommandBlock : JavaPlugin() {
             is PlayerCommandListener -> " (Player Command)"
             is ConsoleCommandListener -> " (Console Command)"
             is BlockCommandListener -> " (CommandBlock Command)"
-            else -> ""
+            else -> " (Unknown)"
         }
         logger.info(msg)
         k.executor = exe

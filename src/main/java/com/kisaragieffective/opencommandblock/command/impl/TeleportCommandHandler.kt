@@ -1,5 +1,6 @@
 package com.kisaragieffective.opencommandblock.command.impl
 
+import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
 import org.bukkit.command.Command
@@ -11,7 +12,7 @@ object TeleportCommandHandler : PlayerCommandListener {
     }
 
     override val triggerCommand: Command
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+        get() = OpenCommandBlock.instance.getCommand("cbtp")
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
 }

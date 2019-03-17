@@ -5,7 +5,7 @@ interface AbstractEnumList<E : Enum<E>> : List<E>
 /**
  * Gets by order.
  */
-class AllOfEnumList<E : Enum<E>>(private val source: Class<E>) : AbstractEnumList<E> {
+class AllOfEnumList<E : Enum<E>>(source: Class<E>) : AbstractEnumList<E> {
     private val values: Array<E> = source.enumConstants
 
     override val size: Int

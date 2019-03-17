@@ -1,6 +1,7 @@
 package com.kisaragieffective.opencommandblock.api
 
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
+import com.kisaragieffective.opencommandblock.annotations.ProguardKeep
 import com.kisaragieffective.opencommandblock.enums.CommandBlockType
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.parseAsMilliSeconds
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.toSingleEnumSet
@@ -13,6 +14,7 @@ import java.util.UUID
 
 class LogAccessor private constructor() {
     companion object {
+        @ProguardKeep
         fun getPlace(where: Location): List<PlayerPlaceOperation> {
             val targetPath = Paths.get(OpenCommandBlock.instance.dataFolder.canonicalPath, where.world.name, "${where.blockX}_${where.blockY}_${where.blockZ}.yml")
             return if (Files.exists(targetPath)) {
@@ -68,12 +70,14 @@ class LogAccessor private constructor() {
             ))
         }
 
+        @ProguardKeep
         fun addRemoveLog(operation: PlayerRemoveOperation) {
-            TODO()
+
         }
 
+        @ProguardKeep
         fun addInputLog(operation: PlayerCommandInputOperation) {
-            TODO()
+
         }
 
         private fun add(who: UUID, where: Location, properties: Map<String, *>) {
@@ -88,6 +92,7 @@ class LogAccessor private constructor() {
             this.set(path, this.getMapList(path) + prop)
         }
 
+        @ProguardKeep
         fun addActivationLog() {
             TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         }

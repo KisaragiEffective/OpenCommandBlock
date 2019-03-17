@@ -5,9 +5,10 @@ import com.kisaragieffective.opencommandblock.api.wrapper.region.PermissionGroup
 import com.kisaragieffective.opencommandblock.kotlinmagic.ImmutableArray
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
+import org.bukkit.permissions.Permission
 import org.bukkit.permissions.PermissionDefault
 
-object CustomTemplateCommandManager {
+object CustomCommandManager {
     val customCommands: HashSet<Command> = HashSet()
     inline fun register(name: String, permissionGroup: PermissionDefault = PermissionDefault.FALSE, crossinline thing: (CommandSender, String, ImmutableArray<String>) -> Boolean) {
         val finalName = "opencommandblock.custom:$name"
@@ -20,7 +21,10 @@ object CustomTemplateCommandManager {
                         p0!!
                         p1!!
                         p2!!
-                        return if (p0.hasPermission("opencommandblock.template.custom.$name")) {
+                        val k = Permission("opencommandblock.template.custom.$name").also {
+                            it.default = permissionGroup
+                        }
+                        return if (p0.hasPermission(k)) {
                             thing(p0, p1, p2)
                         } else {
                             p0.sendMessage(permissionMessage)

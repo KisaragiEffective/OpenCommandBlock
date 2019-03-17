@@ -1,6 +1,7 @@
 package com.kisaragieffective.opencommandblock
 
-import com.kisaragieffective.opencommandblock.api.CustomTemplateCommandManager
+import com.kisaragieffective.opencommandblock.api.CustomCommandManager
+import com.kisaragieffective.opencommandblock.api.PlatformDetector
 import com.kisaragieffective.opencommandblock.command.BlockCommandListener
 import com.kisaragieffective.opencommandblock.command.ConsoleCommandListener
 import com.kisaragieffective.opencommandblock.command.LCommandExecutor
@@ -12,15 +13,13 @@ import com.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp
 import com.kisaragieffective.opencommandblock.command.impl.TellCommandA
 import com.kisaragieffective.opencommandblock.command.impl.TellCommandP
 import com.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
+import com.kisaragieffective.opencommandblock.event.listener.CustomCommandWatcher
 import com.kisaragieffective.opencommandblock.kotlinmagic.extension.freeze
 import com.kisaragieffective.opencommandblock.event.listener.OnRightClick
-import com.kisaragieffective.opencommandblock.event.monitor.paper.PaperMCEventWatcher
-import com.kisaragieffective.opencommandblock.kotlinmagic.ImmutableArray
-import org.bukkit.Sound
 import org.bukkit.command.CommandExecutor
-import org.bukkit.command.CommandSender
+import org.bukkit.event.Event
+import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
-import org.bukkit.permissions.Permission
 import org.bukkit.permissions.PermissionDefault
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
@@ -47,8 +46,11 @@ class OpenCommandBlock : JavaPlugin() {
         registerCommand(TestSelectorQuery)
         registerCommand(CheckRegion)
         registerEventListener(OnRightClick)
-        registerEventListener(PaperMCEventWatcher)
-        CustomTemplateCommandManager.register("test", PermissionDefault.TRUE) { sender, _, _ ->
+        if (PlatformDetector.isPaperMC()) {
+            //registerEventListener(PaperMCEventWatcher)
+        }
+        registerEventListener(CustomCommandWatcher)
+        CustomCommandManager.register("test", PermissionDefault.TRUE) { sender, _, _ ->
             sender.sendMessage("Hi, ${sender.name}")
             true
         }
@@ -106,7 +108,27 @@ class OpenCommandBlock : JavaPlugin() {
     }
 
     private fun registerEventListener(listener: Listener) {
+        val check = true
+        @Suppress("ConstantConditionIf")
+        if (check) {
+            if (listener::class.java.methods.isNotEmpty()) {
+                val methods = listener::class.java.methods
+                        .filter {
+                            it.getDeclaredAnnotation(EventHandler::class.java) != null
+                        }.filter {
+                            !it.isVarArgs
+                        }.filter {
+                            it.parameters.size == 1
+                        }.filter {
+                            it.parameters[0].type.isAssignableFrom(Event::class.java)
+                        }
+                if (methods.isEmpty()) {
+                    logger.warning("Event listener `${listener::class.java.simpleName}` doesn't contains handle methods.")
+                }
+            }
+        }
         server.pluginManager.registerEvents(listener, this)
+        logger.info("Event listener `${listener::class.java.simpleName}` registered.")
     }
 
     private fun checkSoftDepend(name: String) {

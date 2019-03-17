@@ -19,8 +19,3 @@ object WorldGuardNullImpl : WorldGuardWrapper {
     override val applicableVersion: TargetVersionRange
         get() = TargetVersionRange(Version(0), Version.LATEST)
 }
-
-// NEVER SUPPORTED.
-typealias WorldGuard1Wrapper = WorldGuardNullImpl
-typealias WorldGuard2Wrapper = WorldGuardNullImpl
-typealias WorldGuard3Wrapper = WorldGuardNullImpl

@@ -3,11 +3,12 @@ package com.kisaragieffective.opencommandblock.command.impl
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
 import com.kisaragieffective.opencommandblock.command.CommandArgumentType
 import com.kisaragieffective.opencommandblock.command.PlayerCommandListener
+import com.kisaragieffective.opencommandblock.kotlinmagic.ImmutableArray
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 
 object OpenCommandBlocksHelp : PlayerCommandListener {
-    override fun firedCommand(sender: Player, command: Command?, alias: String?, args: Array<out String>): Boolean {
+    override fun firedCommand(sender: Player, command: Command?, alias: String?, args: ImmutableArray<out String>): Boolean {
         val len = args.size
         when (len) {
             0 -> {
@@ -22,7 +23,24 @@ object OpenCommandBlocksHelp : PlayerCommandListener {
             }
 
             1 -> {
+                val one = args[0]
+                when (one) {
+                    "ref", "reference", "references" -> {
+                        sender.sendMessage("Reference.")
+                    }
 
+                    "template", "templates" -> {
+                        sender.sendMessage("Template.")
+                    }
+
+                    "log", "logs", "history", "histories" -> {
+                        sender.sendMessage("History.")
+                    }
+
+                    else -> {
+                        sender.sendMessage("Unknown sub argument: $one")
+                    }
+                }
             }
 
             2 -> {
@@ -38,5 +56,5 @@ object OpenCommandBlocksHelp : PlayerCommandListener {
     override val triggerCommand: Command
         get() = OpenCommandBlock.instance.getCommand("opencommandblock")
     override val applicableArguments: List<List<CommandArgumentType>>
-        get() = listOf(listOf(), listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.STRING, CommandArgumentType.STRING))
+        get() = listOf(emptyList(), listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.STRING, CommandArgumentType.STRING))
 }

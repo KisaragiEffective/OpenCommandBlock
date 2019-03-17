@@ -51,52 +51,48 @@ jdkLib = File(jdk).walkTopDown().filter { it: File ->
 */
 jdkLib += arrayOf(
         """
-    "${jdk}\charsets.jar"
+    "$jdk\charsets.jar"
 """.trimIndent(),
         """
-    "${jdk}\deploy.jar"
+    "$jdk\deploy.jar"
 """.trimIndent(),
         """
-    "${jdk}\javaws.jar"
+    "$jdk\javaws.jar"
 """.trimIndent(),
         """
-    "${jdk}\jce.jar"
+    "$jdk\jce.jar"
 """.trimIndent(),
         """
-    "${jdk}\jfr.jar"
+    "$jdk\jfr.jar"
 """.trimIndent(),
         """
-    "${jdk}\jfxswt.jar"
+    "$jdk\jfxswt.jar"
 """.trimIndent(),
         """
-    "${jdk}\jsse.jar"
+    "$jdk\jsse.jar"
 """.trimIndent(),
         """
-    "${jdk}\management-agent.jar"
+    "$jdk\management-agent.jar"
 """.trimIndent(),
         """
-    "${jdk}\plugin.jar"
+    "$jdk\plugin.jar"
 """.trimIndent(),
         """
-    "${jdk}\resources.jar"
+    "$jdk\resources.jar"
 """.trimIndent(),
         """
-    "${jdk}\rt.jar"
+    "$jdk\rt.jar"
 """.trimIndent()
 )
 val requiredInput = jdkLib + arrayOf(
-        """${mavenCache}\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
-        """${baseDir}\libraries\"""
+        """$mavenCache\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar""",
+        """$baseDir\libraries\"""
 ).distinct()
 val keep: String = """com.kisaragieffective.opencommandblock.OpenCommandBlock"""
 /**
  * If false, you can't minimize until fix all warnings.
  */
 val ignoreWarn: Boolean = true
-/**
- * Hey. It's HIGHLY NOT recommended cause this can trigger VerifyError.
- */
-val doPreVerify: Boolean = true
 val doObfuscate: Boolean = false
 val jdkVersion: Number = 8
 var moreOption: Array<String> = emptyArray()
@@ -104,17 +100,12 @@ var moreOption: Array<String> = emptyArray()
 val jre = """
 "C:\Program Files\Java\jdk1.8.0_144\bin\java.exe"
 """.trimIndent()
-var baseCommand = "${jre} -jar ${proguard} -injars ${inTarget} -keep class ${keep} -libraryjars ${requiredInput.joinToString(";")} -outjars ${outTarget} "
 val logger: Logger = java.util.logging.Logger.getLogger("RunProguard")
 logger.info("The target version is: $targetVersion")
 val env: Logger = java.util.logging.Logger.getLogger("RunProguard.Env")
 env.info("The Java Runtime: $jre")
 if (ignoreWarn) {
     moreOption += "-ignorewarnings"
-}
-
-if (!doPreVerify) {
-    moreOption += "-dontpreverify"
 }
 
 if (!doObfuscate) {
@@ -124,19 +115,36 @@ if (!doObfuscate) {
 moreOption += "-forceprocessing"
 moreOption += "-target ${jdkVersion}"
 
-val finalCommand: String = "$baseCommand${moreOption.joinToString(" ")}".trim()
+val file = File(baseDir, """build\runproguard.cmd""").also {
+    it.delete()
+    it.createNewFile()
+}
 
-val file = File("""${baseDir}\build\runproguard.cmd""")
+val config = File(baseDir, """build\proguard.cfg""").also {
+    it.delete()
+    it.createNewFile()
+}
+
 try {
-    file.delete()
-    file.createNewFile()
-    // CMD must be written in SJIS
-    val fw = PrintWriter(file, Charset.forName("windows-31j").name())
-    fw.println("@REM AUTO GENERATED")
-    fw.println("SET TARGET_VERSION=${targetVersion}")
-    fw.println(finalCommand)
-    fw.flush()
-    fw.close()
+    PrintWriter(file).also {
+        it.println(""""C:\Program Files\Java\jdk1.8.0_144\bin\java.exe" -jar $proguard @$baseDir\build\proguard.cfg""")
+        it.println("EXIT")
+        it.flush()
+        it.close()
+    }
+
+    PrintWriter(config).also {
+        it.println("""-injars $inTarget""")
+        it.println("""-keep class $keep""")
+        it.println("""-libraryjars ${requiredInput.joinToString(";")}""")
+        it.println("""-outjars $outTarget""")
+        it.println(moreOption.joinToString("\n"))
+        it.println("""-keepclassmembers class * {
+ @org.bukkit.event.EventHandler <methods>;
+}""")
+        it.flush()
+        it.close()
+    }
 } catch (e: IOException) {
     println(e)
 }

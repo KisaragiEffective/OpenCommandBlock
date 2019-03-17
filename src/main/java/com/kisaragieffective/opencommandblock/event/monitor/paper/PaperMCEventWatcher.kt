@@ -98,10 +98,12 @@ object PaperMCEventWatcher : Listener {
         OpenCommandBlock.instance.logger.info()
     }
     */
+    /* うるさい:
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     fun onPlayerNaturallySpawnCreatures(e: PlayerNaturallySpawnCreaturesEvent) {
         OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName} (cancel=${e.isCancelled},async=${e.isAsynchronous}): ${e.player} ${e.spawnRadius}")
     }
+    */
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     fun onPreCreatureSpawn(e: PreCreatureSpawnEvent) {
         OpenCommandBlock.instance.logger.info("[PaperEvent] ${e.eventName} (cancel=${e.isCancelled},async=${e.isAsynchronous}): ${e.type} ${e.spawnLocation} ${e.type}")

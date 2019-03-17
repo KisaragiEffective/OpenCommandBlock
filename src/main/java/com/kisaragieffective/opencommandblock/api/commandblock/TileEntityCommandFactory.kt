@@ -6,9 +6,9 @@ import net.minecraft.server.v1_12_R1.TileEntityCommand
 import org.bukkit.Location
 import org.bukkit.craftbukkit.v1_12_R1.block.CraftCommandBlock
 
-class TileEntityCommandFactoryR12(val where: Location) : ITileEntityCommandFactory, Factory<TileEntityCommand> {
+class TileEntityCommandFactoryR12(val where: Location) : ITileEntityCommandFactory, Factory<TileEntityCommand, Function0<Unit>> {
     @DependsCraftBukkit
-    override fun produce(): TileEntityCommand {
+    override fun produce(param: () -> Unit): TileEntityCommand {
         val k = TileEntityCommand()
         val e = CraftCommandBlock(where.block)
         e.applyTo(k)

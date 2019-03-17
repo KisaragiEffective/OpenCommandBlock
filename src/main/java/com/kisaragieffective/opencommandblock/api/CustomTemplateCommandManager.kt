@@ -1,13 +1,15 @@
 package com.kisaragieffective.opencommandblock.api
 
 import com.kisaragieffective.opencommandblock.OpenCommandBlock
+import com.kisaragieffective.opencommandblock.api.wrapper.region.PermissionGroup
 import com.kisaragieffective.opencommandblock.kotlinmagic.ImmutableArray
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
+import org.bukkit.permissions.PermissionDefault
 
 object CustomTemplateCommandManager {
     val customCommands: HashSet<Command> = HashSet()
-    inline fun register(name: String, crossinline thing: (CommandSender, String, ImmutableArray<String>) -> Boolean) {
+    inline fun register(name: String, permissionGroup: PermissionDefault = PermissionDefault.FALSE, crossinline thing: (CommandSender, String, ImmutableArray<String>) -> Boolean) {
         val finalName = "opencommandblock.custom:$name"
         if (customCommands.map { it.name }.contains(finalName)) {
             OpenCommandBlock.instance.logger.info("[CustomTemplate] Define of `$name` will be overwritten.")

@@ -48,8 +48,7 @@ class OpenCommandBlock : JavaPlugin() {
         registerCommand(CheckRegion)
         registerEventListener(OnRightClick)
         registerEventListener(PaperMCEventWatcher)
-        Permission("opencommandblock.template.custom.test").default = PermissionDefault.TRUE
-        CustomTemplateCommandManager.register("test") { sender, name, args ->
+        CustomTemplateCommandManager.register("test", PermissionDefault.TRUE) { sender, _, _ ->
             sender.sendMessage("Hi, ${sender.name}")
             true
         }

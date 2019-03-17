@@ -35,7 +35,7 @@ if (builtWithPom) {
     }[0].textContent
 }
 val inTarget = """${baseDir}\target\OpenCommandBlock-${targetVersion}.jar"""
-val outTarget = """${baseDir}\target\proguarded\OpenCommandBlock-${targetVersion}.proguarded.jar"""
+val outTarget = """${baseDir}\target\proguarded\OpenCommandBlock-${targetVersion}.jar"""
 val mavenCache = """${userProfile}\.m2\repository"""
 val kotlinVersion = KotlinVersion.CURRENT
 val jdk: String = """C:\Program Files\Java\jdk1.8.0_144\jre\lib"""
@@ -125,48 +125,24 @@ moreOption += "-forceprocessing"
 moreOption += "-target ${jdkVersion}"
 
 val finalCommand: String = "$baseCommand${moreOption.joinToString(" ")}".trim()
-/*
+
+val file = File("""${baseDir}\build\runproguard.cmd""")
 try {
-    val file = File("""${baseDir}\build\runproguard.cmd""")
     file.delete()
+    file.createNewFile()
     // CMD must be written in SJIS
     val fw = PrintWriter(file, Charset.forName("windows-31j").name())
     fw.println("@REM AUTO GENERATED")
     fw.println("SET TARGET_VERSION=${targetVersion}")
     fw.println(finalCommand)
+    fw.flush()
     fw.close()
 } catch (e: IOException) {
     println(e)
 }
-*/
 
-// --- EXECUTE'em
-println(finalCommand)
-val dir = File(baseDir, "build")
-val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
-val watchdog = thread {
-    Thread.sleep(500)
-    proc.inputStream.bufferedReader().lines().forEach {
-        println(it)
-    }
-}
+ProcessBuilder().command("""C:\Windows\System32\cmd.exe""", """/c""", """${baseDir}\build\runproguard.cmd""").redirectErrorStream(true).redirectOutput(ProcessBuilder.Redirect.INHERIT).start()
 
-while (proc.isAlive) {
-}
-
-println("EXITED. CODE: ${proc.exitValue()}")
-exitProcess(0)
-fun File.tryDelete(): Boolean {
-    return if (this.exists()) {
-        this.delete()
-    } else {
-        false
-    }
-}
-
-/**
- * This function take O(n).
- */
 fun NodeList.children(): List<Node> {
     return (0..(this.length - 1)).map { i ->
         this.item(i)
@@ -195,7 +171,40 @@ fun <T : Any> File.exists(yesCallback: (File) -> T, noCallback: (File) -> T): T 
     }
 }
 
+fun File.tryDelete(): Boolean {
+    return if (this.exists()) {
+        this.delete()
+    } else {
+        false
+    }
+}
+
+
+/*
+// --- EXECUTE'em
+println(finalCommand)
+val dir = File(baseDir, "build")
+val proc = Runtime.getRuntime().exec(finalCommand, emptyArray(), dir)
+val watchdog = thread {
+    Thread.sleep(500)
+    proc.inputStream.bufferedReader().lines().forEach {
+        println(it)
+    }
+}
+
+while (proc.isAlive) {
+}
+
+println("EXITED. CODE: ${proc.exitValue()}")
+exitProcess(0)
+
+
+/**
+ * This function take O(n).
+ */
+
 /*
 java -jar C:\Users\Obsidian550D\Documents\intellij\OpenCommandBlock\build\proguard6.0.3\lib\proguard.jar -injars inTarget\OpenCommandBlock-1.0.0.jar -libraryjars "%JAVA_HOME%\jre\lib\";C:\Users\Obsidian550D\.m2\repository\org\spigotmc\spigot-api\1.12.2-
 R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-20180323.084251-124.jar;.\libraries\ -outjars inTarget\OpenCommandBlock-1.0.0-pg.jar
+*/
 */

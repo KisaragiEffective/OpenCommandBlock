@@ -1,5 +1,8 @@
 Java.gitignore
 build/proguard6.0.3
+deploy/proguard6.0.3
+.gradle/*
+build/*
 target/*
 .idea/*
 .idea.old/*

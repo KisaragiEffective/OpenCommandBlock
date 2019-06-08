@@ -1,5 +1,8 @@
-package com.github.kisaragieffective.opencommandblock.api.selector
+package com.github.kisaragieffective.opencommandblock.api.selector.value
 
+import com.github.kisaragieffective.opencommandblock.api.selector.SelectorProperty
+import com.github.kisaragieffective.opencommandblock.api.selector.distance.CuboidArea
+import com.github.kisaragieffective.opencommandblock.api.selector.distance.SphereArea
 import org.bukkit.GameMode
 import org.bukkit.Location
 import org.bukkit.advancement.Advancement
@@ -9,13 +12,13 @@ import org.bukkit.scoreboard.Team
 interface SelectorValues {
     fun getBasePoint(): SelectorProperty<Location>
 
-    fun getDistance(): SelectorProperty<IntRange>
+    fun getSphereDistance(): SelectorProperty<SphereArea>
 
-    fun getCuboidDistance(): SelectorProperty<Map<CoordinateAxis, Int>>
+    fun getCuboidDistance(): SelectorProperty<CuboidArea>
 
     fun getScores(): SelectorProperty<Map</* Score name */String, /* Value */ Int>>
 
-    fun getTags(): SelectorProperty<Map</* Tag name */String, Boolean>>
+    fun getTags(): SelectorProperty<Map</* Tag name */String, /* Inverted */Boolean>>
 
     fun getTeam(): SelectorProperty<Team>
 

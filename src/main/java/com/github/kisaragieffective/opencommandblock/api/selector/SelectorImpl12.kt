@@ -1,11 +1,16 @@
 package com.github.kisaragieffective.opencommandblock.api.selector
 
+import com.github.kisaragieffective.opencommandblock.api.common.TargetVersionRange
+import com.github.kisaragieffective.opencommandblock.api.common.Version
+import com.github.kisaragieffective.opencommandblock.api.selector.value.SelectorValues
 import org.bukkit.World
 import kotlin.math.min
 import com.github.kisaragieffective.opencommandblock.kotlinmagic.extension.get
 import java.util.EnumSet
 
-class SelectorImpl12(type: SelectorType, values: SelectorValues) : Selector {
+class SelectorImpl12(override val type: SelectorType, override val values: SelectorValues) : Selector {
+    override val applicableServerVersion: TargetVersionRange
+        get() = TargetVersionRange(Version(1, 12, 0), Version(1, 12, 2))
     companion object {
         val arrowedType: EnumSet<SelectorType> = EnumSet.of(SelectorType.ALL, SelectorType.ENTITY, SelectorType.PERSONAL, SelectorType.RANDOM)
 
@@ -40,4 +45,5 @@ class SelectorImpl12(type: SelectorType, values: SelectorValues) : Selector {
             throw SelectorSyntaxException("Syntax Error: $message")
         }
     }
+
 }

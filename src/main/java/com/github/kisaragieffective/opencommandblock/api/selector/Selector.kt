@@ -1,23 +1,12 @@
 package com.github.kisaragieffective.opencommandblock.api.selector
 
 import com.github.kisaragieffective.opencommandblock.api.common.TargetVersionRange
-import org.bukkit.Location
-import org.bukkit.World
+import com.github.kisaragieffective.opencommandblock.api.selector.value.SelectorValues
 
 interface Selector {
-    fun getType(): SelectorType
+    val type: SelectorType
 
-    fun getX(): Number
-
-    fun getY(): Number
-
-    fun getZ(): Number
-
-    fun getWorld(): World
-
-    fun getBasedPoint(): Location
+    val values: SelectorValues
 
     val applicableServerVersion: TargetVersionRange
-    val rawInput: String
-
 }

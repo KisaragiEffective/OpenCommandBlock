@@ -1,0 +1,6 @@
+package com.github.kisaragieffective.opencommandblock.api.wrapper.plugin
+
+import com.github.kisaragieffective.opencommandblock.annotations.DependencyInjection
+
+@DependencyInjection
+interface LoggingPluginWrapper : JavaPluginWrapper

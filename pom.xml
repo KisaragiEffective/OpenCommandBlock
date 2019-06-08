@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kudasure</groupId>
+    <groupId>com.github.kisarafieffective</groupId>
     <artifactId>OpenCommandBlock</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.8</version>
     <packaging>jar</packaging>
 
     <name>OpenCommandBlock</name>
@@ -17,7 +17,7 @@
     </properties>
 
     <build>
-        <defaultGoal>clean package</defaultGoal>
+        <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,6 +45,20 @@
                         </configuration>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <artifactSet>
+                        <includes>
+
+                        </includes>
+
+                        <excludes>
+                            <!-- groupId:artifactId:type:classifier -->
+                            <exclude>com.sk89q.worldguard:worldguard-legacy</exclude>
+                            <exclude>org.spigotmc:spigot-api</exclude>
+                        </excludes>
+                    </artifactSet>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -88,6 +102,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>sk89q</id>
+            <url>https://maven.sk89q.com/repo/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -115,8 +133,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.sk89q</groupId>
-            <artifactId>worldguard</artifactId>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-legacy</artifactId>
             <version>6.2</version>
             <!--
             <scope>system</scope>

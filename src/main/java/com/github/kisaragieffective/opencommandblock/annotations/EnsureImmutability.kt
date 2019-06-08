@@ -1,0 +1,4 @@
+package com.github.kisaragieffective.opencommandblock.annotations
+
+@Retention(AnnotationRetention.SOURCE)
+annotation class EnsureImmutability

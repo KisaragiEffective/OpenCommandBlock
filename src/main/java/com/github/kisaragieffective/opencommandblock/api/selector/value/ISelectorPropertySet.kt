@@ -7,16 +7,17 @@ import org.bukkit.GameMode
 import org.bukkit.Location
 import org.bukkit.advancement.Advancement
 import org.bukkit.entity.EntityType
+import org.bukkit.scoreboard.Score
 import org.bukkit.scoreboard.Team
 
-interface SelectorValues {
+interface ISelectorPropertySet {
     fun getBasePoint(): SelectorProperty<Location>
 
     fun getSphereDistance(): SelectorProperty<SphereArea>
 
     fun getCuboidDistance(): SelectorProperty<CuboidArea>
 
-    fun getScores(): SelectorProperty<Map</* Score name */String, /* Value */ Int>>
+    fun getScores(): SelectorProperty<List<Score>>
 
     fun getTags(): SelectorProperty<Map</* Tag name */String, /* Inverted */Boolean>>
 

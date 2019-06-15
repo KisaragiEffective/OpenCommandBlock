@@ -4,26 +4,28 @@ import com.github.kisaragieffective.opencommandblock.api.selector.SelectorProper
 import com.github.kisaragieffective.opencommandblock.api.selector.distance.CuboidArea
 import com.github.kisaragieffective.opencommandblock.api.selector.distance.IDistanceArea
 import com.github.kisaragieffective.opencommandblock.api.selector.distance.SphereArea
+import com.github.kisaragieffective.opencommandblock.api.selector.distance.WholeArea
 import org.bukkit.GameMode
 import org.bukkit.Location
 import org.bukkit.advancement.Advancement
 import org.bukkit.entity.EntityType
+import org.bukkit.scoreboard.Score
 import org.bukkit.scoreboard.Team
 
-class SelectorValuesImpl12(
+class SelectorPropertySetImpl12(
         val basePoint: Location,
-        val distance: IDistanceArea,
-        val scores: Map<String, Int>,
-        val tags: Map<String, Boolean>,
-        val team: Team,
-        val count: Int,
-        val level: IntRange,
+        val distance: IDistanceArea = WholeArea,
+        val scores: List<Score> = emptyList(),
+        val tags: Map<String, Boolean> = emptyMap(),
+        val team: Team? = null,
+        val count: Int = 2147483647,
+        val level: IntRange = 0..1_000_000,
         val gameMode: Set<GameMode> = setOf(*GameMode.values()),
-        val name: String,
-        val xRotation: ClosedFloatingPointRange<Double>,
-        val yRotation: ClosedFloatingPointRange<Double>,
-        val type: EntityType
-        ) : SelectorValues {
+        val name: String? = null,
+        val xRotation: ClosedFloatingPointRange<Double> = 0.0..180.0,
+        val yRotation: ClosedFloatingPointRange<Double> = 0.0..180.0,
+        val type: EntityType? = null
+        ) : ISelectorPropertySet {
     override fun getBasePoint(): SelectorProperty<Location> {
         return SelectorProperty(basePoint)
     }
@@ -44,7 +46,7 @@ class SelectorValuesImpl12(
         }
     }
 
-    override fun getScores(): SelectorProperty<Map<String, Int>> {
+    override fun getScores(): SelectorProperty<List<Score>> {
         return SelectorProperty(scores)
     }
 

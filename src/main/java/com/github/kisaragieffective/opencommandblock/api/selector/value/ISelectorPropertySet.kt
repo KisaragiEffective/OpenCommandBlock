@@ -2,6 +2,7 @@ package com.github.kisaragieffective.opencommandblock.api.selector.value
 
 import com.github.kisaragieffective.opencommandblock.api.selector.SelectorProperty
 import com.github.kisaragieffective.opencommandblock.api.selector.distance.CuboidArea
+import com.github.kisaragieffective.opencommandblock.api.selector.distance.IDistanceArea
 import com.github.kisaragieffective.opencommandblock.api.selector.distance.SphereArea
 import org.bukkit.GameMode
 import org.bukkit.Location
@@ -40,4 +41,6 @@ interface ISelectorPropertySet {
     fun getNBT(): SelectorProperty<Any>
 
     fun getAdvancements(): SelectorProperty<Set<Advancement>>
+
+    fun getDistanceType(): IDistanceArea
 }

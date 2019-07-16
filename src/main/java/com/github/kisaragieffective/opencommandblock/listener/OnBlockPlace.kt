@@ -11,7 +11,7 @@ import org.bukkit.event.block.BlockPlaceEvent
 object OnBlockPlace : Listener {
     @EventHandler
     fun onBlockPlace(e: BlockPlaceEvent) {
-        val t = e.blockReplacedState
+        val t = e.blockPlaced.state
         if (t is CommandBlock) {
             CommandBlockPlaceEvent(t, e.player).fire()
         }

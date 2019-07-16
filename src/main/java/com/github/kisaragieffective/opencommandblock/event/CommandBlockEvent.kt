@@ -7,7 +7,7 @@ import org.bukkit.event.HandlerList
 /**
  * 各種イベントのスケルトン実装。
  */
-open class CommandBlockEvent(protected val l: CommandBlock) : Event() {
+open class CommandBlockEvent(protected val cb: CommandBlock) : Event() {
 
     private val handler: HandlerList = HandlerList()
 
@@ -16,7 +16,7 @@ open class CommandBlockEvent(protected val l: CommandBlock) : Event() {
     }
 
     fun getCommandBlock(): CommandBlock {
-        return l
+        return cb
     }
 
 }

@@ -1,1 +1,0 @@
-package com.github.kisaragieffective.opencommandblock.struct

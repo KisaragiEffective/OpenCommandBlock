@@ -12,9 +12,7 @@ fun Date.asCalendar(): Calendar {
     return e
 }
 
-fun Calendar.asDate(): Date {
-    return this.time
-}
+fun Calendar.asDate(): Date = this.time
 
 fun Calendar.getNow(): Calendar = Calendar.getInstance()
 
@@ -24,9 +22,7 @@ fun Calendar.getNow(): Calendar = Calendar.getInstance()
  * @return the receiver, itself
  */
 inline val <T : Any> T.freeze: T
-    get() {
-        return this
-    }
+    get() = this
 
 inline val <T : Any?> T.exciplitNullable: T?
     get() = this
@@ -84,14 +80,14 @@ fun Long.parseAsMilliSeconds(): Calendar {
 }
 
 @DynamicGenericClassCast
-inline fun <SUB : SUPER, reified SUPER : Any> Class<SUB>.toUpcastExciplictly(): Class<out SUPER>? {
-    return asSubclass(SUPER::class.java)
-}
+inline fun <SUB : SUPER, reified SUPER : Any> Class<SUB>.toUpcastExciplictly(): Class<out SUPER?>? =
+        asSubclass(SUPER::class.java) as Class<out SUPER?>? // doesn't understand
 
-fun <T> Comparator<T>.reverse(): Comparator<T> {
-    return Comparator { o1, o2 -> this@reverse.compare(o2, o1) }
-}
+fun <T> Comparator<T>.reverse(): Comparator<T> = Comparator { o1: T, o2: T -> this@reverse.compare(o2, o1) }
 
-operator fun CharSequence.get(r: IntRange): CharSequence {
-    return this.subSequence(r)
+operator fun CharSequence.get(r: IntRange): CharSequence = this.subSequence(r)
+
+operator fun CharSequence.times(repeatCount: Int): String = repeat(repeatCount)
+
+fun a() {
 }

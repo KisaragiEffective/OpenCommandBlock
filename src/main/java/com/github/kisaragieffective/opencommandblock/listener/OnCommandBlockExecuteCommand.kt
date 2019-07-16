@@ -9,6 +9,6 @@ import org.bukkit.event.server.ServerCommandEvent
 object OnCommandBlockExecuteCommand : Listener {
     @EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
     fun o(e: ServerCommandEvent) {
-        OpenCommandBlock.instance.logger.warning("ServerCommandEvent fired (Cancel=${e.isCancelled}, Command=${e.command}, Sender=${e.sender})")
+        OpenCommandBlock.instance.value!!.logger.warning("ServerCommandEvent fired (Cancel=${e.isCancelled}, Command=${e.command}, Sender=${e.sender})")
     }
 }

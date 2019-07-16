@@ -54,7 +54,7 @@ object OpenCommandBlocksHelp : PlayerCommandListener {
     }
 
     override val triggerCommand: Command
-        get() = OpenCommandBlock.instance.getCommand("opencommandblock")
+        get() = OpenCommandBlock.instance.value!!.getCommand("opencommandblock")
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = listOf(listOf(), listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.STRING, CommandArgumentType.STRING))
 }

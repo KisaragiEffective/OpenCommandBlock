@@ -1,6 +1,7 @@
 package com.github.kisaragieffective.opencommandblock
 
 import com.github.kisaragieffective.opencommandblock.api.common.Version
+import com.github.kisaragieffective.opencommandblock.api.immutability.MutableRef
 import com.github.kisaragieffective.opencommandblock.command.BlockCommandListener
 import com.github.kisaragieffective.opencommandblock.command.ConsoleCommandListener
 import com.github.kisaragieffective.opencommandblock.command.LCommandExecutor
@@ -10,8 +11,8 @@ import com.github.kisaragieffective.opencommandblock.command.impl.GameModeComman
 import com.github.kisaragieffective.opencommandblock.command.impl.OpenCommandBlocksHelp
 import com.github.kisaragieffective.opencommandblock.command.impl.TellCommandHandler
 import com.github.kisaragieffective.opencommandblock.command.impl.TestSelectorQuery
-import com.github.kisaragieffective.opencommandblock.kotlinmagic.extension.freeze
 import com.github.kisaragieffective.opencommandblock.kotlinmagic.extension.unmodifiable
+import com.github.kisaragieffective.opencommandblock.listener.DebugListener
 import com.github.kisaragieffective.opencommandblock.listener.OnBlockBreak
 import com.github.kisaragieffective.opencommandblock.listener.OnBlockPlace
 import com.github.kisaragieffective.opencommandblock.listener.OnBlockPowered
@@ -20,7 +21,6 @@ import com.github.kisaragieffective.opencommandblock.listener.OnCommandBlockPowe
 import com.github.kisaragieffective.opencommandblock.listener.OnMinecartMove
 import com.github.kisaragieffective.opencommandblock.listener.OnRightClick
 import com.github.kisaragieffective.opencommandblock.task.CheckUpdate
-import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin

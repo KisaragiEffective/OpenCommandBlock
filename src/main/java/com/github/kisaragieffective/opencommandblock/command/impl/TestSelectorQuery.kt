@@ -13,7 +13,7 @@ object TestSelectorQuery : PlayerCommandListener {
     }
 
     override val triggerCommand: Command
-        get() = OpenCommandBlock.instance.getCommand("testselector")
+        get() = OpenCommandBlock.instance.value!!.getCommand("testselector")
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = emptyList()
 }

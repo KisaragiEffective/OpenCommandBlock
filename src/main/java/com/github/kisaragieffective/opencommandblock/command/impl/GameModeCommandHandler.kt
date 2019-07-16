@@ -15,7 +15,7 @@ import org.bukkit.entity.Player
 object GameModeCommandHandler : PlayerCommandListener {
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = listOf(listOf(CommandArgumentType.GAMEMODE))
-    override val triggerCommand: Command = OpenCommandBlock.instance.getCommand("cbgamemode")
+    override val triggerCommand: Command = OpenCommandBlock.instance.value!!.getCommand("cbgamemode")
 
     override val requiredCommandBlockOnFoot: Boolean = true
 

@@ -179,7 +179,7 @@ private fun ProtectedCuboidRegion.toFrameworkStyle(): IRectangleRegion {
             val ret: Map<Pair<IEntityGroup, EntityAction>, ActionAnswer> = mutableMapOf()
             region.flags.entries.forEach {
                 // the name is Flag#getName, the value is actual flag value.
-                OpenCommandBlock.instance.logger.info("${it.key}:${it.value}")
+                OpenCommandBlock.instance.value!!.logger.info("${it.key}:${it.value}")
             }
             notImplemented()
         }

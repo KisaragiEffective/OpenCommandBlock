@@ -6,16 +6,17 @@ import org.bukkit.scheduler.BukkitRunnable
 
 object CheckUpdate : BukkitRunnable() {
     override fun run() {
-        OpenCommandBlock.instance.logger.info("Checking updates...")
+        val logger = OpenCommandBlock.instance.value!!.logger
+        logger.info("Checking updates...")
 
         var newVersionAvailable = false
 
         val newVersion: Version
 
 
-        OpenCommandBlock.instance.logger.info(
+        logger.info(
                 if (newVersionAvailable) {
-                    "New version is available! (v${OpenCommandBlock.version}"
+                    "New version is available! (v${OpenCommandBlock.getVersion()}"
                 } else {
                     "You are running the latest version."
                 }

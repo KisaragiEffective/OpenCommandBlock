@@ -17,12 +17,12 @@ object WorldGuard6Wrapper : WorldGuardWrapper {
     }
 
     override fun getRegions(where: Location): Set<IRegion> {
-        OpenCommandBlock.instance.logger.info(where.toString())
+        OpenCommandBlock.instance.value!!.logger.info(where.toString())
         val ret = WGBukkit.getRegionManager(where.world).getApplicableRegions(where).map {
             println(it)
             it.toFrameworkStyle()
         }.toSet()
-        OpenCommandBlock.instance.logger.info(ret.joinToString(","))
+        OpenCommandBlock.instance.value!!.logger.info(ret.joinToString(","))
         return ret
     }
 

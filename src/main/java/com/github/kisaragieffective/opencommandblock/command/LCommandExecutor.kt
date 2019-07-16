@@ -48,7 +48,7 @@ interface LCommandExecutor<W : CommandSender> : CommandExecutor {
             // for null -> non-null thrown
             sender.sendMessage("Technical Error: Failed Type Check @ LCommandExecutor")
         } catch (e: ClassCastException) {
-            with(OpenCommandBlock.instance.logger) {
+            with(OpenCommandBlock.instance.value!!.logger) {
                 warning("${e::class.java.canonicalName}: ${e.message}")
                 e.stackTrace.forEach {
                     this.warning(it.toString())

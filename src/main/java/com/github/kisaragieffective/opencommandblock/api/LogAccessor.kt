@@ -14,7 +14,7 @@ import java.util.UUID
 class LogAccessor private constructor() {
     companion object {
         fun getPlace(where: Location): List<PlayerPlaceOperation> {
-            val targetPath = Paths.get(OpenCommandBlock.instance.dataFolder.canonicalPath, where.world.name, "${where.blockX}_${where.blockY}_${where.blockZ}.yml")
+            val targetPath = Paths.get(OpenCommandBlock.instance.value!!.dataFolder.canonicalPath, where.world.name, "${where.blockX}_${where.blockY}_${where.blockZ}.yml")
             return if (Files.exists(targetPath)) {
                 getPlace0(where)
             } else {
@@ -81,7 +81,7 @@ class LogAccessor private constructor() {
         }
 
         private fun getYamlNode(where: Location): YamlConfiguration {
-            return YamlConfiguration.loadConfiguration(Paths.get(OpenCommandBlock.instance.dataFolder.canonicalPath, where.world.name, "${where.blockX}_${where.blockY}_${where.blockZ}.yml").toFile())
+            return YamlConfiguration.loadConfiguration(Paths.get(OpenCommandBlock.instance.value!!.dataFolder.canonicalPath, where.world.name, "${where.blockX}_${where.blockY}_${where.blockZ}.yml").toFile())
         }
 
         private fun YamlConfiguration.addToList(path: String, prop: Map<*, *>) {

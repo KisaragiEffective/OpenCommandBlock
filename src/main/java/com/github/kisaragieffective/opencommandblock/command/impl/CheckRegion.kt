@@ -17,7 +17,7 @@ object CheckRegion : PlayerCommandListener {
     }
 
     override val triggerCommand: Command
-        get() = OpenCommandBlock.instance.getCommand("checkregion")
+        get() = OpenCommandBlock.instance.value!!.getCommand("checkregion")
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = emptyList()
 }

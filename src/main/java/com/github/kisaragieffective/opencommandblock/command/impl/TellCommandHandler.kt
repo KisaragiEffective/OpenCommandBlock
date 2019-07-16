@@ -31,7 +31,7 @@ object TellCommandHandler : PlayerCommandListener, OCBTemplateAvailable {
     }
 
     override val triggerCommand: Command
-        get() = OpenCommandBlock.instance.getCommand("cbtell")
+        get() = OpenCommandBlock.instance.value!!.getCommand("cbtell")
     override val applicableArguments: List<List<CommandArgumentType>>
         get() = listOf(listOf(CommandArgumentType.STRING), listOf(CommandArgumentType.URL))
     override val requiredCommandBlockOnFoot: Boolean

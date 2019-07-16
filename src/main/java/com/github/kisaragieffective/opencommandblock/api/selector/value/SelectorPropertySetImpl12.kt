@@ -11,6 +11,7 @@ import org.bukkit.advancement.Advancement
 import org.bukkit.entity.EntityType
 import org.bukkit.scoreboard.Score
 import org.bukkit.scoreboard.Team
+import java.util.EnumSet
 
 class SelectorPropertySetImpl12(
         val basePoint: Location,
@@ -20,12 +21,16 @@ class SelectorPropertySetImpl12(
         val team: Team? = null,
         val count: Int = 2147483647,
         val level: IntRange = 0..1_000_000,
-        val gameMode: Set<GameMode> = setOf(*GameMode.values()),
+        val gameMode: Set<GameMode> = EnumSet.allOf(GameMode::class.java),
         val name: String? = null,
         val xRotation: ClosedFloatingPointRange<Double> = 0.0..180.0,
         val yRotation: ClosedFloatingPointRange<Double> = 0.0..180.0,
         val type: EntityType? = null
         ) : ISelectorPropertySet {
+    override fun getDistanceType(): IDistanceArea {
+        return distance
+    }
+
     override fun getBasePoint(): SelectorProperty<Location> {
         return SelectorProperty(basePoint)
     }

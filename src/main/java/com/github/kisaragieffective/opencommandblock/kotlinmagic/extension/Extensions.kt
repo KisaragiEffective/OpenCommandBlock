@@ -1,7 +1,7 @@
 package com.github.kisaragieffective.opencommandblock.kotlinmagic.extension
 
-import com.github.kisaragieffective.opencommandblock.annotations.FromKotlinSDK
 import com.github.kisaragieffective.opencommandblock.annotations.DynamicGenericClassCast
+import com.github.kisaragieffective.opencommandblock.annotations.FromKotlinSDK
 import java.util.Calendar
 import java.util.Date
 import java.util.logging.Logger
@@ -51,13 +51,13 @@ inline val <T : Any> T.javaClass: Class<T>
 
 inline fun (() -> Unit).then(crossinline after: () -> Unit): () -> Unit {
     return {
-        this.invoke()
-        after.invoke()
+        this()
+        after()
     }
 }
 
 fun <T> ((T) -> Boolean).or(source: T, func: (T) -> Boolean): (T) -> Boolean {
-    return if (invoke(source)) {
+    return if (this(source)) {
         this
     } else {
         func
@@ -66,7 +66,7 @@ fun <T> ((T) -> Boolean).or(source: T, func: (T) -> Boolean): (T) -> Boolean {
 
 
 fun <T> ((T) -> Boolean).and(source: T, func: (T) -> Boolean): (T) -> Boolean {
-    return if (invoke(source)) {
+    return if (this(source)) {
         func
     } else {
         this
@@ -79,6 +79,7 @@ fun Long.parseAsMilliSeconds(): Calendar {
     return calendar
 }
 
+@Suppress("USELESS_CAST")
 @DynamicGenericClassCast
 inline fun <SUB : SUPER, reified SUPER : Any> Class<SUB>.toUpcastExciplictly(): Class<out SUPER?>? =
         asSubclass(SUPER::class.java) as Class<out SUPER?>? // doesn't understand
@@ -89,5 +90,3 @@ operator fun CharSequence.get(r: IntRange): CharSequence = this.subSequence(r)
 
 operator fun CharSequence.times(repeatCount: Int): String = repeat(repeatCount)
 
-fun a() {
-}

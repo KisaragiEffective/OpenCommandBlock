@@ -4,9 +4,9 @@ import org.bukkit.Location
 import org.bukkit.entity.Entity
 
 class SphereArea(val base: Location, val radius: Double) : IDistanceArea {
-    override fun contains(e: Entity): Boolean {
-        return e.isValid && (
-                base.distance(e.location) <= radius // TODO: これ合ってる？
+    override fun contains(other: Entity): Boolean {
+        return other.isValid && (
+                base.distance(other.location) <= radius // TODO: これ合ってる？
                 )
     }
 }

@@ -13,7 +13,7 @@ object OnBlockPlace : Listener {
     fun onBlockPlace(e: BlockPlaceEvent) {
         val t = e.blockReplacedState
         if (t is CommandBlock) {
-            CommandBlockPlaceEvent(t).fire()
+            CommandBlockPlaceEvent(t, e.player).fire()
         }
     }
 }

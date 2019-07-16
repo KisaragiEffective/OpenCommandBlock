@@ -45,7 +45,7 @@ class SelectorImpl12(override val type: SelectorType, override val values: ISele
         }
 
         private fun parseError(message: String, input: String, erroredRange: IntRange): Nothing {
-            val zo = input.substring(min(0, erroredRange.first), min(erroredRange.endInclusive, input.length))
+            val zo = input.substring(min(0, erroredRange.first), min(erroredRange.last, input.length))
             val tk = "^" + "~".repeat(zo.length)
             throw SelectorSyntaxException("Syntax Error: $message\n$zo\n$tk")
         }

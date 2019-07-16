@@ -1,41 +1,28 @@
 package com.github.kisaragieffective.opencommandblock.api.selector
 
-import com.github.kisaragieffective.opencommandblock.OpenCommandBlock
-import com.github.kisaragieffective.opencommandblock.api.common.CommonVector3
 import com.github.kisaragieffective.opencommandblock.exception.DevelopStepException
-import com.github.kisaragieffective.opencommandblock.kotlinmagic.extension.common2each.toBukkitStyle
-import com.github.kisaragieffective.opencommandblock.kotlinmagic.extension.each2common.toFrameworkStyle
 import org.bukkit.entity.Entity
 
 object SelectorQueryExecutor {
-    fun apply(original: List<Entity>, sb: SelectorBuilder, relativeLocationBase: CommonVector3): Set<Entity> {
-        val tickComparator: Comparator<Entity> = when (sb.getOrder() ?: SelectorOrder.NEAREST) {
-            SelectorOrder.NEAREST -> NearestComparator
-            SelectorOrder.FARTHEST -> NearestComparator.reversed()
-            else -> TODO()
+    fun search(s: Selector): List<Entity> {
+        val props = s.values
+        val entities = (props.getBasePoint().value ?: return emptyList()).world.livingEntities
+        // タイプで絞る
+        val a1 = entities.filter {
+            it.type == props.getEntityType().value
         }
-        val limit = sb.getLimit()
-        val ret =
-                original.asSequence().filter {
-                    it.isValid
-                }.filter {
-                    // minimalRange is null -> pass all
-                    val req = sb.getMinimalRange()
-                    req == null || relativeLocationBase.distance(it.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle()) >= req.toDouble()
-                }.filter {
-                    val req = sb.getMaximumRange()
-                    req == null || relativeLocationBase.distance(it.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle()) <= req.toDouble()
-                }.sortedWith(Comparator<Entity> { o1, o2 ->
-                    o1!!
-                    o2!!
-                    val d1 = relativeLocationBase.distance(o1.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle())
-                    val d2 = relativeLocationBase.distance(o2.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle())
-                    d1.compareTo(d2)
-                }.thenComparing(tickComparator)).filterIndexed { index, _ -> limit == null || index <= limit }.toSet()
-        ret.forEach {
-            OpenCommandBlock.instance.logger.info(relativeLocationBase.distance(it.location.toVector().add(relativeLocationBase.toBukkitStyle()).toFrameworkStyle()).toString())
+        val t2 = props.getDistanceType()
+        val f1: (Entity) -> Boolean = {i -> i in t2}
+
+        // 範囲で絞る
+        val a2 = a1.filter(f1)
+
+        val count = props.getCount().value
+        return if (count != null) {
+            a2.asSequence().take(count).toList()
+        } else {
+            a2
         }
-        return ret
     }
 }
 

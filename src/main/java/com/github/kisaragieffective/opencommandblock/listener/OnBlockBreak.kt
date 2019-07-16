@@ -12,7 +12,7 @@ object OnBlockBreak : Listener {
     fun onBlockBreak(e: BlockBreakEvent) {
         val s = e.block.state
         if (s is CommandBlock) {
-            CommandBlockBreakEvent(s).fire()
+            CommandBlockBreakEvent(s, e.player).fire()
         }
     }
 }

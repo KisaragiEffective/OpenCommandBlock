@@ -1,11 +1,9 @@
 package com.github.kisaragieffective.opencommandblock.api.wrapper.region
 
 import com.github.kisaragieffective.opencommandblock.annotations.DependencyInjection
-import com.github.kisaragieffective.opencommandblock.api.common.CommonVector
-import com.github.kisaragieffective.opencommandblock.api.common.CommonVector2
-import com.github.kisaragieffective.opencommandblock.api.common.CommonVector3
 import com.github.kisaragieffective.opencommandblock.interfaces.MustImplementContains
 import com.github.kisaragieffective.opencommandblock.kotlinmagic.notImplemented
+import org.bukkit.Location
 import org.bukkit.World
 import org.bukkit.entity.Entity
 import org.bukkit.util.Vector
@@ -13,7 +11,7 @@ import java.util.EnumMap
 import kotlin.math.abs
 
 @DependencyInjection
-interface IRegion : MustImplementContains<CommonVector> {
+interface IRegion : MustImplementContains<Location> {
     val type: RegionStructure
     /**
      * If it doesn't have parent, this can be null. otherwise, null value is not allowed.
@@ -26,12 +24,12 @@ interface IRegion : MustImplementContains<CommonVector> {
 
     fun test(actor: Entity, action: EntityAction): ActionAnswer
 
-    override operator fun contains(other: CommonVector): Boolean
+    override operator fun contains(other: Location): Boolean
 
     fun getEntityPermissions(): Map<Pair<IEntityGroup, EntityAction>, ActionAnswer>
 
     /**
-     * Actually, the most key is [com.github.kudasure.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
+     * Actually, the most key is [com.github.kisaragieffective.opencommandblock.api.wrapper.region.Setting], but to complete Dependency Injection, you'll have to check the keys.
      */
     fun <E : Enum<E>, S : Any> getRegionSettings(): EnumMap<E, RegionSetting<S>>
 
@@ -44,7 +42,7 @@ interface IGlobalRegion : IRegion {
     override val parent: IRegion?
         get() = null
 
-    override operator fun contains(other: CommonVector): Boolean {
+    override operator fun contains(other: Location): Boolean {
         return true
     }
 }
@@ -61,29 +59,26 @@ interface IRectangleRegion : IRegion {
 interface ISphereRegion : IRegion {
     override val type: RegionStructure
         get() = RegionStructure.SPHERE
-    val central: CommonVector3
+    val central: Location
     val radius: Float
 
-    override operator fun contains(other: CommonVector): Boolean {
+    override operator fun contains(other: Location): Boolean {
         notImplemented()
     }
 }
 
 interface IPolygonRegion : IRegion {
-    fun getPoints(): Collection<CommonVector>
+    fun getPoints(): Collection<Location>
 }
 
 interface IPolygon2DRegion : IPolygonRegion {
     override val type: RegionStructure
         get() = RegionStructure.POLYGON_2D
-
-    override fun getPoints(): Collection<CommonVector2>
 }
 
 interface IPolygon3DRegion : IPolygonRegion {
     override val type: RegionStructure
         get() = RegionStructure.POLYGON_3D
-    override fun getPoints(): Collection<CommonVector3>
 }
 
 enum class RegionStructure {

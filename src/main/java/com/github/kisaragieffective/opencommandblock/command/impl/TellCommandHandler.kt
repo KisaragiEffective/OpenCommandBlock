@@ -22,7 +22,7 @@ object TellCommandHandler : PlayerCommandListener, OCBTemplateAvailable {
         val location = sender.foot
         LogAccessor.addInputLog(PlayerCommandInputOperation(location, sender.uniqueId))
         val baseCommand = "tell @p[r=${OpenCommandBlock.applicablePersonalRange}]"
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand(
+        CommandBlockAccessor.getCurrentVersionDriver(location).setCommand(
                 baseCommand
                         + " "
             +   args.joinToString(" ")

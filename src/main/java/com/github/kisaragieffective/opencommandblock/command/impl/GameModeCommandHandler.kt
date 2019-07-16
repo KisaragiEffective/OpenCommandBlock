@@ -30,7 +30,7 @@ object GameModeCommandHandler : PlayerCommandListener {
             sender.sendMessage("Illegal argument: First argument requires GAMEMODE, but got `$gamemode`")
             return true
         }
-        CommandBlockAccessor.getCurrentVersionDriver(location.toFrameworkStyle()).setCommand("gamemode $e ${OpenCommandBlock.personalSelector}")
+        CommandBlockAccessor.getCurrentVersionDriver(location).setCommand("gamemode $e ${OpenCommandBlock.personalSelector}")
         return true
     }
 }

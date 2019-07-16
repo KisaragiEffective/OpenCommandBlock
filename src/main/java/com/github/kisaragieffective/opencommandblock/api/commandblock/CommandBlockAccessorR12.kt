@@ -1,12 +1,12 @@
 package com.github.kisaragieffective.opencommandblock.api.commandblock
 
-import com.github.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.github.kisaragieffective.opencommandblock.api.common.TargetVersionRange
 import com.github.kisaragieffective.opencommandblock.api.common.Version
+import org.bukkit.Location
 import org.bukkit.block.CommandBlock
 
-class CommandBlockAccessorR12(override val location: CommonPoint3) : ICommandBlockAccessor {
-    private val target: CommandBlock = location.getBlock().state as? CommandBlock ?: throw IllegalStateException("$location is not CommandBlock. [CBA.R12]")
+class CommandBlockAccessorR12(override val location: Location) : ICommandBlockAccessor {
+    private val target: CommandBlock = location.block.state as? CommandBlock ?: throw IllegalStateException("$location is not CommandBlock. [CBA.R12]")
     override fun setCommand(s: String) {
         target.command = s
         target.update(true)

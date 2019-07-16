@@ -1,18 +1,18 @@
 package com.github.kisaragieffective.opencommandblock.api.commandblock
 
-import com.github.kisaragieffective.opencommandblock.api.common.CommonPoint3
 import com.github.kisaragieffective.opencommandblock.api.common.TargetVersionRange
+import org.bukkit.Location
 
 class CommandBlockAccessor {
     companion object {
-        fun getCurrentVersionDriver(l: CommonPoint3): ICommandBlockAccessor {
+        fun getCurrentVersionDriver(l: Location): ICommandBlockAccessor {
             return CommandBlockAccessorR12(l)
         }
     }
 }
 
 interface ICommandBlockAccessor {
-    val location: CommonPoint3
+    val location: Location
 
     fun setCommand(s: String)
 

@@ -1,10 +1,11 @@
 package com.github.kisaragieffective.opencommandblock.api.common
 
 import com.github.kisaragieffective.opencommandblock.interfaces.MustImplementContains
+import org.bukkit.Location
 
-data class Rectangle(private var p1: CommonPoint3, private var p2: CommonPoint3) : MustImplementContains<CommonPoint3> {
-    override operator fun contains(other: CommonPoint3): Boolean {
-        return ((p1.x)..(p2.x)).contains(other.x) && ((p1.y)..(p2.y)).contains(other.y) && ((p1.z)..(p2.z)).contains(other.z)
+data class Rectangle(private var p1: Location, private var p2: Location) : MustImplementContains<Location> {
+    override operator fun contains(other: Location): Boolean {
+        return other.x in ((p1.x)..(p2.x)) && other.y in ((p1.y)..(p2.y)) && other.z in ((p1.z)..(p2.z))
     }
 
     init {

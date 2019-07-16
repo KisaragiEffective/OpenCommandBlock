@@ -32,7 +32,7 @@ import kotlin.system.measureTimeMillis
 
 class OpenCommandBlock : JavaPlugin() {
     init {
-        instance = this.freeze
+        instance.setOnce(this)
     }
 
     override fun onLoad() {
@@ -41,6 +41,7 @@ class OpenCommandBlock : JavaPlugin() {
     }
 
     override fun onEnable() {
+        instance.setOnce(this)
         val k = measureTimeMillis {
             checkSoftDepend("WorldGuard")
             registerCommand(GameModeCommandHandler)
@@ -55,6 +56,7 @@ class OpenCommandBlock : JavaPlugin() {
             registerEventListener(OnCommandBlockPowered)
             registerEventListener(OnMinecartMove)
             registerEventListener(OnRightClick)
+            registerEventListener(DebugListener)
             startTask(CheckUpdate, period = 20 * 60 * 60)
         } / 1000.0
 
@@ -113,7 +115,7 @@ class OpenCommandBlock : JavaPlugin() {
     private fun registerEventListener(listener: Listener) {
         // checking star-beat!
         logger.info("checking ${listener::class.java} ...")
-        val methods = listener::class.java.declaredMethods.unmodifiable().requireNoNulls()
+        val methods = listener::class.java.declaredMethods.unmodifiable()
         if (methods.isEmpty()) {
             logger.warning("method not defined")
             c(listener::class.java)
@@ -159,15 +161,19 @@ class OpenCommandBlock : JavaPlugin() {
         }
     }
 
+
+
     companion object {
-        lateinit var instance: OpenCommandBlock
+        val instance: MutableRef<OpenCommandBlock> = MutableRef()
         const val applicablePersonalRange = 10
         const val applicablePeopleRange = 10
         const val personalSelector = "@p[r=$applicablePersonalRange]"
         const val peopleSelector = "@a[r=$applicablePeopleRange]"
-        val version: Version = {
-            val vsp = this.instance.description.version.split(".").map { it.toInt() }
-            Version(vsp[0], vsp[1], vsp[2], vsp.getOrElse(3) {0})
-        }()
+        fun getVersion(): Version {
+            return run {
+                val vsp = (instance.value ?: throw IllegalStateException()).description.version.split(".").map { it.toInt() }
+                Version(vsp[0], vsp[1], vsp[2], vsp.getOrElse(3) {0})
+            }
+        }
     }
 }

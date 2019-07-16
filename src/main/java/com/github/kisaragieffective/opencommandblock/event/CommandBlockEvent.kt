@@ -9,7 +9,7 @@ import org.bukkit.event.HandlerList
  */
 open class CommandBlockEvent(protected val cb: CommandBlock) : Event() {
 
-    private val handler: HandlerList = HandlerList()
+    @Suppress("MemberVisibilityCanBePrivate")
 
     override fun getHandlers(): HandlerList {
         return handler
@@ -19,4 +19,13 @@ open class CommandBlockEvent(protected val cb: CommandBlock) : Event() {
         return cb
     }
 
+    companion object {
+        val handler = HandlerList()
+
+        @Suppress("unused")
+        @JvmStatic // how api works, required
+        fun getHandlerList(): HandlerList {
+            return handler
+        }
+    }
 }
